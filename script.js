@@ -1,3 +1,8 @@
+
+/*
+
+GET LOCATION WITH GEOLOCATION
+
 const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
@@ -12,3 +17,23 @@ button.addEventListener("click", () => {
         });
     })
 });
+
+*/
+
+const map = L.map('map', {
+    center: [51.505, -0.09],
+    zoom: 13
+});
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+const marker = L.marker();
+
+function onMapClick(e){
+    marker.setLatLng(e.latlng).addTo(map);
+}
+
+map.on('click', onMapClick);
