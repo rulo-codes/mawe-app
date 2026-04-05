@@ -25,10 +25,23 @@ const map = L.map('map', {
     zoom: 13
 });
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'OSM' });
+const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: 'Esri' });
+const seaMap = L.tileLayer('https://t2.openseamap.org/tile/{z}/{x}/{y}.png', { attribution: 'Open Sea Map'})
+const seaMark = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', { attribution: 'Open Sea Map - Marks'})
+
+const baseMaps = {
+    "Street Map": osm,
+    "Satellite": satellite
+};
+
+const layerMaps = {
+    "Sea Map": seaMap,
+    "Sea Mark": seaMark
+}
+
+L.control.layers(baseMaps, layerMaps).addTo(map);
+
 
 const marker = L.marker();
 
