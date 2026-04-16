@@ -1,0 +1,22 @@
+*For Reverse Geocoding
+Nominatim OSM
+
+
+*For Weather/Marine Weather Map
+stormglass / openmateo
+
+*For Vector Nautical Map
+MapTiler Ocean / OpenMapTiles- OpenSeaMap
+https://cloud.maptiler.com/maps/ocean-v4/?_gl=1*247tgk*_gcl_au*MjAyODAxOTA2Ni4xNzc2MTUxNTIz*_ga*MTI4NzQ4MjYzNS4xNzc2MTUxNTIy*_ga_K4SXYBF4HT*czE3NzYxNTE1MjIkbzEkZzEkdDE3NzYxNTMxMjEkajI2JGwwJGgw
+
+openseamap
+openweathermap
+weatherlayers
+openmateoblue-paywall
+
+`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+
+https://openlayers.org/en/latest/examples/reprojection-wgs84.html
+
+reference site:
+ventusky - https://www.ventusky.com/sea-map/significant-wave-height#p=11.07;123.27;6

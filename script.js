@@ -20,33 +20,15 @@ button.addEventListener("click", () => {
 
 */
 
-const map = L.map('map', {
-    center: [51.505, -0.09],
-    zoom: 13
-});
+const key = 'B5DZprXVurPYHQYpjYGc';
+const maweMap = '019d9359-9c57-7522-b4dc-7a10a029169f';
 
-const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'OSM' });
-const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: 'Esri' });
-const seaMap = L.tileLayer('https://t2.openseamap.org/tile/{z}/{x}/{y}.png', { attribution: 'Open Sea Map'})
-const seaMark = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', { attribution: 'Open Sea Map - Marks'})
+const map = L.map('map').setView([51.505, -0.09], 13);
 
-const baseMaps = {
-    "Street Map": osm,
-    "Satellite": satellite
-};
+const seaTile = L.maptilerLayer({
+    apiKey: `${key}`,
+    style: `${maweMap}`
+}).addTo(map);
 
-const layerMaps = {
-    "Sea Map": seaMap,
-    "Sea Mark": seaMark
-}
+//const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: 'Esri' });
 
-L.control.layers(baseMaps, layerMaps).addTo(map);
-
-
-const marker = L.marker();
-
-function onMapClick(e){
-    marker.setLatLng(e.latlng).addTo(map);
-}
-
-map.on('click', onMapClick);
