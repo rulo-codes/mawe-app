@@ -20,3 +20,6 @@ https://openlayers.org/en/latest/examples/reprojection-wgs84.html
 
 reference site:
 ventusky - https://www.ventusky.com/sea-map/significant-wave-height#p=11.07;123.27;6
+
+Satellite Map - Layer Source
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
