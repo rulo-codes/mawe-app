@@ -11,3 +11,45 @@
   width: 100dvw;
   height: 100dvh;
 }
+
+#time-info{ display: none; position: fixed; width: 60vw; bottom: 0; z-index: 1; margin: 10px; text-shadow: 0px 0px 5px 
+black; color: 
+white; font-size: 18px; font-weight: 500; text-align: center; left: 0; right: 0; margin: auto; padding: 20px;}
+#time-slider{ width: 100%; height: fit-content; left: 0; right: 0; z-index: 1; filter: drop-shadow(0 0 7px 
+#000a); margin-top: 10px;}
+#time-text{ font-size: 12px; font-weight: 600;}
+#pointer-data{ z-index: 1; position: fixed; font-size: 20px; font-weight: 900; margin: 27px 0px 0px 10px; color: 
+#fff; text-shadow: 0px 0px 10px 
+#0007;}
+#variable-name{ z-index: 1; position: fixed; font-size: 20px; font-weight: 500; margin: 5px 0px 0px 10px; color: 
+#fff; text-shadow: 0px 0px 10px 
+#0007;}
+#wind-layer-data{
+  display:none;
+}
+.button{ 
+    cursor: pointer;
+    width: auto; 
+    padding: 8px; 
+    border-radius: 3px; 
+    font-size: 10px; 
+    text-align: center; 
+    color: #fff; 
+    background: #3174ff; font-family: sans-serif; font-weight: bold;
+}
+
+#toggle-weather-btn{
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  background: #ffffff94;
+  width: auto;
+  padding: 8px;
+  margin: 0 10px;
+  font-size: 16px; 
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px 1px rgba(0,0,0,0.5);
+  text-align: center;
+  cursor: pointer;
+}

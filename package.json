@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@maptiler/sdk": "^4.0.1",
+    "@maptiler/weather": "^3.1.1",
     "ol": "^10.9.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"

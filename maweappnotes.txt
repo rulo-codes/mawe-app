@@ -9,8 +9,11 @@ stormglass / openmateo
 MapTiler Ocean / OpenMapTiles- OpenSeaMap
 https://cloud.maptiler.com/maps/ocean-v4/?_gl=1*247tgk*_gcl_au*MjAyODAxOTA2Ni4xNzc2MTUxNTIz*_ga*MTI4NzQ4MjYzNS4xNzc2MTUxNTIy*_ga_K4SXYBF4HT*czE3NzYxNTE1MjIkbzEkZzEkdDE3NzYxNTMxMjEkajI2JGwwJGgw
 
+*Windy api
+
+
 openseamap
-openweathermap
+openweathermap - has free tier
 weatherlayers
 openmateoblue-paywall
 
@@ -21,5 +24,21 @@ https://openlayers.org/en/latest/examples/reprojection-wgs84.html
 reference site:
 ventusky - https://www.ventusky.com/sea-map/significant-wave-height#p=11.07;123.27;6
 
-Satellite Map - Layer Source
-'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+
+//---
+
+Data needed for map 
+- Wind speed and direction
+- Wind gust
+- (optional) Wind vs Current:
+	If your app can calculate this, show a warning when wind blows opposite to the tide/current, as this creates "squared-off," dangerous waves.
+
+- Significant Wave Height
+- Wave Period
+- Swell Direction
+- Sea Level Pressure
+- Visibility
+- Thunderstorm / Squall Probability
+- Tide Levels & Tidal Currents
+
+
