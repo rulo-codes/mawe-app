@@ -1,0 +1,4486 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-30T07:13:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/839235368",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1595296,
+          45.6789832
+        ]
+      },
+      "id": "node/839235368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1295699209",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "8",
+        "seamark:light:period": "10",
+        "seamark:light:range": "5",
+        "seamark:light:reference": "E 6077.8",
+        "seamark:name": "No.9",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 112. 2010-11-10."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.4075333,
+          19.1617833
+        ]
+      },
+      "id": "node/1295699209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1295699219",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "10",
+        "seamark:light:period": "5",
+        "seamark:light:range": "5",
+        "seamark:light:reference": "E 6077.65",
+        "seamark:name": "Al Mansuriyah",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 112. 2010-11-10."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.38855,
+          19.2299
+        ]
+      },
+      "id": "node/1295699219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1347582536",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:information": "Radar reflector.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "5",
+        "seamark:light:period": "10",
+        "seamark:light:range": "6",
+        "seamark:light:reference": "E 2543",
+        "seamark:light:sequence": "1+(9)",
+        "seamark:radar_reflector": "yes",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 113. 2010-10-22."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6060016,
+          45.7432937
+        ]
+      },
+      "id": "node/1347582536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1347582544",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "5",
+        "seamark:light:period": "10",
+        "seamark:light:range": "6",
+        "seamark:light:reference": "E 2525.7",
+        "seamark:light:sequence": "1+(9)",
+        "seamark:radar_reflector": "yes",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 113. 2010-10-22."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3481337,
+          45.6607167
+        ]
+      },
+      "id": "node/1347582544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1347582554",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "6",
+        "seamark:light:period": "2",
+        "seamark:light:range": "6",
+        "seamark:light:reference": "E 2519.5",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 113. 2010-10-22."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1615337,
+          45.6624503
+        ]
+      },
+      "id": "node/1347582554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1347582577",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "7",
+        "seamark:light:period": "10",
+        "seamark:light:range": "6",
+        "seamark:light:reference": "E 2481",
+        "seamark:light:sequence": "1+(9)",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 113. 2010-10-22."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4802833,
+          45.3991
+        ]
+      },
+      "id": "node/1347582577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1347582584",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "7",
+        "seamark:light:period": "10",
+        "seamark:light:range": "6",
+        "seamark:light:reference": "E 2465",
+        "seamark:light:sequence": "1+(9)",
+        "seamark:radar_reflector": "yes",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 113. 2010-10-22."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.38415,
+          45.3246667
+        ]
+      },
+      "id": "node/1347582584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1347582607",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "5",
+        "seamark:light:period": "10",
+        "seamark:light:range": "6",
+        "seamark:light:reference": "E 2417.8",
+        "seamark:radar_reflector": "yes",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 113. 2010-10-22."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3463095,
+          44.5006347
+        ]
+      },
+      "id": "node/1347582607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1494660794",
+        "note": "Seamark",
+        "seamark:type": "beacon_safe_water",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3275897,
+          59.2361246
+        ]
+      },
+      "id": "node/1494660794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1534658553",
+        "note": "Nowe Warpno",
+        "seamark:beacon_safe_water:colour": "white;red",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:fog_signal:category": "whistle",
+        "seamark:light:1:colour": "green",
+        "seamark:light:1:height": "6",
+        "seamark:light:1:range": "1",
+        "seamark:light:1:sector_end": "155",
+        "seamark:light:1:sector_start": "152",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:height": "6",
+        "seamark:light:2:range": "1",
+        "seamark:light:2:sector_end": "157",
+        "seamark:light:2:sector_start": "155",
+        "seamark:light:3:colour": "red",
+        "seamark:light:3:height": "6",
+        "seamark:light:3:range": "1",
+        "seamark:light:3:sector_end": "160",
+        "seamark:light:3:sector_start": "157",
+        "seamark:light:reference": "C 2876",
+        "seamark:name": "Nowe Warpno",
+        "seamark:type": "beacon_safe_water",
+        "source": "US NGA Pub. 116. 2011-07-07."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2819902,
+          53.7262329
+        ]
+      },
+      "id": "node/1534658553"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1654914037",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "4",
+        "seamark:name": "Port Kirwan Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9122733,
+          46.9697883
+        ]
+      },
+      "id": "node/1654914037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1654914086",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:landmark:height": "2",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "4",
+        "seamark:light:range": "4",
+        "seamark:light:sequence": "0.5+(3.5)",
+        "seamark:name": "Calvert Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.91,
+          47.0575
+        ]
+      },
+      "id": "node/1654914086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1654914137",
+        "addr:city": "Cape Broyle",
+        "addr:postcode": "A0A 1P0",
+        "addr:street": "Lower Road",
+        "comment": "seasonal",
+        "description": "Docking Station for Fishing Boats",
+        "name": "Boat Yard",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "3",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:name": "Cape Broyle Public Wharf",
+        "seamark:type": "beacon_safe_water",
+        "waterway": "boatyard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9458333,
+          47.095
+        ]
+      },
+      "id": "node/1654914137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1655227076",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:name": "Fermeuse Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.945,
+          46.9705556
+        ]
+      },
+      "id": "node/1655227076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1655227166",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:name": "Fermeuse Inner Harbour Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9487778,
+          46.9721389
+        ]
+      },
+      "id": "node/1655227166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1655278387",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "4",
+        "seamark:name": "Renews Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9332632,
+          46.9231824
+        ]
+      },
+      "id": "node/1655278387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1655278403",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "4",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:name": "Renews Breakwater",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9475278,
+          46.9287778
+        ]
+      },
+      "id": "node/1655278403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1655278405",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:name": "Renews Southside Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9491111,
+          46.9293333
+        ]
+      },
+      "id": "node/1655278405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1656070162",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "3.1",
+        "seamark:light:period": "4",
+        "seamark:light:range": "4",
+        "seamark:name": "Thornlea Wharf",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.7190556,
+          47.6065278
+        ]
+      },
+      "id": "node/1656070162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1656070177",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "3.5",
+        "seamark:light:period": "4",
+        "seamark:light:range": "4",
+        "seamark:name": "Ochre Pit Cove Breakwater",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.0657597,
+          47.9129082
+        ]
+      },
+      "id": "node/1656070177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1656070489",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "5.7",
+        "seamark:light:period": "4",
+        "seamark:light:range": "4",
+        "seamark:name": "Grates Cove",
+        "seamark:reference": "473.1",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.9377222,
+          48.1646944
+        ]
+      },
+      "id": "node/1656070489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1711227241",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:colour": "white",
+        "seamark:name": "No.1",
+        "seamark:type": "beacon_safe_water",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7083349,
+          35.3818095
+        ]
+      },
+      "id": "node/1711227241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1711227243",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:colour": "white",
+        "seamark:name": "No.2",
+        "seamark:type": "beacon_safe_water",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7221829,
+          35.4068098
+        ]
+      },
+      "id": "node/1711227243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1711227244",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:colour": "white",
+        "seamark:name": "No.3",
+        "seamark:type": "beacon_safe_water",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7459418,
+          35.4189926
+        ]
+      },
+      "id": "node/1711227244"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1730906956",
+        "seamark:beacon_safe_water:colour": "white;red",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.63304,
+          42.44646
+        ]
+      },
+      "id": "node/1730906956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852466796",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3970205,
+          37.7997357
+        ]
+      },
+      "id": "node/2852466796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852466797",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3973701,
+          37.7998457
+        ]
+      },
+      "id": "node/2852466797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852466798",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3973286,
+          37.7999042
+        ]
+      },
+      "id": "node/2852466798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852466799",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3975419,
+          37.7999393
+        ]
+      },
+      "id": "node/2852466799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852466800",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3974101,
+          37.7999651
+        ]
+      },
+      "id": "node/2852466800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852467001",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3967243,
+          37.8000318
+        ]
+      },
+      "id": "node/2852467001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852467002",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3967169,
+          37.8000868
+        ]
+      },
+      "id": "node/2852467002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2852467003",
+        "seamark:beacon_safe_water:shape": "pole",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3969406,
+          37.8001207
+        ]
+      },
+      "id": "node/2852467003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2876837756",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "tower",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:period": "10",
+        "seamark:name": "Torre Oyarvide",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.1298576,
+          -35.1001671
+        ]
+      },
+      "id": "node/2876837756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959082612",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MA",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4708691,
+          53.7239659
+        ]
+      },
+      "id": "node/2959082612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959082613",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MB",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4738333,
+          53.7355167
+        ]
+      },
+      "id": "node/2959082613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959082614",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MC",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4768333,
+          53.7469167
+        ]
+      },
+      "id": "node/2959082614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959215385",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MD",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4791833,
+          53.7586667
+        ]
+      },
+      "id": "node/2959215385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959215389",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "ME-W",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4824833,
+          53.77235
+        ]
+      },
+      "id": "node/2959215389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959288320",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MF",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4853333,
+          53.7847833
+        ]
+      },
+      "id": "node/2959288320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959288321",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MG",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.488,
+          53.796
+        ]
+      },
+      "id": "node/2959288321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959288322",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MH",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.49035,
+          53.8075667
+        ]
+      },
+      "id": "node/2959288322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959288323",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MJ",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4927833,
+          53.8190667
+        ]
+      },
+      "id": "node/2959288323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959288324",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "MK",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4950167,
+          53.8301667
+        ]
+      },
+      "id": "node/2959288324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2959288325",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:name": "M-1",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4981833,
+          53.8436667
+        ]
+      },
+      "id": "node/2959288325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3756263573",
+        "note": "add light and other details, if able",
+        "seamark:beacon_safe_water:colour": "red",
+        "seamark:beacon_safe_water:shape": "tower",
+        "seamark:type": "beacon_safe_water",
+        "survey:date": "2015-09-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.8522,
+          27.215974
+        ]
+      },
+      "id": "node/3756263573"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3756268008",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "pile",
+        "seamark:topmark:colour": "white",
+        "seamark:topmark:shape": "x-shape",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.847099,
+          27.189699
+        ]
+      },
+      "id": "node/3756268008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3756272916",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "pile",
+        "seamark:topmark:colour": "white",
+        "seamark:topmark:shape": "x-shape",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.8558213,
+          27.1874429
+        ]
+      },
+      "id": "node/3756272916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3758266383",
+        "seamark:beacon_safe_water:colour": "red",
+        "seamark:beacon_safe_water:shape": "barrel",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.831824,
+          27.1801637
+        ]
+      },
+      "id": "node/3758266383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4701865874",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1095271,
+          45.6385773
+        ]
+      },
+      "id": "node/4701865874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4701865875",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1090033,
+          45.6382408
+        ]
+      },
+      "id": "node/4701865875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4705193508",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:type": "beacon_safe_water",
+        "source": "Maanmittauslaitos Peruskarttarasteri 2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.187139,
+          61.6834096
+        ]
+      },
+      "id": "node/4705193508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4736216009",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "tower",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2913716,
+          54.2999593
+        ]
+      },
+      "id": "node/4736216009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5130460158",
+        "seamark:light:colour": "yellow",
+        "seamark:light:height": "7.3",
+        "seamark:light:period": "6",
+        "seamark:light:range": "4",
+        "seamark:name": "F",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.9658189,
+          46.9708309
+        ]
+      },
+      "id": "node/5130460158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5130460161",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.9182451,
+          46.9704407
+        ]
+      },
+      "id": "node/5130460161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5130460162",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.9361373,
+          46.9701061
+        ]
+      },
+      "id": "node/5130460162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5130460163",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.9317062,
+          46.9698934
+        ]
+      },
+      "id": "node/5130460163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5130460164",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.910506,
+          46.9718417
+        ]
+      },
+      "id": "node/5130460164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5835459702",
+        "seamark:light:colour": "yellow",
+        "seamark:light:height": "8.2",
+        "seamark:light:period": "4",
+        "seamark:light:range": "4",
+        "seamark:name": "E",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.9731624,
+          46.965334
+        ]
+      },
+      "id": "node/5835459702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6436951437",
+        "seamark:beacon_safe_water:colour": "red;white;white;red",
+        "seamark:beacon_safe_water:colour_pattern": "horizontal",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "7.5",
+        "seamark:light:period": "4",
+        "seamark:light:range": "5",
+        "seamark:name": "Matheson Island",
+        "seamark:source": "https://www.notmar.gc.ca/publications/list-livre/inlandwaters-eauxinter/i1562-en.php",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9202495,
+          51.7414101
+        ]
+      },
+      "id": "node/6436951437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6697568854",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "tower",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.4278578,
+          54.3232252
+        ]
+      },
+      "id": "node/6697568854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9228811994",
+        "height": "4",
+        "man_made": "beacon",
+        "material": "wood",
+        "name": "Motukorea Channel",
+        "ref:linz:hydrographic_id": "153989;153990;153914",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:construction": "wooden",
+        "seamark:beacon_safe_water:shape": "pile",
+        "seamark:light:character": "LFl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "1",
+        "seamark:light:height": "4",
+        "seamark:light:period": "10",
+        "seamark:light:range": "2",
+        "seamark:light:sequence": "2+(8)",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water",
+        "source": "LINZ;Tāmaki River Chart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8673798,
+          -36.8318797
+        ]
+      },
+      "id": "node/9228811994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9228850018",
+        "man_made": "beacon",
+        "ref:linz:hydrographic_id": "7937565",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:type": "beacon_safe_water",
+        "source": "LINZ;Havelock Chart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.7738534,
+          -41.2655844
+        ]
+      },
+      "id": "node/9228850018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9228850019",
+        "man_made": "beacon",
+        "ref:linz:hydrographic_id": "7937564",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:type": "beacon_safe_water",
+        "source": "LINZ;Havelock Chart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.775247,
+          -41.264682
+        ]
+      },
+      "id": "node/9228850019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9839280762",
+        "seamark:beacon_isolated_danger:colour": "black",
+        "seamark:beacon_isolated_danger:shape": "pole",
+        "seamark:daymark:category": "front;leading",
+        "seamark:daymark:colour": "black;white",
+        "seamark:daymark:colour_pattern": "border",
+        "seamark:daymark:shape": "cone, point up",
+        "seamark:light:category": "front;leading",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "red",
+        "seamark:light:reference": "C 7263",
+        "seamark:status": "occasional",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0766246,
+          57.2398208
+        ]
+      },
+      "id": "node/9839280762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9839280763",
+        "seamark:beacon_isolated_danger:colour": "black",
+        "seamark:beacon_isolated_danger:shape": "pole",
+        "seamark:daymark:category": "rear;leading",
+        "seamark:daymark:colour": "black;white",
+        "seamark:daymark:colour_pattern": "border",
+        "seamark:daymark:shape": "cone, point down",
+        "seamark:light:category": "rear;leading",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "red",
+        "seamark:light:reference": "C 7463.1",
+        "seamark:status": "occasional",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0736688,
+          57.2406665
+        ]
+      },
+      "id": "node/9839280763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9894953825",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:light:character": "LFl",
+        "seamark:light:colour": "white",
+        "seamark:topmark:colour": "red",
+        "seamark:topmark:shape": "sphere",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2569113,
+          45.6761601
+        ]
+      },
+      "id": "node/9894953825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654815",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1906937,
+          45.2961804
+        ]
+      },
+      "id": "node/12339654815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654816",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1914471,
+          45.2962818
+        ]
+      },
+      "id": "node/12339654816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654817",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1921113,
+          45.2963188
+        ]
+      },
+      "id": "node/12339654817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654818",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.192984,
+          45.2963569
+        ]
+      },
+      "id": "node/12339654818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654819",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1936657,
+          45.2964264
+        ]
+      },
+      "id": "node/12339654819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654820",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1945241,
+          45.2964611
+        ]
+      },
+      "id": "node/12339654820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654821",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1953714,
+          45.2964925
+        ]
+      },
+      "id": "node/12339654821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654822",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1963716,
+          45.2965731
+        ]
+      },
+      "id": "node/12339654822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654823",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1971361,
+          45.2965888
+        ]
+      },
+      "id": "node/12339654823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654824",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1977922,
+          45.2966123
+        ]
+      },
+      "id": "node/12339654824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654825",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1985264,
+          45.296646
+        ]
+      },
+      "id": "node/12339654825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654826",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1993674,
+          45.2965787
+        ]
+      },
+      "id": "node/12339654826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654827",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2002353,
+          45.2964353
+        ]
+      },
+      "id": "node/12339654827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654828",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2008756,
+          45.2963345
+        ]
+      },
+      "id": "node/12339654828"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654829",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2016385,
+          45.2962415
+        ]
+      },
+      "id": "node/12339654829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654830",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2023042,
+          45.2961967
+        ]
+      },
+      "id": "node/12339654830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654831",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2029492,
+          45.2961407
+        ]
+      },
+      "id": "node/12339654831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654832",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2036006,
+          45.2960802
+        ]
+      },
+      "id": "node/12339654832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654833",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2042663,
+          45.2960074
+        ]
+      },
+      "id": "node/12339654833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654834",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2048492,
+          45.2959009
+        ]
+      },
+      "id": "node/12339654834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654835",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2055181,
+          45.2957967
+        ]
+      },
+      "id": "node/12339654835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654836",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2062842,
+          45.295604
+        ]
+      },
+      "id": "node/12339654836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654837",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2068926,
+          45.2954337
+        ]
+      },
+      "id": "node/12339654837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654838",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2082033,
+          45.2951862
+        ]
+      },
+      "id": "node/12339654838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654839",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2096272,
+          45.2946809
+        ]
+      },
+      "id": "node/12339654839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654840",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2089359,
+          45.2949296
+        ]
+      },
+      "id": "node/12339654840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654841",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2101702,
+          45.2944568
+        ]
+      },
+      "id": "node/12339654841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654842",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2108089,
+          45.2942686
+        ]
+      },
+      "id": "node/12339654842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654843",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2113361,
+          45.2941498
+        ]
+      },
+      "id": "node/12339654843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654844",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2119253,
+          45.2939918
+        ]
+      },
+      "id": "node/12339654844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654845",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2125209,
+          45.2937765
+        ]
+      },
+      "id": "node/12339654845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654846",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2131547,
+          45.2938702
+        ]
+      },
+      "id": "node/12339654846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654847",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2139583,
+          45.2938657
+        ]
+      },
+      "id": "node/12339654847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654848",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2146695,
+          45.2937206
+        ]
+      },
+      "id": "node/12339654848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654849",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2151401,
+          45.2935316
+        ]
+      },
+      "id": "node/12339654849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654850",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2160017,
+          45.2935754
+        ]
+      },
+      "id": "node/12339654850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654851",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2167924,
+          45.293586
+        ]
+      },
+      "id": "node/12339654851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654852",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.217394,
+          45.2934742
+        ]
+      },
+      "id": "node/12339654852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654853",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2186445,
+          45.2928817
+        ]
+      },
+      "id": "node/12339654853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654854",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2193063,
+          45.2927229
+        ]
+      },
+      "id": "node/12339654854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654855",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2199423,
+          45.2928348
+        ]
+      },
+      "id": "node/12339654855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654856",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2204365,
+          45.29293
+        ]
+      },
+      "id": "node/12339654856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654857",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2210853,
+          45.2930479
+        ]
+      },
+      "id": "node/12339654857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654858",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2217643,
+          45.2933926
+        ]
+      },
+      "id": "node/12339654858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654859",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2223208,
+          45.2936556
+        ]
+      },
+      "id": "node/12339654859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654860",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2231051,
+          45.2936994
+        ]
+      },
+      "id": "node/12339654860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654861",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2237368,
+          45.2937493
+        ]
+      },
+      "id": "node/12339654861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654862",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2243083,
+          45.2938022
+        ]
+      },
+      "id": "node/12339654862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654863",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2250754,
+          45.2939155
+        ]
+      },
+      "id": "node/12339654863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654864",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2259585,
+          45.2940032
+        ]
+      },
+      "id": "node/12339654864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654865",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2266073,
+          45.2939926
+        ]
+      },
+      "id": "node/12339654865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654866",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2273594,
+          45.2940229
+        ]
+      },
+      "id": "node/12339654866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654867",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2280383,
+          45.2940289
+        ]
+      },
+      "id": "node/12339654867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654868",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2288398,
+          45.294047
+        ]
+      },
+      "id": "node/12339654868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654869",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2296369,
+          45.2940485
+        ]
+      },
+      "id": "node/12339654869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654870",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2303116,
+          45.2940561
+        ]
+      },
+      "id": "node/12339654870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654871",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2309454,
+          45.2940349
+        ]
+      },
+      "id": "node/12339654871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654872",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2316094,
+          45.2940047
+        ]
+      },
+      "id": "node/12339654872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654873",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.23237,
+          45.2939639
+        ]
+      },
+      "id": "node/12339654873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654874",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2331929,
+          45.2939382
+        ]
+      },
+      "id": "node/12339654874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654875",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2338891,
+          45.2938823
+        ]
+      },
+      "id": "node/12339654875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654876",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2345573,
+          45.2938702
+        ]
+      },
+      "id": "node/12339654876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654877",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2351783,
+          45.2938384
+        ]
+      },
+      "id": "node/12339654877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654878",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2358422,
+          45.2938112
+        ]
+      },
+      "id": "node/12339654878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654879",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2364932,
+          45.2937901
+        ]
+      },
+      "id": "node/12339654879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654880",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2371786,
+          45.2937599
+        ]
+      },
+      "id": "node/12339654880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654881",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2378383,
+          45.2937311
+        ]
+      },
+      "id": "node/12339654881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654882",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2384764,
+          45.2936782
+        ]
+      },
+      "id": "node/12339654882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654883",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2391232,
+          45.2936465
+        ]
+      },
+      "id": "node/12339654883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654884",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2398107,
+          45.2936178
+        ]
+      },
+      "id": "node/12339654884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654885",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2403908,
+          45.2935815
+        ]
+      },
+      "id": "node/12339654885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654886",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2410677,
+          45.2935392
+        ]
+      },
+      "id": "node/12339654886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654887",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2417875,
+          45.2935195
+        ]
+      },
+      "id": "node/12339654887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654888",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2426082,
+          45.2934848
+        ]
+      },
+      "id": "node/12339654888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654889",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2432356,
+          45.2934364
+        ]
+      },
+      "id": "node/12339654889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654890",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2438802,
+          45.2933895
+        ]
+      },
+      "id": "node/12339654890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654891",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.244499,
+          45.2933593
+        ]
+      },
+      "id": "node/12339654891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654892",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2451845,
+          45.2933124
+        ]
+      },
+      "id": "node/12339654892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654893",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2458333,
+          45.2932867
+        ]
+      },
+      "id": "node/12339654893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654894",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2465531,
+          45.293249
+        ]
+      },
+      "id": "node/12339654894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654895",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2471462,
+          45.2932263
+        ]
+      },
+      "id": "node/12339654895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654896",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2478251,
+          45.2931976
+        ]
+      },
+      "id": "node/12339654896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654897",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.248431,
+          45.2931522
+        ]
+      },
+      "id": "node/12339654897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654899",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2541969,
+          45.2998565
+        ]
+      },
+      "id": "node/12339654899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339654900",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540867,
+          45.300666
+        ]
+      },
+      "id": "node/12339654900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682301",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540548,
+          45.301088
+        ]
+      },
+      "id": "node/12339682301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682302",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.254049,
+          45.3015121
+        ]
+      },
+      "id": "node/12339682302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682303",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540693,
+          45.3019382
+        ]
+      },
+      "id": "node/12339682303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682304",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540577,
+          45.3023419
+        ]
+      },
+      "id": "node/12339682304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682305",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540374,
+          45.3027844
+        ]
+      },
+      "id": "node/12339682305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682306",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540664,
+          45.3032023
+        ]
+      },
+      "id": "node/12339682306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682307",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540693,
+          45.303553
+        ]
+      },
+      "id": "node/12339682307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682308",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2540925,
+          45.3039506
+        ]
+      },
+      "id": "node/12339682308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682309",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2541418,
+          45.3043298
+        ]
+      },
+      "id": "node/12339682309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682310",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2541621,
+          45.3047049
+        ]
+      },
+      "id": "node/12339682310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682311",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2541911,
+          45.3051473
+        ]
+      },
+      "id": "node/12339682311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682312",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2542548,
+          45.3055938
+        ]
+      },
+      "id": "node/12339682312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682313",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2542896,
+          45.3059669
+        ]
+      },
+      "id": "node/12339682313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682314",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2543853,
+          45.3063767
+        ]
+      },
+      "id": "node/12339682314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682315",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2545128,
+          45.3067763
+        ]
+      },
+      "id": "node/12339682315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682316",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2547157,
+          45.3071514
+        ]
+      },
+      "id": "node/12339682316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682317",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2549679,
+          45.3074654
+        ]
+      },
+      "id": "node/12339682317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682318",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2552578,
+          45.307816
+        ]
+      },
+      "id": "node/12339682318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682319",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2556491,
+          45.3081422
+        ]
+      },
+      "id": "node/12339682319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682320",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2560724,
+          45.3083909
+        ]
+      },
+      "id": "node/12339682320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682321",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2565564,
+          45.3086661
+        ]
+      },
+      "id": "node/12339682321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682322",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2569941,
+          45.3089087
+        ]
+      },
+      "id": "node/12339682322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682323",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2575681,
+          45.3091371
+        ]
+      },
+      "id": "node/12339682323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682324",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2580696,
+          45.3093104
+        ]
+      },
+      "id": "node/12339682324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682325",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2586116,
+          45.3095061
+        ]
+      },
+      "id": "node/12339682325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682326",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2591218,
+          45.3097079
+        ]
+      },
+      "id": "node/12339682326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682327",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2602146,
+          45.3099831
+        ]
+      },
+      "id": "node/12339682327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682328",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2608553,
+          45.3101013
+        ]
+      },
+      "id": "node/12339682328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682329",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2614205,
+          45.3100952
+        ]
+      },
+      "id": "node/12339682329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682330",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2620814,
+          45.31003
+        ]
+      },
+      "id": "node/12339682330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682331",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2625858,
+          45.3099647
+        ]
+      },
+      "id": "node/12339682331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682332",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2631453,
+          45.3098322
+        ]
+      },
+      "id": "node/12339682332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682333",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2636641,
+          45.3096957
+        ]
+      },
+      "id": "node/12339682333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682334",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2641917,
+          45.3095509
+        ]
+      },
+      "id": "node/12339682334"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682335",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2653512,
+          45.3092186
+        ]
+      },
+      "id": "node/12339682335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682336",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2659802,
+          45.3090453
+        ]
+      },
+      "id": "node/12339682336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682337",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2665976,
+          45.3090718
+        ]
+      },
+      "id": "node/12339682337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682338",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2677484,
+          45.3092859
+        ]
+      },
+      "id": "node/12339682338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682339",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2684065,
+          45.3094184
+        ]
+      },
+      "id": "node/12339682339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682340",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2689253,
+          45.3095856
+        ]
+      },
+      "id": "node/12339682340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682341",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2699602,
+          45.3099749
+        ]
+      },
+      "id": "node/12339682341"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682342",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2704646,
+          45.310187
+        ]
+      },
+      "id": "node/12339682342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682343",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2709805,
+          45.3104499
+        ]
+      },
+      "id": "node/12339682343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682344",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2715487,
+          45.3106293
+        ]
+      },
+      "id": "node/12339682344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682345",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2721458,
+          45.3107211
+        ]
+      },
+      "id": "node/12339682345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682346",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2728009,
+          45.310772
+        ]
+      },
+      "id": "node/12339682346"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682347",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2733894,
+          45.3107863
+        ]
+      },
+      "id": "node/12339682347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682348",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2739633,
+          45.3108026
+        ]
+      },
+      "id": "node/12339682348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682349",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2746358,
+          45.3108719
+        ]
+      },
+      "id": "node/12339682349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682350",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2753344,
+          45.310984
+        ]
+      },
+      "id": "node/12339682350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682351",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2758997,
+          45.3111247
+        ]
+      },
+      "id": "node/12339682351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682352",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2771229,
+          45.3114529
+        ]
+      },
+      "id": "node/12339682352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682353",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2777085,
+          45.3116384
+        ]
+      },
+      "id": "node/12339682353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682354",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2782621,
+          45.3118341
+        ]
+      },
+      "id": "node/12339682354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682355",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2787491,
+          45.3120726
+        ]
+      },
+      "id": "node/12339682355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682356",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2793144,
+          45.3124701
+        ]
+      },
+      "id": "node/12339682356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682357",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2797115,
+          45.3127637
+        ]
+      },
+      "id": "node/12339682357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682358",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2801405,
+          45.3130735
+        ]
+      },
+      "id": "node/12339682358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682359",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2805405,
+          45.3134894
+        ]
+      },
+      "id": "node/12339682359"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682360",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2808043,
+          45.3138237
+        ]
+      },
+      "id": "node/12339682360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682361",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2811145,
+          45.3142477
+        ]
+      },
+      "id": "node/12339682361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682362",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2812942,
+          45.3146554
+        ]
+      },
+      "id": "node/12339682362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682363",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2815029,
+          45.315061
+        ]
+      },
+      "id": "node/12339682363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682364",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2816566,
+          45.3155115
+        ]
+      },
+      "id": "node/12339682364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682365",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2818276,
+          45.3158906
+        ]
+      },
+      "id": "node/12339682365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682366",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2819696,
+          45.3163798
+        ]
+      },
+      "id": "node/12339682366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682367",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2822653,
+          45.3172461
+        ]
+      },
+      "id": "node/12339682367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682368",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2823725,
+          45.3176844
+        ]
+      },
+      "id": "node/12339682368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682369",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2825175,
+          45.3181348
+        ]
+      },
+      "id": "node/12339682369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682370",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2826363,
+          45.3185772
+        ]
+      },
+      "id": "node/12339682370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682371",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.28279,
+          45.3190011
+        ]
+      },
+      "id": "node/12339682371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682372",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2829117,
+          45.3194455
+        ]
+      },
+      "id": "node/12339682372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682373",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2830335,
+          45.3198816
+        ]
+      },
+      "id": "node/12339682373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682374",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2832103,
+          45.3203586
+        ]
+      },
+      "id": "node/12339682374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682375",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2833436,
+          45.3208172
+        ]
+      },
+      "id": "node/12339682375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682376",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2835117,
+          45.3212595
+        ]
+      },
+      "id": "node/12339682376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682377",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2836451,
+          45.3217079
+        ]
+      },
+      "id": "node/12339682377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682378",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2843611,
+          45.3216426
+        ]
+      },
+      "id": "node/12339682378"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682379",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2838103,
+          45.3221502
+        ]
+      },
+      "id": "node/12339682379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682380",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2839118,
+          45.322515
+        ]
+      },
+      "id": "node/12339682380"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682381",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2850017,
+          45.322517
+        ]
+      },
+      "id": "node/12339682381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682382",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2850974,
+          45.3230347
+        ]
+      },
+      "id": "node/12339682382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682383",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2840248,
+          45.3229715
+        ]
+      },
+      "id": "node/12339682383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682384",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2841582,
+          45.3234301
+        ]
+      },
+      "id": "node/12339682384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12339682385",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2842886,
+          45.3238581
+        ]
+      },
+      "id": "node/12339682385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770569285",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.07517,
+          45.4234885
+        ]
+      },
+      "id": "node/12770569285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770569286",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.075128,
+          45.4234429
+        ]
+      },
+      "id": "node/12770569286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770569287",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0750726,
+          45.4234252
+        ]
+      },
+      "id": "node/12770569287"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770569288",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0750052,
+          45.4234104
+        ]
+      },
+      "id": "node/12770569288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770569297",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.074866,
+          45.4231973
+        ]
+      },
+      "id": "node/12770569297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770569298",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0747474,
+          45.4230412
+        ]
+      },
+      "id": "node/12770569298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12825788371",
+        "description": "signboard with a circle coloured in red and white vertical stripes",
+        "direction": "130",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "sign",
+        "seamark:topmark:shape": "square",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.282464,
+          55.8571264
+        ]
+      },
+      "id": "node/12825788371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12826222804",
+        "description": "signboard with a circle coloured in red and white vertical stripes",
+        "direction": "310",
+        "note": "possibly lit",
+        "seamark:beacon_safe_water:colour": "red;white",
+        "seamark:beacon_safe_water:colour_pattern": "vertical",
+        "seamark:beacon_safe_water:shape": "sign",
+        "seamark:topmark:shape": "square",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2829748,
+          55.8572285
+        ]
+      },
+      "id": "node/12826222804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13196313803",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0751918,
+          45.4235743
+        ]
+      },
+      "id": "node/13196313803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13196313804",
+        "man_made": "dolphin",
+        "seamark:beacon_safe_water:shape": "stake",
+        "seamark:type": "beacon_safe_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0751829,
+          45.4235366
+        ]
+      },
+      "id": "node/13196313804"
+    }
+  ]
+}

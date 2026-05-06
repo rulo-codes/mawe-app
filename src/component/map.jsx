@@ -34,14 +34,12 @@ export default function Map() {
             zoom: zoom
         });
 
-
-
-        // Add Weather Layer: Wind with Time Slider
-
-        // Create Wind layer
         const windLayer = new WindLayer();
 
         map.current.on('style.load', () => {
+            // Add source and layer during style.load to ensure proper timing
+
+            // Find insertion point and add openseamap layer
             const layers = map.current.getStyle().layers;
             const firstLabelId = layers.find(l => l.type === 'symbol')?.id;
 

@@ -42,3 +42,30 @@ Data needed for map
 - Tide Levels & Tidal Currents
 
 
+
+
+Codes:
+
+import seamarks from "./data/seamarks.geojson";
+
+const seamarks = await fetch("/data/seamarks.geojson")
+  .then(res => res.json());
+
+map.on("load", () => {
+  map.addSource("seamarks", {
+    type: "geojson",
+    data: seamarks
+  });
+});
+
+map.addLayer({
+  id: "buoys",
+  type: "circle",
+  source: "seamarks",
+  filter: ["==", ["get", "seamark:type"], "buoy_lateral"],
+  paint: {
+    "circle-radius": 4
+  }
+});
+
+//type: "line" if present
