@@ -9,7 +9,6 @@ export default function Map() {
     const mapContainer = useRef(null);
     const map = useRef(null);
     const coordinates = useRef(null);
-    const zoom = 7;
     maptilersdk.config.apiKey = 'B5DZprXVurPYHQYpjYGc';
 
     const timeInfo = useRef(null);
@@ -30,11 +29,35 @@ export default function Map() {
         map.current = new maptilersdk.Map({
             container: mapContainer.current,
             style: "019d9359-9c57-7522-b4dc-7a10a029169f",
-            center: [139.753, 35.6844],
-            zoom: zoom
+            zoom: 8,
+            geolocate: maptilersdk.GeolocationType.POINT,
+            geolocateControl: false
+
         });
 
         const windLayer = new WindLayer();
+
+        const gc = new maptilersdk.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true, // Keeps updating as the user moves
+            showUserLocation: true
+        });
+
+        map.current.addControl(gc, "bottom-right");
+
+        map.current.on('load', () => {
+            console.log("map loaded...");
+            gc.on('geolocate', async () => {
+                const result = await maptilersdk.geolocation.info();
+                console.log(result);
+            });
+            // Optional: Handle errors (e.g., user denied permission)
+            gc.on('error', (error) => {
+                console.error("User denied or GPS failed:", error);
+            });
+        });
 
         map.current.on('style.load', () => {
             // Add source and layer during style.load to ensure proper timing
@@ -121,7 +144,8 @@ export default function Map() {
                     pointerDataDiv.current.innerText = "";
                     return;
                 }
-                pointerDataDiv.current.innerText = `${value.speedMetersPerSecond.toFixed(1)} m/s`
+
+                pointerDataDiv.current.innerHTML = `<div id="arrow" style="transform: rotate(${value.directionAngle}deg);">↑</div> ${value.compassDirection} ${value.speedMetersPerSecond.toFixed(1)} m/s`
         }
 
         // Function for coordinates on pointer map position
@@ -130,13 +154,23 @@ export default function Map() {
 
             if(!coordinates.current) return;
             coordinates.current.style.display = "block";
-            coordinates.current.innerHTML = `Long: ${coords.lng} <br/> Lat:${coords.lat}`;
+            coordinates.current.innerHTML = `Long: ${coords.lng} <br/> Lat:${coords.lat} <br/>`;
         }
+
 
         map.current.on('mousemove', (e) => {
             updatePointerValue(e.lngLat);
             onMove(e.lngLat);
         });
+
+        /*
+        navigator.geolocation.watchPosition((position) => {
+            const speed = position.coords.speed; // Speed in m/s
+            const bearing = position.coords.heading; // Movement direction
+            // ... update your UI
+            speed.current.innerHTML = `Speed: ${speed} <br/> Bearing: ${bearing}`;
+        }, null, { enableHighAccuracy: true });
+        */
 
     }, []);
 
