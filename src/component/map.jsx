@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
-import { WindLayer } from '@maptiler/weather';
+import { PrecipitationLayer, PressureLayer, TemperatureLayer, WindLayer } from '@maptiler/weather';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import './map.css';
 
@@ -11,15 +11,11 @@ export default function Map() {
     const coordinates = useRef(null);
     maptilersdk.config.apiKey = 'B5DZprXVurPYHQYpjYGc';
 
-    const timeInfo = useRef(null);
-    const timeTextDiv = useRef(null);
-    const timeSlider = useRef(null);
-    const playPauseButton = useRef(null);
     const pointerDataDiv = useRef(null);
     const windLayerData = useRef(null);
     let pointerLngLat = null;
 
-    const [isToggleWeather, setToggleWeather] = useState(false);
+    const [selectedLayer, setSelectedLayer] = useState("default");
 
 
     useEffect(() => {
@@ -30,35 +26,61 @@ export default function Map() {
             container: mapContainer.current,
             style: "019d9359-9c57-7522-b4dc-7a10a029169f",
             zoom: 8,
+            //Disable Pitch
+            pitch: 0,
+            minPitch: 0,
+            maxPitch: 0,
+            bearingSnap: 0,
+            dragRotate: true,
+            //Main Controls
             geolocate: maptilersdk.GeolocationType.POINT,
+            navigationControl: false,
             geolocateControl: false
-
         });
 
+        //Map Layers
         const windLayer = new WindLayer();
+        const tempLayer = new TemperatureLayer();
+        const pptLayer = new PrecipitationLayer();
+        const presLayer = new PressureLayer();
 
-        const gc = new maptilersdk.GeolocateControl({
+
+
+        //Map Controls
+        const mapNavigationControl = new maptilersdk.NavigationControl();
+        map.current.addControl(mapNavigationControl, "bottom-right");
+
+        const mapGeolocationControl = new maptilersdk.GeolocateControl({
             positionOptions: {
                 enableHighAccuracy: true
             },
             trackUserLocation: true, // Keeps updating as the user moves
-            showUserLocation: true
+            showUserLocation: true,
+            showAccuracyCircle: true
         });
+        map.current.addControl(mapGeolocationControl, "bottom-right");
 
-        map.current.addControl(gc, "bottom-right");
 
+
+
+        //Map Event Handlers
         map.current.on('load', () => {
             console.log("map loaded...");
-            gc.on('geolocate', async () => {
+            mapGeolocationControl.on('geolocate', async () => {
+                //Get GPS info with geolocation info
                 const result = await maptilersdk.geolocation.info();
                 console.log(result);
             });
             // Optional: Handle errors (e.g., user denied permission)
-            gc.on('error', (error) => {
+            mapGeolocationControl.on('error', (error) => {
                 console.error("User denied or GPS failed:", error);
             });
         });
 
+
+
+
+        //Map Loading Layers
         map.current.on('style.load', () => {
             // Add source and layer during style.load to ensure proper timing
 
@@ -66,66 +88,39 @@ export default function Map() {
             const layers = map.current.getStyle().layers;
             const firstLabelId = layers.find(l => l.type === 'symbol')?.id;
 
-            map.current.addLayer(windLayer, firstLabelId);
-            map.current.setLayoutProperty(windLayer.id, 'visibility', 'none');
+
+            const weatherLayers = [
+                {instance: windLayer, id: "MapTiler Wind"},
+                {instance: tempLayer, id: "MapTiler Temperature"},
+                {instance: pptLayer, id: "MapTiler Precipitation"},
+                {instance: presLayer, id: "MapTiler Pressure"}
+            ]
+
+            weatherLayers.forEach(({instance}) => {
+                map.current.addLayer(instance, firstLabelId);
+                map.current.setLayoutProperty(instance.id, 'visibility', 'none');
+            });
+
 
             map.current.once('idle', () => {
-                if (windLayer) {
-                    windLayer.setOpacity(0.7);
-                    console.log("Weather materials initialized successfully.");
-                }
+
+                windLayer.setOpacity(0.7);
+                tempLayer.setOpacity(0.6);
+                pptLayer.setOpacity(0.9);
+                presLayer.setOpacity(0.5);
+
+                console.log("Weather materials initialized successfully.");
+
             });
         })
 
-        //Time Slider Controls
-        timeSlider.current.addEventListener("input", (evt) => {
-            windLayer.setAnimationTime(parseInt(timeSlider.current.value / 1000))
-        });
-        
-        // Event called when all the datasource for the next days are added and ready.
-        // From now on, the layer nows the start and end dates.
-        windLayer.on("sourceReady", event => {
-            const startDate = windLayer.getAnimationStartDate();
-            const endDate = windLayer.getAnimationEndDate();
-            const currentDate = windLayer.getAnimationTimeDate();
-            refreshTime()
+        //Initinialize Weather Layers
+        windLayer.animateByFactor(0);
+        tempLayer.animateByFactor(0);
+        pptLayer.animateByFactor(0);
+        presLayer.animateByFactor(0);
 
-            timeSlider.current.min = +startDate;
-            timeSlider.current.max = +endDate;
-            timeSlider.current.value = +currentDate;
-        });
 
-        // Called when the animation is progressing
-        windLayer.on("tick", event => {
-            refreshTime();
-            updatePointerValue(pointerLngLat);
-        });
-
-        // Called when the time is manually set
-        windLayer.on("animationTimeSet", event => {
-            refreshTime()
-        });
-
-        // When clicking on the play/pause
-        let isPlaying = false;
-        playPauseButton.current.addEventListener("click", () => {
-            if (isPlaying) {
-                    windLayer.animateByFactor(0);
-                    playPauseButton.current.innerText = "Play 3600x";
-            } else {
-                    windLayer.animateByFactor(3600);
-                    playPauseButton.current.innerText = "Pause";
-            }
-
-            isPlaying = !isPlaying;
-        });
-
-        // Update the date time display
-        function refreshTime() {
-            const d = windLayer.getAnimationTimeDate();
-            timeTextDiv.current.innerText = d.toString();
-            timeSlider.current.value = +d;
-        }
 
         map.current.on('mouseout', function(evt) {
             if (!evt.originalEvent.relatedTarget) {
@@ -185,38 +180,55 @@ export default function Map() {
         map.current.setLayoutProperty(layerId, 'visibility', currentLayerStatus === 'none' ? 'visible' : 'none');
         if(currentLayerStatus === 'none'){
             console.log("Wind Layer Added");
-            timeInfo.current.style.display = "block";
             windLayerData.current.style.display = "block";
         }else{
-            timeInfo.current.style.display = "none";
             windLayerData.current.style.display = "none";
         }
     }
 
-    function toggleWeather(){
-        if(!isToggleWeather){
-            setToggleWeather(true);
-        }else{
-            setToggleWeather(false);
-        }
+    function toggleWeather(e){
+        const layerName = e.currentTarget.value;
+        setSelectedLayer(selectedLayer === layerName ? null : layerName);
 
-        toggleWeatherLayer();
+        const weatherLayers = [
+                "MapTiler Wind",
+                "MapTiler Temperature",
+                "MapTiler Precipitation",
+                "MapTiler Pressure"
+        ];
+
+        weatherLayers.forEach(layer => {
+            map.current.setLayoutProperty(layer, 'visibility', 'none');
+        });
+
+        if(layerName == "default"){
+            console.log("Default Layer Set");
+            weatherLayers.forEach(layer => {
+                map.current.setLayoutProperty(layer, 'visibility', 'none');
+                console.log(layer + " Layer Disabled");
+            });
+        }else{
+            console.log("Selected " + e.target.value + " has been initialized");
+            map.current.setLayoutProperty(e.target.value, 'visibility', 'visible');
+        }
     }
 
     return (
         <div className="map-wrap">
-              <div ref={timeInfo} id="time-info">
-                    <span ref={timeTextDiv} id="time-text"></span>
-                    <button ref={playPauseButton} id="play-pause-bt" className="button">Play 3600x</button>
-                    <input ref={timeSlider} type="range" id="time-slider" min="0" max="11" step="1" />
-                </div>
                 <div ref={windLayerData} id="wind-layer-data">
                     <div id="variable-name">Wind</div>
                     <div ref={pointerDataDiv} id="pointer-data"></div>
                 </div>
                 <div ref={mapContainer} className="map" />
                 <pre ref={coordinates} id="coordinates" className="coordinates"></pre>
-                <button id="toggle-weather-btn" onClick={toggleWeather}>Toggle Weather</button>
+                <div id="map-weather-layers">
+                    <button id="default-layer-btn" className={`layer-btn ${selectedLayer === "default" ? "selected" : ""}`} onClick={toggleWeather} value="default">Default</button>
+                    <button id="wind-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Wind" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Wind">Wind</button>
+                    <button id="temp-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Temperature" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Temperature">Temperature</button>
+                    <button id="ppt-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Precipitation" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Precipitation">Precipitation</button>
+                    <button id="pres-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Pressure" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Pressure">Pressure</button>
+                </div>
+
         </div>
     );
 }
