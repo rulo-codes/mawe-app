@@ -30,3 +30,13 @@ rgba(0, 0, 0, 0.5);
       text-align: left;
       display: none;
   }
+
+.map-marker{
+      width: 50px;
+      height: 50px;
+      color: red;
+      background-image: url("https://www.shareicon.net/data/512x512/2015/09/21/644181_sailing_512x512.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: drop-shadow(0px 5px 5px rgba(255, 255, 255, 0.781));
+}

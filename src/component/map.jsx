@@ -9,8 +9,9 @@ export default function Map() {
     const mapContainer = useRef(null);
     const map = useRef(null);
     const coordinates = useRef(null);
-    maptilersdk.config.apiKey = 'B5DZprXVurPYHQYpjYGc';
+    maptilersdk.config.apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
 
+    const mapMarker = document.querySelector(".map-marker");
     const pointerDataDiv = useRef(null);
     const windLayerData = useRef(null);
     let pointerLngLat = null;
@@ -60,12 +61,27 @@ export default function Map() {
         });
         map.current.addControl(mapGeolocationControl, "bottom-right");
 
-
-
-
         //Map Event Handlers
         map.current.on('load', () => {
             console.log("map loaded...");
+
+            //Add new marker
+            const el = document.createElement('div');
+            el.classList.add('map-marker');
+
+            const marker = new maptilersdk.Marker({element: el, anchor: 'bottom'});
+            
+            //Handle Marker Event
+            map.current.on('click', (e) => {
+                const coords = e.lngLat;
+                marker.remove();
+                marker.setLngLat([coords.lng, coords.lat]);
+                marker.addTo(map.current);
+                console.log("Marker added: " + coords.lng + " " + coords.lat);
+                requestAnimationFrame(animate);
+            });
+
+            //Handle Geolocation Event
             mapGeolocationControl.on('geolocate', async () => {
                 //Get GPS info with geolocation info
                 const result = await maptilersdk.geolocation.info();
@@ -75,7 +91,27 @@ export default function Map() {
             mapGeolocationControl.on('error', (error) => {
                 console.error("User denied or GPS failed:", error);
             });
+
+             let start = null;
+
+            function animate(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+
+                // Create a sine wave for smooth up/down motion
+                // 10 is the height of the float, 0.003 is the speed
+                const offset = Math.sin(progress * 0.003) * 10;
+
+                // Apply the offset. 
+                // Note: if your anchor is 'bottom', you might need to add this 
+                // to your base offset (e.g., -20 + offset)
+                marker.setOffset([0, -20 + offset]);
+
+                requestAnimationFrame(animate);
+            }
         });
+
+       
 
 
 
@@ -208,7 +244,7 @@ export default function Map() {
                 console.log(layer + " Layer Disabled");
             });
         }else{
-            console.log("Selected " + e.target.value + " has been initialized");
+            console.log("Selected " + layerName + " has been initialized");
             map.current.setLayoutProperty(e.target.value, 'visibility', 'visible');
         }
     }
