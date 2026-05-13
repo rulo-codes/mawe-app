@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import { PrecipitationLayer, PressureLayer, TemperatureLayer, WindLayer } from '@maptiler/weather';
+import { GeocodingControl } from '@maptiler/geocoding-control/maptilersdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import './map.css';
 
@@ -8,9 +9,12 @@ export default function Map() {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const coordinates = useRef(null);
     maptilersdk.config.apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
 
+    const geocoding = useRef(null);
+    const customMarkers = useRef([]);
+
+    const coordinates = useRef(null);
     const mapMarker = document.querySelector(".map-marker");
     const pointerDataDiv = useRef(null);
     const windLayerData = useRef(null);
@@ -22,7 +26,7 @@ export default function Map() {
     useEffect(() => {
 
         //Creating map
-        if (map.current) return; // stops map from intializing more than once
+        if (map.current) return; // stops map from initializing more than once
         map.current = new maptilersdk.Map({
             container: mapContainer.current,
             style: "019d9359-9c57-7522-b4dc-7a10a029169f",
@@ -55,11 +59,42 @@ export default function Map() {
             positionOptions: {
                 enableHighAccuracy: true
             },
-            trackUserLocation: true, // Keeps updating as the user moves
+            trackUserLocation: true, // updates as the user moves
             showUserLocation: true,
             showAccuracyCircle: true
         });
         map.current.addControl(mapGeolocationControl, "bottom-right");
+
+        geocoding.current = new GeocodingControl({
+            placeholder: "Enter location or coordinates...",
+            autocomplete: true,
+            marker: false,
+            showResultMarkers: false,
+            types: [
+                'continental_marine',
+                'place',     
+                'country',    
+                'region',
+                'subregion',
+                'county',
+                'joint_municipality',
+                'joint_submunicipality',
+                'municipality',
+                'municipal_district', 
+            ],
+            flyTo: {
+                zoom: 11,
+                padding: { left: 350 }, // Give a little extra room for the panel
+                speed: 1.5,            // Optional: make the move faster/slower
+                essential: true
+            }
+        });
+        map.current.addControl(geocoding.current, "top-left");
+
+
+
+
+
 
         //Map Event Handlers
         map.current.on('load', () => {
@@ -150,7 +185,7 @@ export default function Map() {
             });
         })
 
-        //Initinialize Weather Layers
+        //Initialize Weather Layers
         windLayer.animateByFactor(0);
         tempLayer.animateByFactor(0);
         pptLayer.animateByFactor(0);
@@ -255,9 +290,11 @@ export default function Map() {
                     <div id="variable-name">Wind</div>
                     <div ref={pointerDataDiv} id="pointer-data"></div>
                 </div>
+                
                 <div ref={mapContainer} className="map" />
                 <pre ref={coordinates} id="coordinates" className="coordinates"></pre>
-                <div id="map-weather-layers">
+
+                <div id="weather-layer-controls">
                     <button id="default-layer-btn" className={`layer-btn ${selectedLayer === "default" ? "selected" : ""}`} onClick={toggleWeather} value="default">Default</button>
                     <button id="wind-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Wind" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Wind">Wind</button>
                     <button id="temp-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Temperature" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Temperature">Temperature</button>

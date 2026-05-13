@@ -1,3 +1,4 @@
+
 .map-wrap {
   position: relative;
   width: 100%;
@@ -30,7 +31,7 @@ white; font-size: 18px; font-weight: 500; text-align: center; left: 0; right: 0;
 
 
 
-#map-weather-layers{
+#weather-layer-controls{
   display: flex;
   flex-direction: column;
   position: absolute;

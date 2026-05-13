@@ -9,6 +9,7 @@ function App() {
     <>
       <div id="App">
         <Map />
+        <div className="panel"></div>
       </div>
     </>
   )
