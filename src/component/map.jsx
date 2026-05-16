@@ -1,14 +1,12 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import { PrecipitationLayer, PressureLayer, TemperatureLayer, WindLayer } from '@maptiler/weather';
-import { GeocodingControl } from '@maptiler/geocoding-control/maptilersdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import './map.css';
 
-export default function Map() {
+export default function Map({ map }) {
 
     const mapContainer = useRef(null);
-    const map = useRef(null);
     maptilersdk.config.apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
 
     const geocoding = useRef(null);
@@ -64,32 +62,6 @@ export default function Map() {
             showAccuracyCircle: true
         });
         map.current.addControl(mapGeolocationControl, "bottom-right");
-
-        geocoding.current = new GeocodingControl({
-            placeholder: "Enter location or coordinates...",
-            autocomplete: true,
-            marker: false,
-            showResultMarkers: false,
-            types: [
-                'continental_marine',
-                'place',     
-                'country',    
-                'region',
-                'subregion',
-                'county',
-                'joint_municipality',
-                'joint_submunicipality',
-                'municipality',
-                'municipal_district', 
-            ],
-            flyTo: {
-                zoom: 11,
-                padding: { left: 350 }, // Give a little extra room for the panel
-                speed: 1.5,            // Optional: make the move faster/slower
-                essential: true
-            }
-        });
-        map.current.addControl(geocoding.current, "top-left");
 
 
 

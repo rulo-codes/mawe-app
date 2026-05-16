@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 body {
@@ -15,6 +15,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+
+.main-wrapper{
+      position: relative;
 }
 
 .coordinates{
@@ -54,9 +59,15 @@ rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
-    background: #0f0f0fde;
     display: block;
     width: 40%;
     height: 100vh;
     backdrop-filter: blur(10px);
+    background: #0f0f0fde;
+    box-shadow: 5px 5px 15px #1616166c;
+}
+
+.panel-wrapper{
+    display: block;
+    position: relative;
 }
