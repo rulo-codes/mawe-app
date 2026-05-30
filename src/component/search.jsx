@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './search.css';
 
-export default function Search({map}){
+export default function Search({locSelected, setLocSelected, map}){
     const [query, setQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,7 @@ export default function Search({map}){
     useEffect(() => {
         if (query.trim().length < 2) {
             setSuggestions([]);
+            if(locSelected) {setLocSelected(false)};
             return;
         }
 
@@ -55,7 +56,7 @@ export default function Search({map}){
                 essential: true
             });
         }
-        console.log("Search Location Selected...");
+        if(!locSelected) {setLocSelected(true)};
     };
 
     const handleKeyDown = (e) => {
@@ -88,6 +89,8 @@ export default function Search({map}){
                     className='search-input'
                     onFocus={() => setIsOpen(true)}
                 />
+                <button className='search-btn'>Q</button>
+                <button className='search-btn'>X</button>
             </div>
             <div className="search-result">
                 {isOpen && suggestions.length > 0 && (

@@ -1,0 +1,24 @@
+.dashboard-wrapper{
+    display: block;
+    width: 40%;
+    height: 100vh;
+}
+
+.dashboard-wrapper::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--primary-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 35px 35px 0px;
+    box-shadow: 5px 5px 15px #1616166c;
+}
+
+.dashboard{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 5rem 2.5rem 2.5rem 2.5rem;
+}

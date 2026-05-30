@@ -1,31 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .search-wrapper{
-    width: 600px;
+    width: 35%;
     height: fit-content;
     display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: #2d2d3f;
+    background: var(--primary);
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 1rem;
-    color: #f4f4f4ff;
+    color: var(--primary-color);
     overflow-y:auto;
-    padding: 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #1616166c;
     z-index: 10;
 }
 
 .search-ctrl{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
 .search-input{
-    width: 100%;
+    flex: 1 1;
     height: 30px;
     background: rgb(241, 241, 241);
     font-size: 1rem;
@@ -33,10 +30,17 @@
     padding: 2px;
 }
 
+.search-btn{
+    width: 30px;
+    height: 30px;
+
+}
+
 .search-result-list{
     display: flex;
     flex-direction: column;
     gap: 2px;
+    margin-top: 10px;
 }
 
 .search-result-list-item{
