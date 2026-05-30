@@ -13,7 +13,6 @@ export default function Search({locSelected, setLocSelected, map}){
     useEffect(() => {
         if (query.trim().length < 2) {
             setSuggestions([]);
-            if(locSelected) {setLocSelected(false)};
             return;
         }
 
@@ -27,6 +26,7 @@ export default function Search({locSelected, setLocSelected, map}){
     }, [query])
 
     const fetchSuggestions = async (searchString) => {
+        if(locSelected) return;
         const url = `https://api.maptiler.com/geocoding/${encodeURIComponent(searchString)}.json?key=${apiKey}&autocomplete=true&types=place,region,country&language=en&proximity=ip`;
         
         try {
@@ -41,8 +41,10 @@ export default function Search({locSelected, setLocSelected, map}){
     };
 
     const handleSelectLocation = (feature) => {
-        setQuery(feature.place_name);
+        if(!locSelected) {setLocSelected(true)};
+        setSuggestions([]);
         setIsOpen(false);
+        setQuery(feature.place_name);
 
         const [lng, lat] = feature.center;
         const isMobile = window.matchMedia("(max-width: 767px)").matches;
@@ -56,26 +58,36 @@ export default function Search({locSelected, setLocSelected, map}){
                 essential: true
             });
         }
-        if(!locSelected) {setLocSelected(true)};
     };
 
     const handleKeyDown = (e) => {
-    // Check if the pressed key is 'Enter'
+    // Check if the pressed key is 'Enter'    
         if (e.key === 'Enter') {
         // Prevent standard form submission behavior if wrapped in a form
-            e.preventDefault(); 
+            e.preventDefault();
+            e.currentTarget.blur();
 
             // Check if we actually have matches in our suggestions array
             if (suggestions && suggestions.length > 0) {
                 const bestMatch = suggestions[0]; // The top result is the most accurate
-                
-                setQuery(bestMatch.place_name);
-                setIsOpen(false);
 
                 handleSelectLocation(bestMatch);
             }
+        }else if(locSelected){
+            setLocSelected(false);
         }
     };
+
+    const handleSearchButton = (e) => {
+        if (suggestions && suggestions.length > 0) {
+            const bestMatch = suggestions[0]; // The top result is the most accurate
+                
+            setQuery(bestMatch.place_name);
+            setIsOpen(false);
+
+            handleSelectLocation(bestMatch);
+        }
+    }
 
     return (
         <div className="search-wrapper">
@@ -87,10 +99,10 @@ export default function Search({locSelected, setLocSelected, map}){
                     onKeyDown={handleKeyDown}
                     placeholder='Search...'
                     className='search-input'
-                    onFocus={() => setIsOpen(true)}
+                    onFocus={() => {setLocSelected(false)}}
                 />
-                <button className='search-btn'>Q</button>
-                <button className='search-btn'>X</button>
+                <button className='search-btn' onClick={handleSearchButton}>Q</button>
+                <button className='search-btn' onClick={() => {setQuery(""); setLocSelected(false)}}>X</button>
             </div>
             <div className="search-result">
                 {isOpen && suggestions.length > 0 && (
