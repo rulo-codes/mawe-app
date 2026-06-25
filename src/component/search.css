@@ -4,7 +4,7 @@
     width: 600px;
     height: fit-content;
     display: block;
-    background: var(--primary);
+    background: var(--primary-alt-bg);
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 1rem;
     color: var(--primary-color);
@@ -24,7 +24,7 @@
 .search-input{
     flex: 1 1;
     height: 30px;
-    background: rgb(241, 241, 241);
+    background: inherit;
     font-size: 1rem;
     font-family: "Montserrat", Arial, sans-serif;
     padding: 2px;

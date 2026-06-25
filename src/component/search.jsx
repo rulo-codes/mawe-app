@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './search.css';
 
-export default function Search({locSelected, setLocSelected, map}){
+import testData from '../data/weather.json'
+
+export default function Search({locSelected, setLocSelected, map, setWeatherData}){
     const [query, setQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -40,11 +42,20 @@ export default function Search({locSelected, setLocSelected, map}){
         }
     };
 
+    const fetchWeather = (feature) => {
+        const locationName = feature.text_en;
+        const locationPlace = feature.place_name_en;
+        setWeatherData({coordinates: feature.center, name: locationName, place: locationPlace, weather_data: testData})
+    }
+
     const handleSelectLocation = (feature) => {
         if(!locSelected) {setLocSelected(true)};
+        console.log(feature);
         setSuggestions([]);
         setIsOpen(false);
         setQuery(feature.place_name);
+
+        fetchWeather(feature);
 
         const [lng, lat] = feature.center;
         const isMobile = window.matchMedia("(max-width: 767px)").matches;
@@ -58,6 +69,7 @@ export default function Search({locSelected, setLocSelected, map}){
                 essential: true
             });
         }
+
     };
 
     const handleKeyDown = (e) => {
@@ -101,8 +113,8 @@ export default function Search({locSelected, setLocSelected, map}){
                     className='search-input'
                     onFocus={() => {setLocSelected(false)}}
                 />
-                <button className='search-btn' onClick={handleSearchButton}>Q</button>
                 <button className='search-btn' onClick={() => {setQuery(""); setLocSelected(false)}}>X</button>
+                <button className='search-btn' onClick={handleSearchButton}>Q</button>
             </div>
             <div className="search-result">
                 {isOpen && suggestions.length > 0 && (
