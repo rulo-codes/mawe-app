@@ -1,0 +1,44 @@
+{
+      "chlorophyll": {
+        "mercator": 0.13,
+        "sg": 0.13
+      },
+      "iron": {
+        "mercator": 0,
+        "sg": 0
+      },
+      "nitrate": {
+        "mercator": 0.01,
+        "sg": 0.01
+      },
+      "oxygen": {
+        "mercator": 199.21,
+        "sg": 199.21
+      },
+      "ph": {
+        "mercator": 8.01,
+        "sg": 8.01
+      },
+      "phosphate": {
+        "mercator": 0.06,
+        "sg": 0.06
+      },
+      "phyto": {
+        "mercator": 5.98,
+        "sg": 5.98
+      },
+      "phytoplankton": {
+        "mercator": 1.62,
+        "sg": 1.62
+      },
+      "salinity": {
+        "meto": 34.21,
+        "noaa": 34.23,
+        "sg": 34.21
+      },
+      "silicate": {
+        "mercator": 2.47,
+        "sg": 2.47
+      },
+      "time": "2026-06-30T00:00:00+00:00"
+}

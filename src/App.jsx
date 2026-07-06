@@ -9,7 +9,15 @@ import Search from "./component/search";
 
 function App() {
   const [locSelected, setLocSelected] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({
+    date: null, 
+    coordinates: null, 
+    name: "", 
+    place: "", 
+    weather_data: null, 
+    bio: null, 
+    solar: null
+  });
 
   const map = useRef(null);
 
@@ -27,7 +35,7 @@ function App() {
       <div id="App" className='main-wrapper'>
         <Map map={map} />
         <Search locSelected={locSelected} setLocSelected={setLocSelected} map={map} setWeatherData={setWeatherData} />
-        <Dashboard weatherData={weatherData} />
+        <Dashboard weatherData={weatherData} setWeatherData={setWeatherData} locSelected={locSelected}/>
       </div>
     </>
   )

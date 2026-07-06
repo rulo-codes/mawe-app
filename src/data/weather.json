@@ -1,3905 +1,2294 @@
 {
-  "current": [
-    [
-      {
-        "airTemperature": {
-          "ecmwf": 28.05,
-          "ecmwf:aifs": 27.03,
-          "noaa": 24.28,
-          "sg": 28.05
-        },
-        "currentDirection": {
-          "ecmwf": 333.84,
-          "meto": 188.39,
-          "noaa": 12,
-          "sg": 333.84
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.69,
-          "noaa": 1.17,
-          "sg": 5.69
-        },
-        "humidity": {
-          "noaa": 93.53,
-          "sg": 93.53
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.32,
-          "ecmwf:aifs": 0.66,
-          "noaa": 0.14,
-          "sg": 0.32
-        },
-        "pressure": {
-          "ecmwf": 1010.79,
-          "ecmwf:aifs": 1001.34,
-          "noaa": 1009.85,
-          "sg": 1010.79
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.37,
-          "meteo": 268.62,
-          "noaa": 262,
-          "sg": 268.62
-        },
-        "swellHeight": {
-          "dwd": 0.13,
-          "meteo": 0.09,
-          "noaa": 0.06,
-          "sg": 0.09
-        },
-        "swellPeriod": {
-          "dwd": 3.19,
-          "meteo": 2.51,
-          "noaa": 2.04,
-          "sg": 2.51
-        },
-        "time": "2026-06-01T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.71,
-          "noaa": 29.23,
-          "sg": 30.71
-        },
-        "waveDirection": {
-          "ecmwf": 159.62,
-          "meteo": 266.27,
-          "noaa": 210.08,
-          "sg": 159.62
-        },
-        "waveHeight": {
-          "dwd": 0.13,
-          "ecmwf": 0.22,
-          "meteo": 0.1,
-          "noaa": 0.09,
-          "sg": 0.22
-        },
-        "wavePeriod": {
-          "ecmwf": 1.55,
-          "meteo": 2.33,
-          "noaa": 1.91,
-          "sg": 1.55
-        },
-        "windDirection": {
-          "dwd": 143.3,
-          "ecmwf": 164.07,
-          "ecmwf:aifs": 174.86,
-          "noaa": 115.91,
-          "sg": 164.07
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.33,
-          "ecmwf:aifs": 1.68,
-          "noaa": 1.14,
-          "sg": 4.33
-        }
-      }
-    ]
-  ],
+  "code": {
+    "condition": "Sunny / Clear",
+    "iconId": "clear_sky",
+    "alertLevel": "NONE"
+  },
+  "current": {
+    "airTemperature": {
+      "sg": 26.22
+    },
+    "cloudCover": {
+      "sg": 100
+    },
+    "currentDirection": {
+      "sg": 76.84
+    },
+    "currentSpeed": {
+      "sg": 0
+    },
+    "gust": {
+      "sg": 3.86
+    },
+    "humidity": {
+      "sg": 93.9
+    },
+    "iceCover": {
+      "sg": 0
+    },
+    "precipitation": {
+      "sg": 0.89
+    },
+    "pressure": {
+      "sg": 1010.15
+    },
+    "seaIceThickness": {
+      "sg": 0
+    },
+    "seaLevel": {
+      "sg": 0.71
+    },
+    "snow": {
+      "sg": 0
+    },
+    "swellDirection": {
+      "sg": 16.34
+    },
+    "swellHeight": {
+      "sg": 0.05
+    },
+    "swellPeriod": {
+      "sg": 1.85
+    },
+    "time": "2026-06-29T15:00:00+00:00",
+    "waterTemperature": {
+      "sg": 30.87
+    },
+    "waveDirection": {
+      "sg": 337.33
+    },
+    "waveHeight": {
+      "sg": 0.11
+    },
+    "wavePeriod": {
+      "sg": 1.47
+    },
+    "windDirection": {
+      "sg": 315.8
+    },
+    "windSpeed": {
+      "sg": 0.91
+    }
+  },
   "hourly": [
-    [
-      {
-        "airTemperature": {
-          "ecmwf": 30.44,
-          "ecmwf:aifs": 29.28,
-          "noaa": 29.31,
-          "sg": 30.44
-        },
-        "currentDirection": {
-          "ecmwf": 88.48,
-          "meto": 69.39,
-          "noaa": 318.87,
-          "sg": 88.48
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.03,
-          "noaa": 0.03,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.3,
-          "noaa": 2.52,
-          "sg": 5.3
-        },
-        "humidity": {
-          "noaa": 71.1,
-          "sg": 71.1
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.06,
-          "ecmwf:aifs": 0.06,
-          "noaa": 0,
-          "sg": 0.06
-        },
-        "pressure": {
-          "ecmwf": 1011.16,
-          "ecmwf:aifs": 1001.23,
-          "noaa": 1011.06,
-          "sg": 1011.16
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.31,
-          "meteo": 263.2,
-          "noaa": 261.96,
-          "sg": 263.2
-        },
-        "swellHeight": {
-          "dwd": 0.22,
-          "meteo": 0.14,
-          "noaa": 0.07,
-          "sg": 0.14
-        },
-        "swellPeriod": {
-          "dwd": 3.59,
-          "meteo": 3.57,
-          "noaa": 3.25,
-          "sg": 3.57
-        },
-        "time": "2026-06-01T00:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.75,
-          "noaa": 28.98,
-          "sg": 30.75
-        },
-        "waveDirection": {
-          "ecmwf": 235.17,
-          "meteo": 256.1,
-          "noaa": 230.14,
-          "sg": 235.17
-        },
-        "waveHeight": {
-          "dwd": 0.23,
-          "ecmwf": 0.17,
-          "meteo": 0.34,
-          "noaa": 0.21,
-          "sg": 0.17
-        },
-        "wavePeriod": {
-          "ecmwf": 2.43,
-          "meteo": 2.31,
-          "noaa": 2.03,
-          "sg": 2.43
-        },
-        "windDirection": {
-          "dwd": 184.36,
-          "ecmwf": 204.61,
-          "ecmwf:aifs": 201.48,
-          "noaa": 209.15,
-          "sg": 204.61
-        },
-        "windSpeed": {
-          "dwd": 2.24,
-          "ecmwf": 4.02,
-          "ecmwf:aifs": 2.12,
-          "noaa": 1.43,
-          "sg": 4.02
-        }
+    {
+      "airTemperature": {
+        "sg": 26.38
       },
-      {
-        "airTemperature": {
-          "ecmwf": 30.4,
-          "ecmwf:aifs": 29.59,
-          "noaa": 30.88,
-          "sg": 30.4
-        },
-        "currentDirection": {
-          "ecmwf": 29.36,
-          "meto": 112.14,
-          "noaa": 312.65,
-          "sg": 29.36
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.03,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 4.09,
-          "noaa": 2.77,
-          "sg": 4.09
-        },
-        "humidity": {
-          "noaa": 63.5,
-          "sg": 63.5
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.04,
-          "ecmwf:aifs": 0.07,
-          "noaa": 0,
-          "sg": 0.04
-        },
-        "pressure": {
-          "ecmwf": 1011.15,
-          "ecmwf:aifs": 1000.97,
-          "noaa": 1010.62,
-          "sg": 1011.15
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.46,
-          "meteo": 262,
-          "noaa": 257.55,
-          "sg": 262
-        },
-        "swellHeight": {
-          "dwd": 0.21,
-          "meteo": 0.14,
-          "noaa": 0.08,
-          "sg": 0.14
-        },
-        "swellPeriod": {
-          "dwd": 3.54,
-          "meteo": 3.47,
-          "noaa": 3.15,
-          "sg": 3.47
-        },
-        "time": "2026-06-01T01:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.83,
-          "noaa": 29.06,
-          "sg": 30.83
-        },
-        "waveDirection": {
-          "ecmwf": 230.72,
-          "meteo": 257.56,
-          "noaa": 233.58,
-          "sg": 230.72
-        },
-        "waveHeight": {
-          "dwd": 0.22,
-          "ecmwf": 0.16,
-          "meteo": 0.33,
-          "noaa": 0.2,
-          "sg": 0.16
-        },
-        "wavePeriod": {
-          "ecmwf": 2.23,
-          "meteo": 2.3,
-          "noaa": 2.01,
-          "sg": 2.23
-        },
-        "windDirection": {
-          "dwd": 196.66,
-          "ecmwf": 255.7,
-          "ecmwf:aifs": 210.86,
-          "noaa": 231.05,
-          "sg": 255.7
-        },
-        "windSpeed": {
-          "dwd": 2.2,
-          "ecmwf": 2.97,
-          "ecmwf:aifs": 2.25,
-          "noaa": 1.71,
-          "sg": 2.97
-        }
+      "cloudCover": {
+        "sg": 98.4
       },
-      {
-        "airTemperature": {
-          "ecmwf": 30.37,
-          "ecmwf:aifs": 29.9,
-          "noaa": 32.45,
-          "sg": 30.37
-        },
-        "currentDirection": {
-          "ecmwf": 330.24,
-          "meto": 137.41,
-          "noaa": 306.42,
-          "sg": 330.24
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 4.09,
-          "noaa": 3.01,
-          "sg": 4.09
-        },
-        "humidity": {
-          "noaa": 55.9,
-          "sg": 55.9
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.02,
-          "ecmwf:aifs": 0.08,
-          "noaa": 0,
-          "sg": 0.02
-        },
-        "pressure": {
-          "ecmwf": 1011.14,
-          "ecmwf:aifs": 1000.7,
-          "noaa": 1010.18,
-          "sg": 1011.14
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.62,
-          "meteo": 260.79,
-          "noaa": 253.13,
-          "sg": 260.79
-        },
-        "swellHeight": {
-          "dwd": 0.21,
-          "meteo": 0.15,
-          "noaa": 0.09,
-          "sg": 0.15
-        },
-        "swellPeriod": {
-          "dwd": 3.49,
-          "meteo": 3.36,
-          "noaa": 3.06,
-          "sg": 3.36
-        },
-        "time": "2026-06-01T02:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.95,
-          "noaa": 29.13,
-          "sg": 30.95
-        },
-        "waveDirection": {
-          "ecmwf": 226.27,
-          "meteo": 259.02,
-          "noaa": 237.03,
-          "sg": 226.27
-        },
-        "waveHeight": {
-          "dwd": 0.21,
-          "ecmwf": 0.16,
-          "meteo": 0.33,
-          "noaa": 0.18,
-          "sg": 0.16
-        },
-        "wavePeriod": {
-          "ecmwf": 2.03,
-          "meteo": 2.28,
-          "noaa": 2,
-          "sg": 2.03
-        },
-        "windDirection": {
-          "dwd": 208.97,
-          "ecmwf": 306.78,
-          "ecmwf:aifs": 220.24,
-          "noaa": 252.96,
-          "sg": 306.78
-        },
-        "windSpeed": {
-          "dwd": 2.15,
-          "ecmwf": 1.92,
-          "ecmwf:aifs": 2.38,
-          "noaa": 2,
-          "sg": 1.92
-        }
+      "currentDirection": {
+        "sg": 284.11
       },
-      {
-        "airTemperature": {
-          "ecmwf": 30.34,
-          "ecmwf:aifs": 30.21,
-          "noaa": 34.02,
-          "sg": 30.34
-        },
-        "currentDirection": {
-          "ecmwf": 271.12,
-          "meto": 174.79,
-          "noaa": 300.2,
-          "sg": 271.12
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 4.09,
-          "noaa": 3.25,
-          "sg": 4.09
-        },
-        "humidity": {
-          "noaa": 48.3,
-          "sg": 48.3
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0,
-          "ecmwf:aifs": 0.09,
-          "noaa": 0,
-          "sg": 0
-        },
-        "pressure": {
-          "ecmwf": 1011.13,
-          "ecmwf:aifs": 1000.44,
-          "noaa": 1009.73,
-          "sg": 1011.13
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.77,
-          "meteo": 259.59,
-          "noaa": 248.72,
-          "sg": 259.59
-        },
-        "swellHeight": {
-          "dwd": 0.2,
-          "meteo": 0.15,
-          "noaa": 0.1,
-          "sg": 0.15
-        },
-        "swellPeriod": {
-          "dwd": 3.44,
-          "meteo": 3.26,
-          "noaa": 2.96,
-          "sg": 3.26
-        },
-        "time": "2026-06-01T03:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.1,
-          "noaa": 29.21,
-          "sg": 31.1
-        },
-        "waveDirection": {
-          "ecmwf": 221.82,
-          "meteo": 260.48,
-          "noaa": 240.47,
-          "sg": 221.82
-        },
-        "waveHeight": {
-          "dwd": 0.2,
-          "ecmwf": 0.16,
-          "meteo": 0.32,
-          "noaa": 0.17,
-          "sg": 0.16
-        },
-        "wavePeriod": {
-          "ecmwf": 1.82,
-          "meteo": 2.27,
-          "noaa": 1.98,
-          "sg": 1.82
-        },
-        "windDirection": {
-          "dwd": 221.27,
-          "ecmwf": 357.87,
-          "ecmwf:aifs": 229.62,
-          "noaa": 274.86,
-          "sg": 357.87
-        },
-        "windSpeed": {
-          "dwd": 2.11,
-          "ecmwf": 0.87,
-          "ecmwf:aifs": 2.51,
-          "noaa": 2.28,
-          "sg": 0.87
-        }
+      "currentSpeed": {
+        "sg": 0
       },
-      {
-        "airTemperature": {
-          "ecmwf": 30.21,
-          "ecmwf:aifs": 30.52,
-          "noaa": 34.15,
-          "sg": 30.21
-        },
-        "currentDirection": {
-          "ecmwf": 271.73,
-          "meto": 179.31,
-          "noaa": 301.39,
-          "sg": 271.73
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.01,
-          "noaa": 0.05,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 3.52,
-          "noaa": 3.3,
-          "sg": 3.52
-        },
-        "humidity": {
-          "noaa": 48.2,
-          "sg": 48.2
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.01,
-          "ecmwf:aifs": 0.1,
-          "noaa": 0.01,
-          "sg": 0.01
-        },
-        "pressure": {
-          "ecmwf": 1010.58,
-          "ecmwf:aifs": 1000.17,
-          "noaa": 1009.04,
-          "sg": 1010.58
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.69,
-          "meteo": 258.89,
-          "noaa": 251.65,
-          "sg": 258.89
-        },
-        "swellHeight": {
-          "dwd": 0.19,
-          "meteo": 0.13,
-          "noaa": 0.1,
-          "sg": 0.13
-        },
-        "swellPeriod": {
-          "dwd": 3.39,
-          "meteo": 3.32,
-          "noaa": 2.92,
-          "sg": 3.32
-        },
-        "time": "2026-06-01T04:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.22,
-          "noaa": 29.28,
-          "sg": 31.22
-        },
-        "waveDirection": {
-          "ecmwf": 227.12,
-          "meteo": 260.49,
-          "noaa": 248.21,
-          "sg": 227.12
-        },
-        "waveHeight": {
-          "dwd": 0.19,
-          "ecmwf": 0.14,
-          "meteo": 0.32,
-          "noaa": 0.22,
-          "sg": 0.14
-        },
-        "wavePeriod": {
-          "ecmwf": 1.88,
-          "meteo": 2.25,
-          "noaa": 2.18,
-          "sg": 1.88
-        },
-        "windDirection": {
-          "dwd": 232.19,
-          "ecmwf": 338.9,
-          "ecmwf:aifs": 239,
-          "noaa": 277.87,
-          "sg": 338.9
-        },
-        "windSpeed": {
-          "dwd": 2.1,
-          "ecmwf": 1.21,
-          "ecmwf:aifs": 2.64,
-          "noaa": 2.79,
-          "sg": 1.21
-        }
+      "gust": {
+        "sg": 6.26
       },
-      {
-        "airTemperature": {
-          "ecmwf": 30.08,
-          "ecmwf:aifs": 30.83,
-          "noaa": 34.28,
-          "sg": 30.08
-        },
-        "currentDirection": {
-          "ecmwf": 272.34,
-          "meto": 133.24,
-          "noaa": 302.57,
-          "sg": 272.34
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0,
-          "noaa": 0.07,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 3.52,
-          "noaa": 3.36,
-          "sg": 3.52
-        },
-        "humidity": {
-          "noaa": 48.1,
-          "sg": 48.1
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.01,
-          "ecmwf:aifs": 0.11,
-          "noaa": 0.01,
-          "sg": 0.01
-        },
-        "pressure": {
-          "ecmwf": 1010.03,
-          "ecmwf:aifs": 999.91,
-          "noaa": 1008.36,
-          "sg": 1010.03
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.62,
-          "meteo": 258.2,
-          "noaa": 254.57,
-          "sg": 258.2
-        },
-        "swellHeight": {
-          "dwd": 0.19,
-          "meteo": 0.11,
-          "noaa": 0.1,
-          "sg": 0.11
-        },
-        "swellPeriod": {
-          "dwd": 3.34,
-          "meteo": 3.38,
-          "noaa": 2.88,
-          "sg": 3.38
-        },
-        "time": "2026-06-01T05:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.33,
-          "noaa": 29.34,
-          "sg": 31.33
-        },
-        "waveDirection": {
-          "ecmwf": 232.42,
-          "meteo": 260.49,
-          "noaa": 255.94,
-          "sg": 232.42
-        },
-        "waveHeight": {
-          "dwd": 0.19,
-          "ecmwf": 0.13,
-          "meteo": 0.32,
-          "noaa": 0.27,
-          "sg": 0.13
-        },
-        "wavePeriod": {
-          "ecmwf": 1.94,
-          "meteo": 2.23,
-          "noaa": 2.38,
-          "sg": 1.94
-        },
-        "windDirection": {
-          "dwd": 243.1,
-          "ecmwf": 319.94,
-          "ecmwf:aifs": 248.38,
-          "noaa": 280.88,
-          "sg": 319.94
-        },
-        "windSpeed": {
-          "dwd": 2.09,
-          "ecmwf": 1.55,
-          "ecmwf:aifs": 2.77,
-          "noaa": 3.3,
-          "sg": 1.55
-        }
+      "humidity": {
+        "sg": 77.1
       },
-      {
-        "airTemperature": {
-          "ecmwf": 29.94,
-          "ecmwf:aifs": 31.13,
-          "noaa": 34.4,
-          "sg": 29.94
-        },
-        "currentDirection": {
-          "ecmwf": 272.95,
-          "meto": 13.53,
-          "noaa": 303.76,
-          "sg": 272.95
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.01,
-          "noaa": 0.08,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 3.52,
-          "noaa": 3.41,
-          "sg": 3.52
-        },
-        "humidity": {
-          "noaa": 48,
-          "sg": 48
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.02,
-          "ecmwf:aifs": 0.11,
-          "noaa": 0.02,
-          "sg": 0.02
-        },
-        "pressure": {
-          "ecmwf": 1009.48,
-          "ecmwf:aifs": 999.65,
-          "noaa": 1007.67,
-          "sg": 1009.48
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.54,
-          "meteo": 257.5,
-          "noaa": 257.5,
-          "sg": 257.5
-        },
-        "swellHeight": {
-          "dwd": 0.18,
-          "meteo": 0.09,
-          "noaa": 0.1,
-          "sg": 0.09
-        },
-        "swellPeriod": {
-          "dwd": 3.29,
-          "meteo": 3.44,
-          "noaa": 2.84,
-          "sg": 3.44
-        },
-        "time": "2026-06-01T06:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.36,
-          "noaa": 29.41,
-          "sg": 31.36
-        },
-        "waveDirection": {
-          "ecmwf": 237.72,
-          "meteo": 260.5,
-          "noaa": 263.68,
-          "sg": 237.72
-        },
-        "waveHeight": {
-          "dwd": 0.18,
-          "ecmwf": 0.11,
-          "meteo": 0.32,
-          "noaa": 0.32,
-          "sg": 0.11
-        },
-        "wavePeriod": {
-          "ecmwf": 2,
-          "meteo": 2.21,
-          "noaa": 2.58,
-          "sg": 2
-        },
-        "windDirection": {
-          "dwd": 254.02,
-          "ecmwf": 300.97,
-          "ecmwf:aifs": 257.76,
-          "noaa": 283.89,
-          "sg": 300.97
-        },
-        "windSpeed": {
-          "dwd": 2.08,
-          "ecmwf": 1.89,
-          "ecmwf:aifs": 2.9,
-          "noaa": 3.81,
-          "sg": 1.89
-        }
+      "iceCover": {
+        "sg": 0
       },
-      {
-        "airTemperature": {
-          "ecmwf": 29.95,
-          "ecmwf:aifs": 30.61,
-          "noaa": 32.29,
-          "sg": 29.95
-        },
-        "currentDirection": {
-          "ecmwf": 275.34,
-          "meto": 354.5,
-          "noaa": 304.52,
-          "sg": 275.34
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.09,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.48,
-          "noaa": 3.15,
-          "sg": 5.48
-        },
-        "humidity": {
-          "noaa": 59.1,
-          "sg": 59.1
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.13,
-          "ecmwf:aifs": 0.18,
-          "noaa": 0.26,
-          "sg": 0.13
-        },
-        "pressure": {
-          "ecmwf": 1009.64,
-          "ecmwf:aifs": 1000.07,
-          "noaa": 1008,
-          "sg": 1009.64
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.63,
-          "meteo": 260.18,
-          "noaa": 260.43,
-          "sg": 260.18
-        },
-        "swellHeight": {
-          "dwd": 0.18,
-          "meteo": 0.13,
-          "noaa": 0.1,
-          "sg": 0.13
-        },
-        "swellPeriod": {
-          "dwd": 3.26,
-          "meteo": 3.14,
-          "noaa": 2.8,
-          "sg": 3.14
-        },
-        "time": "2026-06-01T07:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.32,
-          "noaa": 29.4,
-          "sg": 31.32
-        },
-        "waveDirection": {
-          "ecmwf": 250.98,
-          "meteo": 260.89,
-          "noaa": 265.45,
-          "sg": 250.98
-        },
-        "waveHeight": {
-          "dwd": 0.18,
-          "ecmwf": 0.13,
-          "meteo": 0.3,
-          "noaa": 0.31,
-          "sg": 0.13
-        },
-        "wavePeriod": {
-          "ecmwf": 1.86,
-          "meteo": 2.22,
-          "noaa": 2.55,
-          "sg": 1.86
-        },
-        "windDirection": {
-          "dwd": 271.89,
-          "ecmwf": 286.98,
-          "ecmwf:aifs": 240.74,
-          "noaa": 282.39,
-          "sg": 286.98
-        },
-        "windSpeed": {
-          "dwd": 2.05,
-          "ecmwf": 1.66,
-          "ecmwf:aifs": 2.61,
-          "noaa": 2.98,
-          "sg": 1.66
-        }
+      "precipitation": {
+        "sg": 0.74
       },
-      {
-        "airTemperature": {
-          "ecmwf": 29.95,
-          "ecmwf:aifs": 30.09,
-          "noaa": 30.18,
-          "sg": 29.95
-        },
-        "currentDirection": {
-          "ecmwf": 277.72,
-          "meto": 12.81,
-          "noaa": 305.29,
-          "sg": 277.72
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.02,
-          "noaa": 0.09,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 5.48,
-          "noaa": 2.9,
-          "sg": 5.48
-        },
-        "humidity": {
-          "noaa": 70.2,
-          "sg": 70.2
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.24,
-          "ecmwf:aifs": 0.25,
-          "noaa": 0.5,
-          "sg": 0.24
-        },
-        "pressure": {
-          "ecmwf": 1009.8,
-          "ecmwf:aifs": 1000.49,
-          "noaa": 1008.34,
-          "sg": 1009.8
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.71,
-          "meteo": 262.85,
-          "noaa": 263.35,
-          "sg": 262.85
-        },
-        "swellHeight": {
-          "dwd": 0.17,
-          "meteo": 0.17,
-          "noaa": 0.09,
-          "sg": 0.17
-        },
-        "swellPeriod": {
-          "dwd": 3.23,
-          "meteo": 2.84,
-          "noaa": 2.77,
-          "sg": 2.84
-        },
-        "time": "2026-06-01T08:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.25,
-          "noaa": 29.38,
-          "sg": 31.25
-        },
-        "waveDirection": {
-          "ecmwf": 264.25,
-          "meteo": 261.27,
-          "noaa": 267.23,
-          "sg": 264.25
-        },
-        "waveHeight": {
-          "dwd": 0.17,
-          "ecmwf": 0.15,
-          "meteo": 0.29,
-          "noaa": 0.3,
-          "sg": 0.15
-        },
-        "wavePeriod": {
-          "ecmwf": 1.73,
-          "meteo": 2.23,
-          "noaa": 2.52,
-          "sg": 1.73
-        },
-        "windDirection": {
-          "dwd": 289.76,
-          "ecmwf": 272.98,
-          "ecmwf:aifs": 223.72,
-          "noaa": 280.88,
-          "sg": 272.98
-        },
-        "windSpeed": {
-          "dwd": 2.03,
-          "ecmwf": 1.42,
-          "ecmwf:aifs": 2.31,
-          "noaa": 2.15,
-          "sg": 1.42
-        }
+      "pressure": {
+        "sg": 1010.3
       },
-      {
-        "airTemperature": {
-          "ecmwf": 29.95,
-          "ecmwf:aifs": 29.56,
-          "noaa": 28.06,
-          "sg": 29.95
-        },
-        "currentDirection": {
-          "ecmwf": 280.11,
-          "meto": 71.16,
-          "noaa": 306.05,
-          "sg": 280.11
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.02,
-          "noaa": 0.1,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 5.48,
-          "noaa": 2.64,
-          "sg": 5.48
-        },
-        "humidity": {
-          "noaa": 81.3,
-          "sg": 81.3
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.36,
-          "ecmwf:aifs": 0.31,
-          "noaa": 0.73,
-          "sg": 0.36
-        },
-        "pressure": {
-          "ecmwf": 1009.95,
-          "ecmwf:aifs": 1000.92,
-          "noaa": 1008.68,
-          "sg": 1009.95
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.73,
-          "sg": 0.73
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 256.8,
-          "meteo": 265.53,
-          "noaa": 266.28,
-          "sg": 265.53
-        },
-        "swellHeight": {
-          "dwd": 0.17,
-          "meteo": 0.21,
-          "noaa": 0.09,
-          "sg": 0.21
-        },
-        "swellPeriod": {
-          "dwd": 3.2,
-          "meteo": 2.54,
-          "noaa": 2.73,
-          "sg": 2.54
-        },
-        "time": "2026-06-01T09:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.13,
-          "noaa": 29.36,
-          "sg": 31.13
-        },
-        "waveDirection": {
-          "ecmwf": 277.51,
-          "meteo": 261.66,
-          "noaa": 269,
-          "sg": 277.51
-        },
-        "waveHeight": {
-          "dwd": 0.17,
-          "ecmwf": 0.17,
-          "meteo": 0.27,
-          "noaa": 0.29,
-          "sg": 0.17
-        },
-        "wavePeriod": {
-          "ecmwf": 1.59,
-          "meteo": 2.24,
-          "noaa": 2.49,
-          "sg": 1.59
-        },
-        "windDirection": {
-          "dwd": 307.63,
-          "ecmwf": 258.99,
-          "ecmwf:aifs": 206.7,
-          "noaa": 279.38,
-          "sg": 258.99
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 1.19,
-          "ecmwf:aifs": 2.02,
-          "noaa": 1.32,
-          "sg": 1.19
-        }
+      "seaIceThickness": {
+        "sg": 0
       },
-      {
-        "airTemperature": {
-          "ecmwf": 29.08,
-          "ecmwf:aifs": 29.04,
-          "noaa": 27.08,
-          "sg": 29.08
-        },
-        "currentDirection": {
-          "ecmwf": 331.64,
-          "meto": 155.16,
-          "noaa": 306.83,
-          "sg": 331.64
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.02,
-          "noaa": 0.1,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 3.6,
-          "noaa": 2.1,
-          "sg": 3.6
-        },
-        "humidity": {
-          "noaa": 84.57,
-          "sg": 84.57
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 1.12,
-          "ecmwf:aifs": 0.38,
-          "noaa": 0.82,
-          "sg": 1.12
-        },
-        "pressure": {
-          "ecmwf": 1010.87,
-          "ecmwf:aifs": 1001.34,
-          "noaa": 1009.49,
-          "sg": 1010.87
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.74,
-          "sg": 0.74
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 257.06,
-          "meteo": 265.92,
-          "noaa": 269.21,
-          "sg": 265.92
-        },
-        "swellHeight": {
-          "dwd": 0.16,
-          "meteo": 0.19,
-          "noaa": 0.09,
-          "sg": 0.19
-        },
-        "swellPeriod": {
-          "dwd": 3.18,
-          "meteo": 2.33,
-          "noaa": 2.69,
-          "sg": 2.33
-        },
-        "time": "2026-06-01T10:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.98,
-          "noaa": 29.35,
-          "sg": 30.98
-        },
-        "waveDirection": {
-          "ecmwf": 276.83,
-          "meteo": 262.21,
-          "noaa": 263.95,
-          "sg": 276.83
-        },
-        "waveHeight": {
-          "dwd": 0.16,
-          "ecmwf": 0.15,
-          "meteo": 0.24,
-          "noaa": 0.27,
-          "sg": 0.15
-        },
-        "wavePeriod": {
-          "ecmwf": 1.62,
-          "meteo": 2.23,
-          "noaa": 2.4,
-          "sg": 1.62
-        },
-        "windDirection": {
-          "dwd": 270.73,
-          "ecmwf": 222.65,
-          "ecmwf:aifs": 189.68,
-          "noaa": 331.07,
-          "sg": 222.65
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 1.06,
-          "ecmwf:aifs": 1.73,
-          "noaa": 1.21,
-          "sg": 1.06
-        }
+      "seaLevel": {
+        "sg": 0.71
       },
-      {
-        "airTemperature": {
-          "ecmwf": 28.21,
-          "ecmwf:aifs": 28.52,
-          "noaa": 26.1,
-          "sg": 28.21
-        },
-        "currentDirection": {
-          "ecmwf": 23.18,
-          "meto": 190.94,
-          "noaa": 307.6,
-          "sg": 23.18
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.06,
-          "noaa": 0.1,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 3.6,
-          "noaa": 1.55,
-          "sg": 3.6
-        },
-        "humidity": {
-          "noaa": 87.83,
-          "sg": 87.83
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 1.87,
-          "ecmwf:aifs": 0.44,
-          "noaa": 0.9,
-          "sg": 1.87
-        },
-        "pressure": {
-          "ecmwf": 1011.78,
-          "ecmwf:aifs": 1001.76,
-          "noaa": 1010.3,
-          "sg": 1011.78
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.74,
-          "sg": 0.74
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 257.33,
-          "meteo": 266.32,
-          "noaa": 272.13,
-          "sg": 266.32
-        },
-        "swellHeight": {
-          "dwd": 0.16,
-          "meteo": 0.17,
-          "noaa": 0.09,
-          "sg": 0.17
-        },
-        "swellPeriod": {
-          "dwd": 3.17,
-          "meteo": 2.13,
-          "noaa": 2.65,
-          "sg": 2.13
-        },
-        "time": "2026-06-01T11:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.84,
-          "noaa": 29.34,
-          "sg": 30.84
-        },
-        "waveDirection": {
-          "ecmwf": 276.14,
-          "meteo": 262.76,
-          "noaa": 258.89,
-          "sg": 276.14
-        },
-        "waveHeight": {
-          "dwd": 0.16,
-          "ecmwf": 0.14,
-          "meteo": 0.21,
-          "noaa": 0.24,
-          "sg": 0.14
-        },
-        "wavePeriod": {
-          "ecmwf": 1.66,
-          "meteo": 2.22,
-          "noaa": 2.3,
-          "sg": 1.66
-        },
-        "windDirection": {
-          "dwd": 233.82,
-          "ecmwf": 186.3,
-          "ecmwf:aifs": 172.66,
-          "noaa": 22.75,
-          "sg": 186.3
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 0.94,
-          "ecmwf:aifs": 1.43,
-          "noaa": 1.11,
-          "sg": 0.94
-        }
+      "snow": {
+        "sg": 0
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.34,
-          "ecmwf:aifs": 27.99,
-          "noaa": 25.12,
-          "sg": 27.34
-        },
-        "currentDirection": {
-          "ecmwf": 74.71,
-          "meto": 193.46,
-          "noaa": 308.38,
-          "sg": 74.71
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.06,
-          "noaa": 0.1,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 3.6,
-          "noaa": 1,
-          "sg": 3.6
-        },
-        "humidity": {
-          "noaa": 91.1,
-          "sg": 91.1
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 2.63,
-          "ecmwf:aifs": 0.51,
-          "noaa": 0.99,
-          "sg": 2.63
-        },
-        "pressure": {
-          "ecmwf": 1012.7,
-          "ecmwf:aifs": 1002.19,
-          "noaa": 1011.11,
-          "sg": 1012.7
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.73,
-          "sg": 0.73
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 257.59,
-          "meteo": 266.71,
-          "noaa": 275.06,
-          "sg": 266.71
-        },
-        "swellHeight": {
-          "dwd": 0.15,
-          "meteo": 0.15,
-          "noaa": 0.09,
-          "sg": 0.15
-        },
-        "swellPeriod": {
-          "dwd": 3.15,
-          "meteo": 1.92,
-          "noaa": 2.61,
-          "sg": 1.92
-        },
-        "time": "2026-06-01T12:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.81,
-          "noaa": 29.33,
-          "sg": 30.81
-        },
-        "waveDirection": {
-          "ecmwf": 275.46,
-          "meteo": 263.31,
-          "noaa": 253.84,
-          "sg": 275.46
-        },
-        "waveHeight": {
-          "dwd": 0.15,
-          "ecmwf": 0.12,
-          "meteo": 0.18,
-          "noaa": 0.22,
-          "sg": 0.12
-        },
-        "wavePeriod": {
-          "ecmwf": 1.69,
-          "meteo": 2.21,
-          "noaa": 2.21,
-          "sg": 1.69
-        },
-        "windDirection": {
-          "dwd": 196.92,
-          "ecmwf": 149.96,
-          "ecmwf:aifs": 155.64,
-          "noaa": 74.44,
-          "sg": 149.96
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 0.81,
-          "ecmwf:aifs": 1.14,
-          "noaa": 1,
-          "sg": 0.81
-        }
+      "swellDirection": {
+        "sg": 293.12
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.43,
-          "ecmwf:aifs": 27.8,
-          "noaa": 24.9,
-          "sg": 27.43
-        },
-        "currentDirection": {
-          "ecmwf": 34.83,
-          "meto": 192.96,
-          "noaa": 308.31,
-          "sg": 34.83
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.04,
-          "noaa": 0.09,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 6.55,
-          "noaa": 1.04,
-          "sg": 6.55
-        },
-        "humidity": {
-          "noaa": 91.8,
-          "sg": 91.8
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 1.88,
-          "ecmwf:aifs": 0.54,
-          "noaa": 0.77,
-          "sg": 1.88
-        },
-        "pressure": {
-          "ecmwf": 1012.64,
-          "ecmwf:aifs": 1002.02,
-          "noaa": 1011.32,
-          "sg": 1012.64
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 257.9,
-          "meteo": 266.75,
-          "noaa": 270.69,
-          "sg": 266.75
-        },
-        "swellHeight": {
-          "dwd": 0.15,
-          "meteo": 0.14,
-          "noaa": 0.11,
-          "sg": 0.14
-        },
-        "swellPeriod": {
-          "dwd": 3.15,
-          "meteo": 2.07,
-          "noaa": 2.47,
-          "sg": 2.07
-        },
-        "time": "2026-06-01T13:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.81,
-          "noaa": 29.31,
-          "sg": 30.81
-        },
-        "waveDirection": {
-          "ecmwf": 238.41,
-          "meteo": 263.84,
-          "noaa": 252.64,
-          "sg": 238.41
-        },
-        "waveHeight": {
-          "dwd": 0.15,
-          "ecmwf": 0.14,
-          "meteo": 0.16,
-          "noaa": 0.19,
-          "sg": 0.14
-        },
-        "wavePeriod": {
-          "ecmwf": 1.6,
-          "meteo": 2.25,
-          "noaa": 2.18,
-          "sg": 1.6
-        },
-        "windDirection": {
-          "dwd": 172.78,
-          "ecmwf": 145.76,
-          "ecmwf:aifs": 157.79,
-          "noaa": 94.48,
-          "sg": 145.76
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 1.94,
-          "ecmwf:aifs": 1.22,
-          "noaa": 1.06,
-          "sg": 1.94
-        }
+      "swellHeight": {
+        "sg": 0.01
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.51,
-          "ecmwf:aifs": 27.6,
-          "noaa": 24.68,
-          "sg": 27.51
-        },
-        "currentDirection": {
-          "ecmwf": 354.96,
-          "meto": 194.52,
-          "noaa": 308.23,
-          "sg": 354.96
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.03,
-          "noaa": 0.08,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 6.55,
-          "noaa": 1.08,
-          "sg": 6.55
-        },
-        "humidity": {
-          "noaa": 92.5,
-          "sg": 92.5
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 1.12,
-          "ecmwf:aifs": 0.58,
-          "noaa": 0.55,
-          "sg": 1.12
-        },
-        "pressure": {
-          "ecmwf": 1012.58,
-          "ecmwf:aifs": 1001.85,
-          "noaa": 1011.53,
-          "sg": 1012.58
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 258.2,
-          "meteo": 266.8,
-          "noaa": 266.31,
-          "sg": 266.8
-        },
-        "swellHeight": {
-          "dwd": 0.14,
-          "meteo": 0.14,
-          "noaa": 0.13,
-          "sg": 0.14
-        },
-        "swellPeriod": {
-          "dwd": 3.14,
-          "meteo": 2.23,
-          "noaa": 2.34,
-          "sg": 2.23
-        },
-        "time": "2026-06-01T14:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.8,
-          "noaa": 29.3,
-          "sg": 30.8
-        },
-        "waveDirection": {
-          "ecmwf": 201.35,
-          "meteo": 264.37,
-          "noaa": 251.43,
-          "sg": 201.35
-        },
-        "waveHeight": {
-          "dwd": 0.14,
-          "ecmwf": 0.16,
-          "meteo": 0.15,
-          "noaa": 0.16,
-          "sg": 0.16
-        },
-        "wavePeriod": {
-          "ecmwf": 1.51,
-          "meteo": 2.28,
-          "noaa": 2.14,
-          "sg": 1.51
-        },
-        "windDirection": {
-          "dwd": 148.63,
-          "ecmwf": 141.57,
-          "ecmwf:aifs": 159.94,
-          "noaa": 114.51,
-          "sg": 141.57
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 3.08,
-          "ecmwf:aifs": 1.3,
-          "noaa": 1.11,
-          "sg": 3.08
-        }
+      "swellPeriod": {
+        "sg": 4.19
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.6,
-          "ecmwf:aifs": 27.4,
-          "noaa": 24.47,
-          "sg": 27.6
-        },
-        "currentDirection": {
-          "ecmwf": 315.08,
-          "meto": 196.95,
-          "noaa": 308.16,
-          "sg": 315.08
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.03,
-          "noaa": 0.07,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 6.55,
-          "noaa": 1.13,
-          "sg": 6.55
-        },
-        "humidity": {
-          "noaa": 93.2,
-          "sg": 93.2
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.37,
-          "ecmwf:aifs": 0.61,
-          "noaa": 0.33,
-          "sg": 0.37
-        },
-        "pressure": {
-          "ecmwf": 1012.52,
-          "ecmwf:aifs": 1001.68,
-          "noaa": 1011.74,
-          "sg": 1012.52
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 258.51,
-          "meteo": 266.84,
-          "noaa": 261.94,
-          "sg": 266.84
-        },
-        "swellHeight": {
-          "dwd": 0.14,
-          "meteo": 0.13,
-          "noaa": 0.15,
-          "sg": 0.13
-        },
-        "swellPeriod": {
-          "dwd": 3.14,
-          "meteo": 2.38,
-          "noaa": 2.2,
-          "sg": 2.38
-        },
-        "time": "2026-06-01T15:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.78,
-          "noaa": 29.29,
-          "sg": 30.78
-        },
-        "waveDirection": {
-          "ecmwf": 164.3,
-          "meteo": 264.9,
-          "noaa": 250.23,
-          "sg": 164.3
-        },
-        "waveHeight": {
-          "dwd": 0.14,
-          "ecmwf": 0.18,
-          "meteo": 0.13,
-          "noaa": 0.13,
-          "sg": 0.18
-        },
-        "wavePeriod": {
-          "ecmwf": 1.42,
-          "meteo": 2.32,
-          "noaa": 2.11,
-          "sg": 1.42
-        },
-        "windDirection": {
-          "dwd": 124.49,
-          "ecmwf": 137.37,
-          "ecmwf:aifs": 162.09,
-          "noaa": 134.55,
-          "sg": 137.37
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.21,
-          "ecmwf:aifs": 1.38,
-          "noaa": 1.17,
-          "sg": 4.21
-        }
+      "time": "2026-06-29T00:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.09
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.77,
-          "ecmwf:aifs": 27.21,
-          "noaa": 24.41,
-          "sg": 27.77
-        },
-        "currentDirection": {
-          "ecmwf": 302.19,
-          "meto": 191.1,
-          "noaa": 320.17,
-          "sg": 302.19
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.02,
-          "noaa": 0.06,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 6.61,
-          "noaa": 1.14,
-          "sg": 6.61
-        },
-        "humidity": {
-          "noaa": 93.23,
-          "sg": 93.23
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.28,
-          "ecmwf:aifs": 0.64,
-          "noaa": 0.29,
-          "sg": 0.28
-        },
-        "pressure": {
-          "ecmwf": 1011.97,
-          "ecmwf:aifs": 1001.51,
-          "noaa": 1011.12,
-          "sg": 1011.97
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 258.76,
-          "meteo": 267.2,
-          "noaa": 258.51,
-          "sg": 267.2
-        },
-        "swellHeight": {
-          "dwd": 0.14,
-          "meteo": 0.12,
-          "noaa": 0.12,
-          "sg": 0.12
-        },
-        "swellPeriod": {
-          "dwd": 3.15,
-          "meteo": 2.43,
-          "noaa": 2.12,
-          "sg": 2.43
-        },
-        "time": "2026-06-01T16:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.76,
-          "noaa": 29.27,
-          "sg": 30.76
-        },
-        "waveDirection": {
-          "ecmwf": 159.9,
-          "meteo": 265.19,
-          "noaa": 250.81,
-          "sg": 159.9
-        },
-        "waveHeight": {
-          "dwd": 0.14,
-          "ecmwf": 0.2,
-          "meteo": 0.12,
-          "noaa": 0.11,
-          "sg": 0.2
-        },
-        "wavePeriod": {
-          "ecmwf": 1.47,
-          "meteo": 2.35,
-          "noaa": 2.06,
-          "sg": 1.47
-        },
-        "windDirection": {
-          "dwd": 130.39,
-          "ecmwf": 141.31,
-          "ecmwf:aifs": 164.24,
-          "noaa": 125.41,
-          "sg": 141.31
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.31,
-          "ecmwf:aifs": 1.46,
-          "noaa": 1.16,
-          "sg": 4.31
-        }
+      "waveDirection": {
+        "sg": 338.29
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.94,
-          "ecmwf:aifs": 27.01,
-          "noaa": 24.36,
-          "sg": 27.94
-        },
-        "currentDirection": {
-          "ecmwf": 289.29,
-          "meto": 190.16,
-          "noaa": 332.17,
-          "sg": 289.29
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.05,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 6.61,
-          "noaa": 1.16,
-          "sg": 6.61
-        },
-        "humidity": {
-          "noaa": 93.27,
-          "sg": 93.27
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.19,
-          "ecmwf:aifs": 0.68,
-          "noaa": 0.24,
-          "sg": 0.19
-        },
-        "pressure": {
-          "ecmwf": 1011.41,
-          "ecmwf:aifs": 1001.34,
-          "noaa": 1010.5,
-          "sg": 1011.41
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.01,
-          "meteo": 267.56,
-          "noaa": 255.09,
-          "sg": 267.56
-        },
-        "swellHeight": {
-          "dwd": 0.13,
-          "meteo": 0.11,
-          "noaa": 0.09,
-          "sg": 0.11
-        },
-        "swellPeriod": {
-          "dwd": 3.17,
-          "meteo": 2.47,
-          "noaa": 2.05,
-          "sg": 2.47
-        },
-        "time": "2026-06-01T17:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.74,
-          "noaa": 29.25,
-          "sg": 30.74
-        },
-        "waveDirection": {
-          "ecmwf": 155.51,
-          "meteo": 265.49,
-          "noaa": 251.4,
-          "sg": 155.51
-        },
-        "waveHeight": {
-          "dwd": 0.13,
-          "ecmwf": 0.21,
-          "meteo": 0.12,
-          "noaa": 0.09,
-          "sg": 0.21
-        },
-        "wavePeriod": {
-          "ecmwf": 1.52,
-          "meteo": 2.39,
-          "noaa": 2.02,
-          "sg": 1.52
-        },
-        "windDirection": {
-          "dwd": 136.29,
-          "ecmwf": 145.26,
-          "ecmwf:aifs": 166.39,
-          "noaa": 116.26,
-          "sg": 145.26
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.41,
-          "ecmwf:aifs": 1.54,
-          "noaa": 1.16,
-          "sg": 4.41
-        }
+      "waveHeight": {
+        "sg": 0.18
       },
-      {
-        "airTemperature": {
-          "ecmwf": 28.11,
-          "ecmwf:aifs": 26.82,
-          "noaa": 24.31,
-          "sg": 28.11
-        },
-        "currentDirection": {
-          "ecmwf": 276.4,
-          "meto": 182.55,
-          "noaa": 344.18,
-          "sg": 276.4
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 6.61,
-          "noaa": 1.17,
-          "sg": 6.61
-        },
-        "humidity": {
-          "noaa": 93.3,
-          "sg": 93.3
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.1,
-          "ecmwf:aifs": 0.71,
-          "noaa": 0.2,
-          "sg": 0.1
-        },
-        "pressure": {
-          "ecmwf": 1010.86,
-          "ecmwf:aifs": 1001.17,
-          "noaa": 1009.89,
-          "sg": 1010.86
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.26,
-          "meteo": 267.92,
-          "noaa": 251.66,
-          "sg": 267.92
-        },
-        "swellHeight": {
-          "dwd": 0.13,
-          "meteo": 0.1,
-          "noaa": 0.06,
-          "sg": 0.1
-        },
-        "swellPeriod": {
-          "dwd": 3.18,
-          "meteo": 2.52,
-          "noaa": 1.97,
-          "sg": 2.52
-        },
-        "time": "2026-06-01T18:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.73,
-          "noaa": 29.23,
-          "sg": 30.73
-        },
-        "waveDirection": {
-          "ecmwf": 151.11,
-          "meteo": 265.78,
-          "noaa": 251.98,
-          "sg": 151.11
-        },
-        "waveHeight": {
-          "dwd": 0.13,
-          "ecmwf": 0.23,
-          "meteo": 0.11,
-          "noaa": 0.07,
-          "sg": 0.23
-        },
-        "wavePeriod": {
-          "ecmwf": 1.56,
-          "meteo": 2.42,
-          "noaa": 1.97,
-          "sg": 1.56
-        },
-        "windDirection": {
-          "dwd": 142.19,
-          "ecmwf": 149.2,
-          "ecmwf:aifs": 168.54,
-          "noaa": 107.12,
-          "sg": 149.2
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.51,
-          "ecmwf:aifs": 1.62,
-          "noaa": 1.15,
-          "sg": 4.51
-        }
+      "wavePeriod": {
+        "sg": 1.47
       },
-      {
-        "airTemperature": {
-          "ecmwf": 28.05,
-          "ecmwf:aifs": 27.03,
-          "noaa": 24.28,
-          "sg": 28.05
-        },
-        "currentDirection": {
-          "ecmwf": 333.84,
-          "meto": 188.39,
-          "noaa": 12,
-          "sg": 333.84
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.69,
-          "noaa": 1.17,
-          "sg": 5.69
-        },
-        "humidity": {
-          "noaa": 93.53,
-          "sg": 93.53
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.32,
-          "ecmwf:aifs": 0.66,
-          "noaa": 0.14,
-          "sg": 0.32
-        },
-        "pressure": {
-          "ecmwf": 1010.79,
-          "ecmwf:aifs": 1001.34,
-          "noaa": 1009.85,
-          "sg": 1010.79
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.37,
-          "meteo": 268.62,
-          "noaa": 262,
-          "sg": 268.62
-        },
-        "swellHeight": {
-          "dwd": 0.13,
-          "meteo": 0.09,
-          "noaa": 0.06,
-          "sg": 0.09
-        },
-        "swellPeriod": {
-          "dwd": 3.19,
-          "meteo": 2.51,
-          "noaa": 2.04,
-          "sg": 2.51
-        },
-        "time": "2026-06-01T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.71,
-          "noaa": 29.23,
-          "sg": 30.71
-        },
-        "waveDirection": {
-          "ecmwf": 159.62,
-          "meteo": 266.27,
-          "noaa": 210.08,
-          "sg": 159.62
-        },
-        "waveHeight": {
-          "dwd": 0.13,
-          "ecmwf": 0.22,
-          "meteo": 0.1,
-          "noaa": 0.09,
-          "sg": 0.22
-        },
-        "wavePeriod": {
-          "ecmwf": 1.55,
-          "meteo": 2.33,
-          "noaa": 1.91,
-          "sg": 1.55
-        },
-        "windDirection": {
-          "dwd": 143.3,
-          "ecmwf": 164.07,
-          "ecmwf:aifs": 174.86,
-          "noaa": 115.91,
-          "sg": 164.07
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.33,
-          "ecmwf:aifs": 1.68,
-          "noaa": 1.14,
-          "sg": 4.33
-        }
+      "windDirection": {
+        "sg": 353.75
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.99,
-          "ecmwf:aifs": 27.24,
-          "noaa": 24.26,
-          "sg": 27.99
-        },
-        "currentDirection": {
-          "ecmwf": 31.29,
-          "meto": 200.86,
-          "noaa": 39.82,
-          "sg": 31.29
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.03,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.69,
-          "noaa": 1.16,
-          "sg": 5.69
-        },
-        "humidity": {
-          "noaa": 93.77,
-          "sg": 93.77
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.54,
-          "ecmwf:aifs": 0.62,
-          "noaa": 0.07,
-          "sg": 0.54
-        },
-        "pressure": {
-          "ecmwf": 1010.72,
-          "ecmwf:aifs": 1001.51,
-          "noaa": 1009.82,
-          "sg": 1010.72
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.47,
-          "meteo": 269.32,
-          "noaa": 272.34,
-          "sg": 269.32
-        },
-        "swellHeight": {
-          "dwd": 0.12,
-          "meteo": 0.09,
-          "noaa": 0.07,
-          "sg": 0.09
-        },
-        "swellPeriod": {
-          "dwd": 3.21,
-          "meteo": 2.49,
-          "noaa": 2.12,
-          "sg": 2.49
-        },
-        "time": "2026-06-01T20:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.69,
-          "noaa": 29.23,
-          "sg": 30.69
-        },
-        "waveDirection": {
-          "ecmwf": 168.13,
-          "meteo": 266.76,
-          "noaa": 168.18,
-          "sg": 168.13
-        },
-        "waveHeight": {
-          "dwd": 0.12,
-          "ecmwf": 0.21,
-          "meteo": 0.1,
-          "noaa": 0.11,
-          "sg": 0.21
-        },
-        "wavePeriod": {
-          "ecmwf": 1.53,
-          "meteo": 2.24,
-          "noaa": 1.84,
-          "sg": 1.53
-        },
-        "windDirection": {
-          "dwd": 144.42,
-          "ecmwf": 178.95,
-          "ecmwf:aifs": 181.18,
-          "noaa": 124.7,
-          "sg": 178.95
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.16,
-          "ecmwf:aifs": 1.75,
-          "noaa": 1.12,
-          "sg": 4.16
-        }
-      },
-      {
-        "airTemperature": {
-          "ecmwf": 27.93,
-          "ecmwf:aifs": 27.45,
-          "noaa": 24.24,
-          "sg": 27.93
-        },
-        "currentDirection": {
-          "ecmwf": 88.73,
-          "meto": 204.87,
-          "noaa": 67.64,
-          "sg": 88.73
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.03,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.69,
-          "noaa": 1.16,
-          "sg": 5.69
-        },
-        "humidity": {
-          "noaa": 94,
-          "sg": 94
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.76,
-          "ecmwf:aifs": 0.57,
-          "noaa": 0,
-          "sg": 0.76
-        },
-        "pressure": {
-          "ecmwf": 1010.66,
-          "ecmwf:aifs": 1001.68,
-          "noaa": 1009.78,
-          "sg": 1010.66
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.58,
-          "meteo": 270.02,
-          "noaa": 282.68,
-          "sg": 270.02
-        },
-        "swellHeight": {
-          "dwd": 0.12,
-          "meteo": 0.08,
-          "noaa": 0.07,
-          "sg": 0.08
-        },
-        "swellPeriod": {
-          "dwd": 3.22,
-          "meteo": 2.48,
-          "noaa": 2.19,
-          "sg": 2.48
-        },
-        "time": "2026-06-01T21:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.67,
-          "noaa": 29.23,
-          "sg": 30.67
-        },
-        "waveDirection": {
-          "ecmwf": 176.64,
-          "meteo": 267.25,
-          "noaa": 126.28,
-          "sg": 176.64
-        },
-        "waveHeight": {
-          "dwd": 0.12,
-          "ecmwf": 0.2,
-          "meteo": 0.09,
-          "noaa": 0.13,
-          "sg": 0.2
-        },
-        "wavePeriod": {
-          "ecmwf": 1.52,
-          "meteo": 2.15,
-          "noaa": 1.78,
-          "sg": 1.52
-        },
-        "windDirection": {
-          "dwd": 145.53,
-          "ecmwf": 193.82,
-          "ecmwf:aifs": 187.5,
-          "noaa": 133.49,
-          "sg": 193.82
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 3.98,
-          "ecmwf:aifs": 1.81,
-          "noaa": 1.11,
-          "sg": 3.98
-        }
-      },
-      {
-        "airTemperature": {
-          "ecmwf": 28.06,
-          "ecmwf:aifs": 27.66,
-          "noaa": 25.73,
-          "sg": 28.06
-        },
-        "currentDirection": {
-          "ecmwf": 83.21,
-          "meto": 216.17,
-          "noaa": 74.11,
-          "sg": 83.21
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.03,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 4.74,
-          "noaa": 1.55,
-          "sg": 4.74
-        },
-        "humidity": {
-          "noaa": 88.13,
-          "sg": 88.13
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.52,
-          "ecmwf:aifs": 0.52,
-          "noaa": 0,
-          "sg": 0.52
-        },
-        "pressure": {
-          "ecmwf": 1011.07,
-          "ecmwf:aifs": 1001.85,
-          "noaa": 1010.14,
-          "sg": 1011.07
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.74,
-          "meteo": 269.29,
-          "noaa": 229.73,
-          "sg": 269.29
-        },
-        "swellHeight": {
-          "dwd": 0.12,
-          "meteo": 0.07,
-          "noaa": 0.07,
-          "sg": 0.07
-        },
-        "swellPeriod": {
-          "dwd": 3.23,
-          "meteo": 2.6,
-          "noaa": 2.06,
-          "sg": 2.6
-        },
-        "time": "2026-06-01T22:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.66,
-          "noaa": 29.21,
-          "sg": 30.66
-        },
-        "waveDirection": {
-          "ecmwf": 185.06,
-          "meteo": 267.91,
-          "noaa": 125.37,
-          "sg": 185.06
-        },
-        "waveHeight": {
-          "dwd": 0.12,
-          "ecmwf": 0.19,
-          "meteo": 0.1,
-          "noaa": 0.11,
-          "sg": 0.19
-        },
-        "wavePeriod": {
-          "ecmwf": 1.53,
-          "meteo": 1.97,
-          "noaa": 1.79,
-          "sg": 1.53
-        },
-        "windDirection": {
-          "dwd": 161.25,
-          "ecmwf": 198.94,
-          "ecmwf:aifs": 193.83,
-          "noaa": 146.14,
-          "sg": 198.94
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 3.06,
-          "ecmwf:aifs": 1.87,
-          "noaa": 1.23,
-          "sg": 3.06
-        }
-      },
-      {
-        "airTemperature": {
-          "ecmwf": 28.19,
-          "ecmwf:aifs": 27.88,
-          "noaa": 27.23,
-          "sg": 28.19
-        },
-        "currentDirection": {
-          "ecmwf": 77.69,
-          "meto": 209.04,
-          "noaa": 80.58,
-          "sg": 77.69
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.01,
-          "noaa": 0.03,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 4.74,
-          "noaa": 1.94,
-          "sg": 4.74
-        },
-        "humidity": {
-          "noaa": 82.27,
-          "sg": 82.27
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.29,
-          "ecmwf:aifs": 0.48,
-          "noaa": 0,
-          "sg": 0.29
-        },
-        "pressure": {
-          "ecmwf": 1011.49,
-          "ecmwf:aifs": 1002.02,
-          "noaa": 1010.5,
-          "sg": 1011.49
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.89,
-          "meteo": 268.55,
-          "noaa": 176.79,
-          "sg": 268.55
-        },
-        "swellHeight": {
-          "dwd": 0.11,
-          "meteo": 0.05,
-          "noaa": 0.07,
-          "sg": 0.05
-        },
-        "swellPeriod": {
-          "dwd": 3.24,
-          "meteo": 2.71,
-          "noaa": 1.93,
-          "sg": 2.71
-        },
-        "time": "2026-06-01T23:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.64,
-          "noaa": 29.2,
-          "sg": 30.64
-        },
-        "waveDirection": {
-          "ecmwf": 193.48,
-          "meteo": 268.58,
-          "noaa": 124.47,
-          "sg": 193.48
-        },
-        "waveHeight": {
-          "dwd": 0.12,
-          "ecmwf": 0.18,
-          "meteo": 0.1,
-          "noaa": 0.09,
-          "sg": 0.18
-        },
-        "wavePeriod": {
-          "ecmwf": 1.53,
-          "meteo": 1.78,
-          "noaa": 1.79,
-          "sg": 1.53
-        },
-        "windDirection": {
-          "dwd": 176.97,
-          "ecmwf": 204.07,
-          "ecmwf:aifs": 200.15,
-          "noaa": 158.8,
-          "sg": 204.07
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 2.14,
-          "ecmwf:aifs": 1.94,
-          "noaa": 1.34,
-          "sg": 2.14
-        }
+      "windSpeed": {
+        "sg": 3.72
       }
-    ]
+    },
+    {
+      "airTemperature": {
+        "sg": 26.57
+      },
+      "cloudCover": {
+        "sg": 98.6
+      },
+      "currentDirection": {
+        "sg": 322.65
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 6.03
+      },
+      "humidity": {
+        "sg": 76.8
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.63
+      },
+      "pressure": {
+        "sg": 1010.03
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 293.76
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 4.16
+      },
+      "time": "2026-06-29T01:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.09
+      },
+      "waveDirection": {
+        "sg": 328.69
+      },
+      "waveHeight": {
+        "sg": 0.18
+      },
+      "wavePeriod": {
+        "sg": 1.46
+      },
+      "windDirection": {
+        "sg": 333.81
+      },
+      "windSpeed": {
+        "sg": 3.78
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.76
+      },
+      "cloudCover": {
+        "sg": 98.8
+      },
+      "currentDirection": {
+        "sg": 1.19
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 6.03
+      },
+      "humidity": {
+        "sg": 76.5
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.51
+      },
+      "pressure": {
+        "sg": 1009.75
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 294.39
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 4.12
+      },
+      "time": "2026-06-29T02:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.07
+      },
+      "waveDirection": {
+        "sg": 319.08
+      },
+      "waveHeight": {
+        "sg": 0.18
+      },
+      "wavePeriod": {
+        "sg": 1.46
+      },
+      "windDirection": {
+        "sg": 313.88
+      },
+      "windSpeed": {
+        "sg": 3.84
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.94
+      },
+      "cloudCover": {
+        "sg": 99
+      },
+      "currentDirection": {
+        "sg": 39.73
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 6.03
+      },
+      "humidity": {
+        "sg": 76.2
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.4
+      },
+      "pressure": {
+        "sg": 1009.47
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 295.03
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 4.09
+      },
+      "time": "2026-06-29T03:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.01
+      },
+      "waveDirection": {
+        "sg": 309.48
+      },
+      "waveHeight": {
+        "sg": 0.18
+      },
+      "wavePeriod": {
+        "sg": 1.45
+      },
+      "windDirection": {
+        "sg": 293.94
+      },
+      "windSpeed": {
+        "sg": 3.9
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.13
+      },
+      "cloudCover": {
+        "sg": 99.33
+      },
+      "currentDirection": {
+        "sg": 358.72
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 8.72
+      },
+      "humidity": {
+        "sg": 77.33
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.67
+      },
+      "pressure": {
+        "sg": 1009.18
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 295.67
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 4.13
+      },
+      "time": "2026-06-29T04:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.04
+      },
+      "waveDirection": {
+        "sg": 309.15
+      },
+      "waveHeight": {
+        "sg": 0.21
+      },
+      "wavePeriod": {
+        "sg": 1.49
+      },
+      "windDirection": {
+        "sg": 306
+      },
+      "windSpeed": {
+        "sg": 4.6
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.32
+      },
+      "cloudCover": {
+        "sg": 99.67
+      },
+      "currentDirection": {
+        "sg": 317.7
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 8.72
+      },
+      "humidity": {
+        "sg": 78.47
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.95
+      },
+      "pressure": {
+        "sg": 1008.9
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 296.32
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 4.16
+      },
+      "time": "2026-06-29T05:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.06
+      },
+      "waveDirection": {
+        "sg": 308.82
+      },
+      "waveHeight": {
+        "sg": 0.24
+      },
+      "wavePeriod": {
+        "sg": 1.53
+      },
+      "windDirection": {
+        "sg": 318.05
+      },
+      "windSpeed": {
+        "sg": 5.29
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.51
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 276.69
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 8.72
+      },
+      "humidity": {
+        "sg": 79.6
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.23
+      },
+      "pressure": {
+        "sg": 1008.61
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 296.96
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 4.2
+      },
+      "time": "2026-06-29T06:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.05
+      },
+      "waveDirection": {
+        "sg": 308.5
+      },
+      "waveHeight": {
+        "sg": 0.27
+      },
+      "wavePeriod": {
+        "sg": 1.57
+      },
+      "windDirection": {
+        "sg": 330.11
+      },
+      "windSpeed": {
+        "sg": 5.99
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.45
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 328.19
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 6.33
+      },
+      "humidity": {
+        "sg": 82.93
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.36
+      },
+      "pressure": {
+        "sg": 1008.55
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 323.98
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 3.45
+      },
+      "time": "2026-06-29T07:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.05
+      },
+      "waveDirection": {
+        "sg": 313.32
+      },
+      "waveHeight": {
+        "sg": 0.25
+      },
+      "wavePeriod": {
+        "sg": 1.57
+      },
+      "windDirection": {
+        "sg": 332.08
+      },
+      "windSpeed": {
+        "sg": 5.42
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.38
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 19.69
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 6.33
+      },
+      "humidity": {
+        "sg": 86.27
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.5
+      },
+      "pressure": {
+        "sg": 1008.5
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 351.01
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 2.7
+      },
+      "time": "2026-06-29T08:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.04
+      },
+      "waveDirection": {
+        "sg": 318.15
+      },
+      "waveHeight": {
+        "sg": 0.23
+      },
+      "wavePeriod": {
+        "sg": 1.57
+      },
+      "windDirection": {
+        "sg": 334.05
+      },
+      "windSpeed": {
+        "sg": 4.84
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.32
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 71.19
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 6.33
+      },
+      "humidity": {
+        "sg": 89.6
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.64
+      },
+      "pressure": {
+        "sg": 1008.44
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 18.03
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 1.95
+      },
+      "time": "2026-06-29T09:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.02
+      },
+      "waveDirection": {
+        "sg": 322.98
+      },
+      "waveHeight": {
+        "sg": 0.21
+      },
+      "wavePeriod": {
+        "sg": 1.56
+      },
+      "windDirection": {
+        "sg": 336.02
+      },
+      "windSpeed": {
+        "sg": 4.27
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.11
+      },
+      "cloudCover": {
+        "sg": 98.67
+      },
+      "currentDirection": {
+        "sg": 20.2
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 4.99
+      },
+      "humidity": {
+        "sg": 90.7
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.35
+      },
+      "pressure": {
+        "sg": 1008.76
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 18.5
+      },
+      "swellHeight": {
+        "sg": 0.02
+      },
+      "swellPeriod": {
+        "sg": 1.89
+      },
+      "time": "2026-06-29T10:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.99
+      },
+      "waveDirection": {
+        "sg": 327
+      },
+      "waveHeight": {
+        "sg": 0.2
+      },
+      "wavePeriod": {
+        "sg": 1.55
+      },
+      "windDirection": {
+        "sg": 334.5
+      },
+      "windSpeed": {
+        "sg": 3.43
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.9
+      },
+      "cloudCover": {
+        "sg": 97.33
+      },
+      "currentDirection": {
+        "sg": 329.22
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 4.99
+      },
+      "humidity": {
+        "sg": 91.8
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.07
+      },
+      "pressure": {
+        "sg": 1009.09
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 18.97
+      },
+      "swellHeight": {
+        "sg": 0.04
+      },
+      "swellPeriod": {
+        "sg": 1.84
+      },
+      "time": "2026-06-29T11:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.98
+      },
+      "waveDirection": {
+        "sg": 331.02
+      },
+      "waveHeight": {
+        "sg": 0.18
+      },
+      "wavePeriod": {
+        "sg": 1.53
+      },
+      "windDirection": {
+        "sg": 332.98
+      },
+      "windSpeed": {
+        "sg": 2.59
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.69
+      },
+      "cloudCover": {
+        "sg": 96
+      },
+      "currentDirection": {
+        "sg": 278.23
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 4.99
+      },
+      "humidity": {
+        "sg": 92.9
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.79
+      },
+      "pressure": {
+        "sg": 1009.41
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 19.44
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.78
+      },
+      "time": "2026-06-29T12:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.97
+      },
+      "waveDirection": {
+        "sg": 335.04
+      },
+      "waveHeight": {
+        "sg": 0.16
+      },
+      "wavePeriod": {
+        "sg": 1.52
+      },
+      "windDirection": {
+        "sg": 331.46
+      },
+      "windSpeed": {
+        "sg": 1.75
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.53
+      },
+      "cloudCover": {
+        "sg": 97.33
+      },
+      "currentDirection": {
+        "sg": 331.1
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 3.86
+      },
+      "humidity": {
+        "sg": 93.23
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.82
+      },
+      "pressure": {
+        "sg": 1009.66
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 18.41
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.8
+      },
+      "time": "2026-06-29T13:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.96
+      },
+      "waveDirection": {
+        "sg": 335.8
+      },
+      "waveHeight": {
+        "sg": 0.15
+      },
+      "wavePeriod": {
+        "sg": 1.5
+      },
+      "windDirection": {
+        "sg": 326.24
+      },
+      "windSpeed": {
+        "sg": 1.47
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.38
+      },
+      "cloudCover": {
+        "sg": 98.67
+      },
+      "currentDirection": {
+        "sg": 23.97
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 3.86
+      },
+      "humidity": {
+        "sg": 93.57
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.86
+      },
+      "pressure": {
+        "sg": 1009.91
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 17.37
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.83
+      },
+      "time": "2026-06-29T14:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.92
+      },
+      "waveDirection": {
+        "sg": 336.57
+      },
+      "waveHeight": {
+        "sg": 0.13
+      },
+      "wavePeriod": {
+        "sg": 1.48
+      },
+      "windDirection": {
+        "sg": 321.02
+      },
+      "windSpeed": {
+        "sg": 1.19
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.22
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 76.84
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 3.86
+      },
+      "humidity": {
+        "sg": 93.9
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.89
+      },
+      "pressure": {
+        "sg": 1010.15
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 16.34
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.85
+      },
+      "time": "2026-06-29T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.87
+      },
+      "waveDirection": {
+        "sg": 337.33
+      },
+      "waveHeight": {
+        "sg": 0.11
+      },
+      "wavePeriod": {
+        "sg": 1.47
+      },
+      "windDirection": {
+        "sg": 315.8
+      },
+      "windSpeed": {
+        "sg": 0.91
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.36
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 25.81
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 5.77
+      },
+      "humidity": {
+        "sg": 94.33
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.7
+      },
+      "pressure": {
+        "sg": 1009.61
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 2.04
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.87
+      },
+      "time": "2026-06-29T16:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.89
+      },
+      "waveDirection": {
+        "sg": 321.57
+      },
+      "waveHeight": {
+        "sg": 0.12
+      },
+      "wavePeriod": {
+        "sg": 1.42
+      },
+      "windDirection": {
+        "sg": 301.98
+      },
+      "windSpeed": {
+        "sg": 1.85
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.49
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 334.79
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 5.77
+      },
+      "humidity": {
+        "sg": 94.77
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.5
+      },
+      "pressure": {
+        "sg": 1009.07
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 347.75
+      },
+      "swellHeight": {
+        "sg": 0.04
+      },
+      "swellPeriod": {
+        "sg": 1.89
+      },
+      "time": "2026-06-29T17:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.92
+      },
+      "waveDirection": {
+        "sg": 305.81
+      },
+      "waveHeight": {
+        "sg": 0.14
+      },
+      "wavePeriod": {
+        "sg": 1.36
+      },
+      "windDirection": {
+        "sg": 288.17
+      },
+      "windSpeed": {
+        "sg": 2.8
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.63
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 283.76
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 5.77
+      },
+      "humidity": {
+        "sg": 95.2
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.3
+      },
+      "pressure": {
+        "sg": 1008.52
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 333.45
+      },
+      "swellHeight": {
+        "sg": 0.04
+      },
+      "swellPeriod": {
+        "sg": 1.91
+      },
+      "time": "2026-06-29T18:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.92
+      },
+      "waveDirection": {
+        "sg": 290.05
+      },
+      "waveHeight": {
+        "sg": 0.15
+      },
+      "wavePeriod": {
+        "sg": 1.31
+      },
+      "windDirection": {
+        "sg": 274.35
+      },
+      "windSpeed": {
+        "sg": 3.74
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 26.94
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 337.12
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 4.45
+      },
+      "humidity": {
+        "sg": 95.1
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.25
+      },
+      "pressure": {
+        "sg": 1008.38
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 336.07
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.9
+      },
+      "time": "2026-06-29T19:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.92
+      },
+      "waveDirection": {
+        "sg": 283.8
+      },
+      "waveHeight": {
+        "sg": 0.15
+      },
+      "wavePeriod": {
+        "sg": 1.38
+      },
+      "windDirection": {
+        "sg": 255.38
+      },
+      "windSpeed": {
+        "sg": 3.16
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.25
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 30.49
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 4.45
+      },
+      "humidity": {
+        "sg": 95
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.19
+      },
+      "pressure": {
+        "sg": 1008.23
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 338.69
+      },
+      "swellHeight": {
+        "sg": 0.07
+      },
+      "swellPeriod": {
+        "sg": 1.88
+      },
+      "time": "2026-06-29T20:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.91
+      },
+      "waveDirection": {
+        "sg": 277.55
+      },
+      "waveHeight": {
+        "sg": 0.15
+      },
+      "wavePeriod": {
+        "sg": 1.45
+      },
+      "windDirection": {
+        "sg": 236.42
+      },
+      "windSpeed": {
+        "sg": 2.57
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.56
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 83.85
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 4.45
+      },
+      "humidity": {
+        "sg": 94.9
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.13
+      },
+      "pressure": {
+        "sg": 1008.09
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 341.31
+      },
+      "swellHeight": {
+        "sg": 0.08
+      },
+      "swellPeriod": {
+        "sg": 1.87
+      },
+      "time": "2026-06-29T21:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.9
+      },
+      "waveDirection": {
+        "sg": 271.3
+      },
+      "waveHeight": {
+        "sg": 0.15
+      },
+      "wavePeriod": {
+        "sg": 1.52
+      },
+      "windDirection": {
+        "sg": 217.45
+      },
+      "windSpeed": {
+        "sg": 1.99
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.61
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 34.1
+      },
+      "currentSpeed": {
+        "sg": 0.01
+      },
+      "gust": {
+        "sg": 5.61
+      },
+      "humidity": {
+        "sg": 91.7
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.13
+      },
+      "pressure": {
+        "sg": 1008.56
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 312.31
+      },
+      "swellHeight": {
+        "sg": 0.08
+      },
+      "swellPeriod": {
+        "sg": 1.93
+      },
+      "time": "2026-06-29T22:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.89
+      },
+      "waveDirection": {
+        "sg": 260.53
+      },
+      "waveHeight": {
+        "sg": 0.17
+      },
+      "wavePeriod": {
+        "sg": 1.6
+      },
+      "windDirection": {
+        "sg": 217.43
+      },
+      "windSpeed": {
+        "sg": 2.42
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.66
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 344.36
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 5.61
+      },
+      "humidity": {
+        "sg": 88.5
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.13
+      },
+      "pressure": {
+        "sg": 1009.02
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 283.31
+      },
+      "swellHeight": {
+        "sg": 0.07
+      },
+      "swellPeriod": {
+        "sg": 1.99
+      },
+      "time": "2026-06-29T23:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.89
+      },
+      "waveDirection": {
+        "sg": 249.76
+      },
+      "waveHeight": {
+        "sg": 0.18
+      },
+      "wavePeriod": {
+        "sg": 1.67
+      },
+      "windDirection": {
+        "sg": 217.41
+      },
+      "windSpeed": {
+        "sg": 2.86
+      }
+    }
   ],
   "daily": [
-    [
-      {
-        "airTemperature": {
-          "ecmwf": 28.05,
-          "ecmwf:aifs": 27.03,
-          "noaa": 24.28,
-          "sg": 28.05
-        },
-        "currentDirection": {
-          "ecmwf": 333.84,
-          "meto": 188.39,
-          "noaa": 12,
-          "sg": 333.84
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.02,
-          "noaa": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.69,
-          "noaa": 1.17,
-          "sg": 5.69
-        },
-        "humidity": {
-          "noaa": 93.53,
-          "sg": 93.53
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.32,
-          "ecmwf:aifs": 0.66,
-          "noaa": 0.14,
-          "sg": 0.32
-        },
-        "pressure": {
-          "ecmwf": 1010.79,
-          "ecmwf:aifs": 1001.34,
-          "noaa": 1009.85,
-          "sg": 1010.79
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.72,
-          "sg": 0.72
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.37,
-          "meteo": 268.62,
-          "noaa": 262,
-          "sg": 268.62
-        },
-        "swellHeight": {
-          "dwd": 0.13,
-          "meteo": 0.09,
-          "noaa": 0.06,
-          "sg": 0.09
-        },
-        "swellPeriod": {
-          "dwd": 3.19,
-          "meteo": 2.51,
-          "noaa": 2.04,
-          "sg": 2.51
-        },
-        "time": "2026-06-01T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.71,
-          "noaa": 29.23,
-          "sg": 30.71
-        },
-        "waveDirection": {
-          "ecmwf": 159.62,
-          "meteo": 266.27,
-          "noaa": 210.08,
-          "sg": 159.62
-        },
-        "waveHeight": {
-          "dwd": 0.13,
-          "ecmwf": 0.22,
-          "meteo": 0.1,
-          "noaa": 0.09,
-          "sg": 0.22
-        },
-        "wavePeriod": {
-          "ecmwf": 1.55,
-          "meteo": 2.33,
-          "noaa": 1.91,
-          "sg": 1.55
-        },
-        "windDirection": {
-          "dwd": 143.3,
-          "ecmwf": 164.07,
-          "ecmwf:aifs": 174.86,
-          "noaa": 115.91,
-          "sg": 164.07
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 4.33,
-          "ecmwf:aifs": 1.68,
-          "noaa": 1.14,
-          "sg": 4.33
-        }
+    {
+      "airTemperature": {
+        "sg": 26.22
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.32,
-          "ecmwf:aifs": 27.31,
-          "noaa": 24.45,
-          "sg": 27.32
-        },
-        "currentDirection": {
-          "ecmwf": 87.49,
-          "meto": 292.11,
-          "noaa": 354.14,
-          "sg": 87.49
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.01,
-          "noaa": 0.06,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 5.57,
-          "noaa": 1.02,
-          "sg": 5.57
-        },
-        "humidity": {
-          "noaa": 93.5,
-          "sg": 93.5
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 1.03,
-          "ecmwf:aifs": 0.25,
-          "noaa": 0.07,
-          "sg": 1.03
-        },
-        "pressure": {
-          "ecmwf": 1009.93,
-          "ecmwf:aifs": 1000.7,
-          "noaa": 1008.85,
-          "sg": 1009.93
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.7,
-          "sg": 0.7
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 259.38,
-          "meteo": 258.37,
-          "noaa": 275.39,
-          "sg": 258.37
-        },
-        "swellHeight": {
-          "dwd": 0.09,
-          "meteo": 0.04,
-          "noaa": 0.07,
-          "sg": 0.04
-        },
-        "swellPeriod": {
-          "dwd": 3.11,
-          "meteo": 2.12,
-          "noaa": 2.57,
-          "sg": 2.12
-        },
-        "time": "2026-06-02T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.66,
-          "noaa": 29.36,
-          "sg": 30.66
-        },
-        "waveDirection": {
-          "ecmwf": 169.94,
-          "meteo": 257.07,
-          "noaa": 284.62,
-          "sg": 169.94
-        },
-        "waveHeight": {
-          "dwd": 0.09,
-          "ecmwf": 0.14,
-          "meteo": 0.04,
-          "noaa": 0.07,
-          "sg": 0.14
-        },
-        "wavePeriod": {
-          "ecmwf": 1.41,
-          "meteo": 2.02,
-          "noaa": 2.18,
-          "sg": 1.41
-        },
-        "windDirection": {
-          "dwd": 132.4,
-          "ecmwf": 155.68,
-          "ecmwf:aifs": 158.12,
-          "noaa": 133.62,
-          "sg": 155.68
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 3.4,
-          "ecmwf:aifs": 1.02,
-          "noaa": 1.01,
-          "sg": 3.4
-        }
+      "cloudCover": {
+        "sg": 100
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.96,
-          "ecmwf:aifs": 27.35,
-          "noaa": 24.35,
-          "sg": 27.96
-        },
-        "currentDirection": {
-          "ecmwf": 90.82,
-          "meto": 198.06,
-          "noaa": 163.35,
-          "sg": 90.82
-        },
-        "currentSpeed": {
-          "ecmwf": 0,
-          "meto": 0.02,
-          "noaa": 0.12,
-          "sg": 0
-        },
-        "gust": {
-          "ecmwf": 5.54,
-          "noaa": 1.12,
-          "sg": 5.54
-        },
-        "humidity": {
-          "noaa": 93.1,
-          "sg": 93.1
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 1.08,
-          "ecmwf:aifs": 0.14,
-          "noaa": 0.15,
-          "sg": 1.08
-        },
-        "pressure": {
-          "ecmwf": 1010.5,
-          "ecmwf:aifs": 1000.89,
-          "noaa": 1009.29,
-          "sg": 1010.5
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.69,
-          "sg": 0.69
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 254.27,
-          "meteo": 253.21,
-          "noaa": 127.78,
-          "sg": 253.21
-        },
-        "swellHeight": {
-          "dwd": 0.1,
-          "meteo": 0.02,
-          "noaa": 0.07,
-          "sg": 0.02
-        },
-        "swellPeriod": {
-          "dwd": 3.57,
-          "meteo": 2.24,
-          "noaa": 2,
-          "sg": 2.24
-        },
-        "time": "2026-06-03T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.57,
-          "noaa": 29.58,
-          "sg": 30.57
-        },
-        "waveDirection": {
-          "ecmwf": 171.66,
-          "meteo": 245.76,
-          "noaa": 160.98,
-          "sg": 171.66
-        },
-        "waveHeight": {
-          "dwd": 0.1,
-          "ecmwf": 0.13,
-          "meteo": 0.04,
-          "noaa": 0.09,
-          "sg": 0.13
-        },
-        "wavePeriod": {
-          "ecmwf": 1.39,
-          "meteo": 1.72,
-          "noaa": 1.83,
-          "sg": 1.39
-        },
-        "windDirection": {
-          "dwd": 175.85,
-          "ecmwf": 206.05,
-          "ecmwf:aifs": 177.59,
-          "noaa": 125.74,
-          "sg": 206.05
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf": 2.61,
-          "ecmwf:aifs": 1.66,
-          "noaa": 1.07,
-          "sg": 2.61
-        }
+      "currentDirection": {
+        "sg": 76.84
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.16,
-          "ecmwf:aifs": 27.8,
-          "noaa": 24.36,
-          "sg": 27.16
-        },
-        "currentDirection": {
-          "ecmwf": 90.37,
-          "meto": 217.51,
-          "sg": 90.37
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 6.12,
-          "noaa": 1.23,
-          "sg": 6.12
-        },
-        "humidity": {
-          "noaa": 89.93,
-          "sg": 89.93
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 2.99,
-          "ecmwf:aifs": 0.06,
-          "noaa": 0.01,
-          "sg": 2.99
-        },
-        "pressure": {
-          "ecmwf": 1010.42,
-          "ecmwf:aifs": 1001.27,
-          "noaa": 1009.65,
-          "sg": 1010.42
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.7,
-          "sg": 0.7
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 260.31,
-          "meteo": 255.3,
-          "noaa": 243.96,
-          "sg": 255.3
-        },
-        "swellHeight": {
-          "dwd": 0.14,
-          "meteo": 0.26,
-          "noaa": 0.07,
-          "sg": 0.26
-        },
-        "swellPeriod": {
-          "dwd": 4.45,
-          "meteo": 2.28,
-          "noaa": 2.21,
-          "sg": 2.28
-        },
-        "time": "2026-06-04T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.57,
-          "sg": 30.57
-        },
-        "waveDirection": {
-          "ecmwf": 175.87,
-          "meteo": 254.38,
-          "noaa": 247.93,
-          "sg": 175.87
-        },
-        "waveHeight": {
-          "dwd": 0.15,
-          "ecmwf": 0.14,
-          "meteo": 0.26,
-          "noaa": 0.07,
-          "sg": 0.14
-        },
-        "wavePeriod": {
-          "ecmwf": 1.46,
-          "meteo": 2.33,
-          "noaa": 2.21,
-          "sg": 1.46
-        },
-        "windDirection": {
-          "dwd": 177.65,
-          "ecmwf": 129.36,
-          "ecmwf:aifs": 150.37,
-          "noaa": 99.08,
-          "sg": 129.36
-        },
-        "windSpeed": {
-          "dwd": 2.04,
-          "ecmwf": 2.63,
-          "ecmwf:aifs": 1.73,
-          "noaa": 1.17,
-          "sg": 2.63
-        }
+      "currentSpeed": {
+        "sg": 0
       },
-      {
-        "airTemperature": {
-          "ecmwf": 27.22,
-          "ecmwf:aifs": 27.68,
-          "noaa": 24.54,
-          "sg": 27.22
-        },
-        "currentDirection": {
-          "ecmwf": 150.95,
-          "meto": 223.09,
-          "sg": 150.95
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.04,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 7.07,
-          "noaa": 1.16,
-          "sg": 7.07
-        },
-        "humidity": {
-          "noaa": 92.83,
-          "sg": 92.83
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 2,
-          "ecmwf:aifs": 0.11,
-          "noaa": 0.03,
-          "sg": 2
-        },
-        "pressure": {
-          "ecmwf": 1011.18,
-          "ecmwf:aifs": 1001.72,
-          "noaa": 1010.38,
-          "sg": 1011.18
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.69,
-          "sg": 0.69
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 263.67,
-          "meteo": 162.89,
-          "noaa": 227.67,
-          "sg": 162.89
-        },
-        "swellHeight": {
-          "dwd": 0.15,
-          "meteo": 0.04,
-          "noaa": 0.13,
-          "sg": 0.04
-        },
-        "swellPeriod": {
-          "dwd": 4.83,
-          "meteo": 1.81,
-          "noaa": 2.44,
-          "sg": 1.81
-        },
-        "time": "2026-06-05T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.61,
-          "sg": 30.61
-        },
-        "waveDirection": {
-          "ecmwf": 182.48,
-          "meteo": 168.93,
-          "noaa": 167.45,
-          "sg": 182.48
-        },
-        "waveHeight": {
-          "dwd": 0.16,
-          "ecmwf": 0.18,
-          "meteo": 0.06,
-          "noaa": 0.05,
-          "sg": 0.18
-        },
-        "wavePeriod": {
-          "ecmwf": 1.49,
-          "meteo": 1.7,
-          "noaa": 1.83,
-          "sg": 1.49
-        },
-        "windDirection": {
-          "dwd": 153.99,
-          "ecmwf": 98.8,
-          "ecmwf:aifs": 141.7,
-          "noaa": 132.58,
-          "sg": 98.8
-        },
-        "windSpeed": {
-          "dwd": 2.04,
-          "ecmwf": 3,
-          "ecmwf:aifs": 1.74,
-          "noaa": 1.09,
-          "sg": 3
-        }
+      "gust": {
+        "sg": 3.86
       },
-      {
-        "airTemperature": {
-          "ecmwf": 28.29,
-          "ecmwf:aifs": 27.52,
-          "noaa": 24.18,
-          "sg": 28.29
-        },
-        "currentDirection": {
-          "ecmwf": 93.01,
-          "meto": 180.32,
-          "sg": 93.01
-        },
-        "currentSpeed": {
-          "ecmwf": 0.01,
-          "meto": 0.06,
-          "sg": 0.01
-        },
-        "gust": {
-          "ecmwf": 6.26,
-          "noaa": 1.02,
-          "sg": 6.26
-        },
-        "humidity": {
-          "noaa": 94,
-          "sg": 94
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf": 0.7,
-          "ecmwf:aifs": 0.09,
-          "noaa": 0.11,
-          "sg": 0.7
-        },
-        "pressure": {
-          "ecmwf": 1011.05,
-          "ecmwf:aifs": 1001.67,
-          "noaa": 1011.11,
-          "sg": 1011.05
-        },
-        "seaIceThickness": {
-          "ecmwf": 0,
-          "sg": 0
-        },
-        "seaLevel": {
-          "meto": 0.68,
-          "sg": 0.68
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 266.98,
-          "meteo": 246.38,
-          "noaa": 257.95,
-          "sg": 246.38
-        },
-        "swellHeight": {
-          "dwd": 0.15,
-          "meteo": 0.08,
-          "noaa": 0.11,
-          "sg": 0.08
-        },
-        "swellPeriod": {
-          "dwd": 4.97,
-          "meteo": 1.72,
-          "noaa": 3.34,
-          "sg": 1.72
-        },
-        "time": "2026-06-06T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.62,
-          "sg": 30.62
-        },
-        "waveDirection": {
-          "ecmwf": 164.63,
-          "meteo": 248.25,
-          "noaa": 217.14,
-          "sg": 164.63
-        },
-        "waveHeight": {
-          "dwd": 0.16,
-          "ecmwf": 0.14,
-          "meteo": 0.1,
-          "noaa": 0.04,
-          "sg": 0.14
-        },
-        "wavePeriod": {
-          "ecmwf": 1.4,
-          "meteo": 1.68,
-          "noaa": 1.63,
-          "sg": 1.4
-        },
-        "windDirection": {
-          "dwd": 140.23,
-          "ecmwf": 164.75,
-          "ecmwf:aifs": 131.74,
-          "noaa": 113.56,
-          "sg": 164.75
-        },
-        "windSpeed": {
-          "dwd": 2.04,
-          "ecmwf": 3.65,
-          "ecmwf:aifs": 2.57,
-          "noaa": 1,
-          "sg": 3.65
-        }
+      "humidity": {
+        "sg": 93.9
       },
-      {
-        "airTemperature": {
-          "ecmwf:aifs": 27.35,
-          "noaa": 24.21,
-          "sg": 24.21
-        },
-        "currentDirection": {
-          "meto": 279.55,
-          "sg": 279.55
-        },
-        "currentSpeed": {
-          "meto": 0.01,
-          "sg": 0.01
-        },
-        "gust": {
-          "noaa": 0.96,
-          "sg": 0.96
-        },
-        "humidity": {
-          "noaa": 92.3,
-          "sg": 92.3
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf:aifs": 0.13,
-          "noaa": 0.13,
-          "sg": 0.13
-        },
-        "pressure": {
-          "ecmwf:aifs": 1001.01,
-          "noaa": 1010.26,
-          "sg": 1010.26
-        },
-        "seaLevel": {
-          "meto": 0.7,
-          "sg": 0.7
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "dwd": 263.49,
-          "meteo": 244.61,
-          "noaa": 258.9,
-          "sg": 244.61
-        },
-        "swellHeight": {
-          "dwd": 0.14,
-          "meteo": 0.05,
-          "noaa": 0.16,
-          "sg": 0.05
-        },
-        "swellPeriod": {
-          "dwd": 3.97,
-          "meteo": 2.04,
-          "noaa": 3.13,
-          "sg": 2.04
-        },
-        "time": "2026-06-07T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.83,
-          "sg": 30.83
-        },
-        "waveDirection": {
-          "meteo": 249.38,
-          "noaa": 235.07,
-          "sg": 249.38
-        },
-        "waveHeight": {
-          "dwd": 0.15,
-          "meteo": 0.11,
-          "noaa": 0.15,
-          "sg": 0.11
-        },
-        "wavePeriod": {
-          "meteo": 1.63,
-          "noaa": 1.84,
-          "sg": 1.63
-        },
-        "windDirection": {
-          "dwd": 149.99,
-          "ecmwf:aifs": 137.94,
-          "noaa": 124.06,
-          "sg": 149.99
-        },
-        "windSpeed": {
-          "dwd": 2,
-          "ecmwf:aifs": 2.5,
-          "noaa": 0.99,
-          "sg": 2
-        }
+      "iceCover": {
+        "sg": 0
       },
-      {
-        "airTemperature": {
-          "ecmwf:aifs": 26.99,
-          "noaa": 23.92,
-          "sg": 23.92
-        },
-        "currentDirection": {
-          "meto": 121.41,
-          "sg": 121.41
-        },
-        "currentSpeed": {
-          "meto": 0.07,
-          "sg": 0.07
-        },
-        "gust": {
-          "noaa": 1.09,
-          "sg": 1.09
-        },
-        "humidity": {
-          "noaa": 93.57,
-          "sg": 93.57
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf:aifs": 0.25,
-          "noaa": 0.08,
-          "sg": 0.08
-        },
-        "pressure": {
-          "ecmwf:aifs": 1000.85,
-          "noaa": 1010.14,
-          "sg": 1010.14
-        },
-        "seaLevel": {
-          "meto": 0.7,
-          "sg": 0.7
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "meteo": 245.19,
-          "noaa": 267.67,
-          "sg": 245.19
-        },
-        "swellHeight": {
-          "meteo": 0.06,
-          "noaa": 0.07,
-          "sg": 0.06
-        },
-        "swellPeriod": {
-          "meteo": 2.15,
-          "noaa": 2.24,
-          "sg": 2.15
-        },
-        "time": "2026-06-08T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 30.92,
-          "sg": 30.92
-        },
-        "waveDirection": {
-          "meteo": 245.72,
-          "noaa": 141.92,
-          "sg": 245.72
-        },
-        "waveHeight": {
-          "meteo": 0.09,
-          "noaa": 0.11,
-          "sg": 0.09
-        },
-        "wavePeriod": {
-          "meteo": 1.6,
-          "noaa": 1.62,
-          "sg": 1.6
-        },
-        "windDirection": {
-          "ecmwf:aifs": 148.96,
-          "noaa": 111.74,
-          "sg": 111.74
-        },
-        "windSpeed": {
-          "ecmwf:aifs": 2.24,
-          "noaa": 1.06,
-          "sg": 1.06
-        }
+      "precipitation": {
+        "sg": 0.89
       },
-      {
-        "airTemperature": {
-          "ecmwf:aifs": 26.79,
-          "noaa": 24.05,
-          "sg": 24.05
-        },
-        "currentDirection": {
-          "meto": 137.75,
-          "sg": 137.75
-        },
-        "currentSpeed": {
-          "meto": 0.03,
-          "sg": 0.03
-        },
-        "gust": {
-          "noaa": 1.08,
-          "sg": 1.08
-        },
-        "humidity": {
-          "noaa": 94.73,
-          "sg": 94.73
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf:aifs": 0.39,
-          "noaa": 0.18,
-          "sg": 0.18
-        },
-        "pressure": {
-          "ecmwf:aifs": 1001.44,
-          "noaa": 1010.56,
-          "sg": 1010.56
-        },
-        "seaLevel": {
-          "meto": 0.69,
-          "sg": 0.69
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "meteo": 258.77,
-          "noaa": 262.21,
-          "sg": 258.77
-        },
-        "swellHeight": {
-          "meteo": 0.04,
-          "noaa": 0.08,
-          "sg": 0.04
-        },
-        "swellPeriod": {
-          "meteo": 1.73,
-          "noaa": 2.07,
-          "sg": 1.73
-        },
-        "time": "2026-06-09T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.04,
-          "sg": 31.04
-        },
-        "waveDirection": {
-          "meteo": 258.3,
-          "noaa": 225.44,
-          "sg": 258.3
-        },
-        "waveHeight": {
-          "meteo": 0.04,
-          "noaa": 0.11,
-          "sg": 0.04
-        },
-        "wavePeriod": {
-          "meteo": 1.66,
-          "noaa": 1.66,
-          "sg": 1.66
-        },
-        "windDirection": {
-          "ecmwf:aifs": 170.19,
-          "noaa": 100.47,
-          "sg": 100.47
-        },
-        "windSpeed": {
-          "ecmwf:aifs": 1.94,
-          "noaa": 1.08,
-          "sg": 1.08
-        }
+      "pressure": {
+        "sg": 1010.15
       },
-      {
-        "airTemperature": {
-          "ecmwf:aifs": 26.7,
-          "noaa": 24.01,
-          "sg": 24.01
-        },
-        "currentDirection": {
-          "meto": 148.01,
-          "sg": 148.01
-        },
-        "currentSpeed": {
-          "meto": 0.02,
-          "sg": 0.02
-        },
-        "gust": {
-          "noaa": 1.87,
-          "sg": 1.87
-        },
-        "humidity": {
-          "noaa": 95.93,
-          "sg": 95.93
-        },
-        "iceCover": {
-          "noaa": 0,
-          "sg": 0
-        },
-        "precipitation": {
-          "ecmwf:aifs": 0.42,
-          "noaa": 0.06,
-          "sg": 0.06
-        },
-        "pressure": {
-          "ecmwf:aifs": 1002.58,
-          "noaa": 1011.32,
-          "sg": 1011.32
-        },
-        "seaLevel": {
-          "meto": 0.71,
-          "sg": 0.71
-        },
-        "snow": {
-          "ecmwf:aifs": 0,
-          "sg": 0
-        },
-        "swellDirection": {
-          "meteo": 272.19,
-          "noaa": 252.11,
-          "sg": 272.19
-        },
-        "swellHeight": {
-          "meteo": 0.1,
-          "noaa": 0.07,
-          "sg": 0.1
-        },
-        "swellPeriod": {
-          "meteo": 2.02,
-          "noaa": 2.01,
-          "sg": 2.02
-        },
-        "time": "2026-06-10T19:00:00+00:00",
-        "waterTemperature": {
-          "meto": 31.14,
-          "sg": 31.14
-        },
-        "waveDirection": {
-          "meteo": 261.46,
-          "noaa": 142.78,
-          "sg": 261.46
-        },
-        "waveHeight": {
-          "meteo": 0.11,
-          "noaa": 0.16,
-          "sg": 0.11
-        },
-        "wavePeriod": {
-          "meteo": 2.05,
-          "noaa": 2.21,
-          "sg": 2.05
-        },
-        "windDirection": {
-          "ecmwf:aifs": 203.15,
-          "noaa": 121.49,
-          "sg": 121.49
-        },
-        "windSpeed": {
-          "ecmwf:aifs": 1.24,
-          "noaa": 1.36,
-          "sg": 1.36
-        }
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.71
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 16.34
+      },
+      "swellHeight": {
+        "sg": 0.05
+      },
+      "swellPeriod": {
+        "sg": 1.85
+      },
+      "time": "2026-06-29T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.87
+      },
+      "waveDirection": {
+        "sg": 337.33
+      },
+      "waveHeight": {
+        "sg": 0.11
+      },
+      "wavePeriod": {
+        "sg": 1.47
+      },
+      "windDirection": {
+        "sg": 315.8
+      },
+      "windSpeed": {
+        "sg": 0.91
       }
-    ]
+    },
+    {
+      "airTemperature": {
+        "sg": 27.5
+      },
+      "cloudCover": {
+        "sg": 76.5
+      },
+      "currentDirection": {
+        "sg": 61.03
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 7.64
+      },
+      "humidity": {
+        "sg": 95.4
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 1.33
+      },
+      "pressure": {
+        "sg": 1010.78
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 272.26
+      },
+      "swellHeight": {
+        "sg": 0.12
+      },
+      "swellPeriod": {
+        "sg": 2.12
+      },
+      "time": "2026-06-30T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.83
+      },
+      "waveDirection": {
+        "sg": 161.36
+      },
+      "waveHeight": {
+        "sg": 0.23
+      },
+      "wavePeriod": {
+        "sg": 1.58
+      },
+      "windDirection": {
+        "sg": 143.69
+      },
+      "windSpeed": {
+        "sg": 3.91
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.76
+      },
+      "cloudCover": {
+        "sg": 93.8
+      },
+      "currentDirection": {
+        "sg": 108.34
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 6.7
+      },
+      "humidity": {
+        "sg": 94
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.7
+      },
+      "pressure": {
+        "sg": 1011.92
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 207.81
+      },
+      "swellHeight": {
+        "sg": 0.08
+      },
+      "swellPeriod": {
+        "sg": 1.67
+      },
+      "time": "2026-07-01T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.76
+      },
+      "waveDirection": {
+        "sg": 159.6
+      },
+      "waveHeight": {
+        "sg": 0.21
+      },
+      "wavePeriod": {
+        "sg": 1.53
+      },
+      "windDirection": {
+        "sg": 166.55
+      },
+      "windSpeed": {
+        "sg": 3.79
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.21
+      },
+      "cloudCover": {
+        "sg": 58.7
+      },
+      "currentDirection": {
+        "sg": 131.65
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 5.15
+      },
+      "humidity": {
+        "sg": 94.4
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.33
+      },
+      "pressure": {
+        "sg": 1013.79
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 150.57
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 1.82
+      },
+      "time": "2026-07-02T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.78
+      },
+      "waveDirection": {
+        "sg": 135.1
+      },
+      "waveHeight": {
+        "sg": 0.13
+      },
+      "wavePeriod": {
+        "sg": 1.4
+      },
+      "windDirection": {
+        "sg": 154.08
+      },
+      "windSpeed": {
+        "sg": 2.91
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 27.97
+      },
+      "cloudCover": {
+        "sg": 37
+      },
+      "currentDirection": {
+        "sg": 273.03
+      },
+      "currentSpeed": {
+        "sg": 0
+      },
+      "gust": {
+        "sg": 3.81
+      },
+      "humidity": {
+        "sg": 95
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.08
+      },
+      "pressure": {
+        "sg": 1013.63
+      },
+      "seaIceThickness": {
+        "sg": 0
+      },
+      "seaLevel": {
+        "sg": 0.74
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 110.45
+      },
+      "swellHeight": {
+        "sg": 0.02
+      },
+      "swellPeriod": {
+        "sg": 1.51
+      },
+      "time": "2026-07-03T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 30.87
+      },
+      "waveDirection": {
+        "sg": 114.87
+      },
+      "waveHeight": {
+        "sg": 0.09
+      },
+      "wavePeriod": {
+        "sg": 1.47
+      },
+      "windDirection": {
+        "sg": 117.3
+      },
+      "windSpeed": {
+        "sg": 1.55
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 23.87
+      },
+      "cloudCover": {
+        "sg": 83.7
+      },
+      "currentDirection": {
+        "sg": 35.94
+      },
+      "currentSpeed": {
+        "sg": 0.03
+      },
+      "gust": {
+        "sg": 1.25
+      },
+      "humidity": {
+        "sg": 94.7
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0
+      },
+      "pressure": {
+        "sg": 1010.59
+      },
+      "seaLevel": {
+        "sg": 0.75
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 100.19
+      },
+      "swellHeight": {
+        "sg": 0.02
+      },
+      "swellPeriod": {
+        "sg": 1.42
+      },
+      "time": "2026-07-04T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.03
+      },
+      "waveDirection": {
+        "sg": 99.4
+      },
+      "waveHeight": {
+        "sg": 0.02
+      },
+      "wavePeriod": {
+        "sg": 1.42
+      },
+      "windDirection": {
+        "sg": 77.89
+      },
+      "windSpeed": {
+        "sg": 2
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 23.17
+      },
+      "cloudCover": {
+        "sg": 98.8
+      },
+      "currentDirection": {
+        "sg": 43.88
+      },
+      "currentSpeed": {
+        "sg": 0.04
+      },
+      "gust": {
+        "sg": 1.37
+      },
+      "humidity": {
+        "sg": 92
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.01
+      },
+      "pressure": {
+        "sg": 1010.86
+      },
+      "seaLevel": {
+        "sg": 0.74
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 56.65
+      },
+      "swellHeight": {
+        "sg": 0.01
+      },
+      "swellPeriod": {
+        "sg": 1.55
+      },
+      "time": "2026-07-05T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.12
+      },
+      "waveDirection": {
+        "sg": 355.11
+      },
+      "waveHeight": {
+        "sg": 0.02
+      },
+      "wavePeriod": {
+        "sg": 1.43
+      },
+      "windDirection": {
+        "sg": 98.96
+      },
+      "windSpeed": {
+        "sg": 1.4
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 23.96
+      },
+      "cloudCover": {
+        "sg": 2.2
+      },
+      "currentDirection": {
+        "sg": 22.86
+      },
+      "currentSpeed": {
+        "sg": 0.05
+      },
+      "gust": {
+        "sg": 0.84
+      },
+      "humidity": {
+        "sg": 92.6
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.15
+      },
+      "pressure": {
+        "sg": 1011
+      },
+      "seaLevel": {
+        "sg": 0.72
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 262.78
+      },
+      "swellHeight": {
+        "sg": 0.04
+      },
+      "swellPeriod": {
+        "sg": 1.78
+      },
+      "time": "2026-07-06T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.13
+      },
+      "waveDirection": {
+        "sg": 266.03
+      },
+      "waveHeight": {
+        "sg": 0.05
+      },
+      "wavePeriod": {
+        "sg": 1.71
+      },
+      "windDirection": {
+        "sg": 74.13
+      },
+      "windSpeed": {
+        "sg": 0.82
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 24.38
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "currentDirection": {
+        "sg": 319.99
+      },
+      "currentSpeed": {
+        "sg": 0.05
+      },
+      "gust": {
+        "sg": 0.81
+      },
+      "humidity": {
+        "sg": 91.7
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.02
+      },
+      "pressure": {
+        "sg": 1009.78
+      },
+      "seaLevel": {
+        "sg": 0.73
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 282.87
+      },
+      "swellHeight": {
+        "sg": 0.06
+      },
+      "swellPeriod": {
+        "sg": 2.08
+      },
+      "time": "2026-07-07T15:00:00+00:00",
+      "waterTemperature": {
+        "sg": 31.01
+      },
+      "waveDirection": {
+        "sg": 293.95
+      },
+      "waveHeight": {
+        "sg": 0.17
+      },
+      "wavePeriod": {
+        "sg": 1.8
+      },
+      "windDirection": {
+        "sg": 213.75
+      },
+      "windSpeed": {
+        "sg": 0.23
+      }
+    },
+    {
+      "airTemperature": {
+        "sg": 24.59
+      },
+      "cloudCover": {
+        "sg": 100
+      },
+      "gust": {
+        "sg": 3.61
+      },
+      "humidity": {
+        "sg": 90.4
+      },
+      "iceCover": {
+        "sg": 0
+      },
+      "precipitation": {
+        "sg": 0.04
+      },
+      "pressure": {
+        "sg": 1009.98
+      },
+      "snow": {
+        "sg": 0
+      },
+      "swellDirection": {
+        "sg": 267.24
+      },
+      "swellHeight": {
+        "sg": 0.16
+      },
+      "swellPeriod": {
+        "sg": 2.2
+      },
+      "time": "2026-07-08T15:00:00+00:00",
+      "waveDirection": {
+        "sg": 267.65
+      },
+      "waveHeight": {
+        "sg": 0.52
+      },
+      "wavePeriod": {
+        "sg": 3.21
+      },
+      "windDirection": {
+        "sg": 253.91
+      },
+      "windSpeed": {
+        "sg": 1.47
+      }
+    }
   ]
 }

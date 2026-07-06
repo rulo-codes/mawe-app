@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './search.css';
 
-import testData from '../data/weather.json'
+import testData from '../data/weather.json';
+import bioData from '../data/bio.json'
 
 export default function Search({locSelected, setLocSelected, map, setWeatherData}){
     const [query, setQuery] = useState('');
@@ -43,14 +44,17 @@ export default function Search({locSelected, setLocSelected, map, setWeatherData
     };
 
     const fetchWeather = (feature) => {
+        const date = new Date();
         const locationName = feature.text_en;
         const locationPlace = feature.place_name_en;
-        setWeatherData({coordinates: feature.center, name: locationName, place: locationPlace, weather_data: testData})
+        const solarData = {dawn: "2026-06-29T20:30:31+00:00", dusk: "2026-06-30T10:59:55+00:00"};
+        setWeatherData({date: date, coordinates: feature.center, name: locationName, place: locationPlace, weather_data: testData, bio: bioData, solar: solarData});
     }
 
     const handleSelectLocation = (feature) => {
         if(!locSelected) {setLocSelected(true)};
         console.log(feature);
+        setWeatherData([]);
         setSuggestions([]);
         setIsOpen(false);
         setQuery(feature.place_name);

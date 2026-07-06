@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-      --primary: rgb(235, 235, 235);
-      --primary-bg: rgba(207, 207, 207, 0.80);
-      --primary-alt-bg: rgb(233, 233, 233);
+      --primary: rgba(235, 235, 235, 1);
+      --primary-bg: rgba(207, 207, 207, 0.70);
+      --primary-alt-bg: rgb(230, 230, 230);
       --secondary-bg: rgb(95, 202, 179);
       --primary-color: rgb(20, 20, 20);
+      --secondary-color: rgb(235, 235, 235);
+      --primary-border-color: rgb(99, 106, 131);
       --primary-font: Montserrat, sans-serif, Arial;
 }
 
@@ -62,7 +64,7 @@ rgba(0, 0, 0, 0.5);
 .search-wrapper{
       position: absolute;
       top: 15px;
-      left: 25px;
+      left: 45px;
 }
 
 .dashboard-wrapper{
