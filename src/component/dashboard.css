@@ -39,7 +39,10 @@
     background: #29415e;
     background: linear-gradient(152deg,rgba(41, 65, 94, 1) 51%, rgba(88, 132, 166, 1) 100%);
     color: var(--secondary-color);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 2px 5px rgba(19, 19, 19, 0.6);
     padding: 2rem 2.4rem;
+    margin-bottom: 20px;
 }
 
 .dashboard-header .header-city-name{
@@ -52,7 +55,7 @@
 
 .dashboard-data{
     width: 100%;
-    height: auto;
+    height: 640px;
     padding: 2rem 1.8rem;
     overflow-y: auto;
 }
@@ -67,7 +70,6 @@
     border-radius: 24px;
     padding: 1.4rem;
     box-shadow: 0px 2px 2px #1e27312a;
-    margin-bottom: 20px;
 }
 
 .data-featured{
@@ -78,6 +80,12 @@
     padding: 0.6rem 1rem;
     border: solid 1px var(--primary-border-color);
     box-shadow: 0px 2px 2px #1e27312a;
+}
+
+.data-current{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .current-condition{
@@ -130,7 +138,6 @@
     height: 150px;
     max-height: 150px;
     padding: 1.4rem;
-    margin-bottom: 0px;
 }
 
 .pin-date{
@@ -146,6 +153,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 5px;
@@ -167,4 +175,96 @@
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+.pin-wind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wind-speed, .wind-unit{
+    z-index: 10;
+}
+
+.wind-speed{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.icon-wind-direction::before, .icon-wind-direction .icon-arrow{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.icon-wind-direction::before{
+    background-image: url("/ui-icons/wind-direction-frame.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-wind-direction .icon-arrow{
+    background-image: url("/ui-icons/wind-direction-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.pin-wave{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.pin-wave .icon-wave, .pin-wave .wave-period{
+    flex: 1fr;
+}
+
+.pin-wave .wave, .pin-wave .wave-direction{
+    flex: 1fr;
+    font-weight: 600;
+}
+
+.pin-wave .wave{
+    font-size: 1.25rem;
+}
+
+/* CURRENT SEA WAVES */
+
+.current-sea-waves{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sea-waves-header{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-alt-color);
+}
+
+.sea-waves-data{
+    height: auto;
+    max-height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+.sea-waves{
+    background: var(--primary-highlight);
+    padding: 0.2rem 0.6rem;
+    border: none;
 }

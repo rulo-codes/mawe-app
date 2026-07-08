@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { getDirectionfromValueShort, getDirectionfromValueLong } from '../utils/getDirectionfromValue.jsx';
 import './dashboard.css';
 
 
@@ -64,7 +65,7 @@ export default function Dashboard({weatherData, setWeatherData, locSelected}){
             return;
         }
 
-        const loadingTimer = setTimeout(() => { setLoading(false) }, 5000);
+        const loadingTimer = setTimeout(() => { setLoading(false) }, 2000);
 
         return () => {
             clearTimeout(loadingTimer);
@@ -96,9 +97,10 @@ export default function Dashboard({weatherData, setWeatherData, locSelected}){
                     <h3 className='err-dashboard'>UNABLE TO GET DATA</h3>
                 ) : (
                     <div className='dashboard-data'>
+                        {/* Weather Data at current hour */}
                         <div className='data-current'>
                             <div className='data-card current-condition'>
-                                <img src="/public/icons/clear_sky_day.png" alt="weather icon" height={100} width={100} />
+                                <img src="/weather-icons/clear_sky_day.png" alt="weather icon" height={100} width={100} />
                                 <div className='condition-details'>
                                     <div className='details-header'>
                                         <h2 className='details-code'>
@@ -134,14 +136,49 @@ export default function Dashboard({weatherData, setWeatherData, locSelected}){
                                     </div>
                                 </div>
                                 <div className='data-card weather-pin pin-wind'>
-
+                                    <div className='wind-speed'>{weatherCurrent?.windSpeed?.sg ?? "---"}</div>
+                                    <div className='wind-unit'>m/s</div>
+                                    <div className='icon-wind-direction'>
+                                        <div className='icon-arrow' style={{transform: `rotate(${weatherCurrent?.windDirection?.sg ?? 0}deg)`}}></div>
+                                    </div>
                                 </div>
                                 <div className='data-card weather-pin pin-wave'>
-
+                                    <div className='icon-wave'><img src="/ui-icons/wave-blue.png" width="30px" height="30px" loading='lazy'></img></div>
+                                    <div className='wave'>
+                                        <div className='wave-height'>{weatherCurrent?.waveHeight?.sg ?? "---"} m</div>
+                                        
+                                    </div>
+                                    <div className='wave-period'>
+                                        Period: {weatherCurrent?.wavePeriod?.sg ?? "---"}s
+                                    </div>
+                                    <div className='wave-direction'>{getDirectionfromValueShort(weatherCurrent?.waveDirection?.sg)}</div>
                                 </div>
                             </div>
+                            <div className='data-card current-sea-waves'>
+                                <div className='sea-waves-header'>Sea State & Waves</div>
+                                <hr style={{opacity: 0.8}} />
+                                <div className='sea-waves-data'>
+                                    <div className='sea-level'>Sea Level: <span className='data-featured sea-waves'>{weatherCurrent?.seaLevel?.sg ?? "---"}m</span></div>
+                                    <div className='curr-speed'>Current Speed: <span className='data-featured sea-waves'>{weatherCurrent?.seaLevel?.sg ?? "---"}m/s</span></div>
+                                    
+                                    <div className='wave-height'>Wave Height: <span className='data-featured sea-waves'>{weatherCurrent?.waveHeight?.sg ?? "---"}m</span></div>
+                                    <div className='wave-period'>Wave Period: <span className='data-featured sea-waves'>{weatherCurrent?.wavePeriod?.sg ?? "---"}m/s</span></div>
+                                    
+                                    <div className='swell-height'>Swell Height: <span className='data-featured sea-waves'>{weatherCurrent?.swellHeight?.sg ?? "---"}m</span></div>
+                                    <div className='swell-period'>Swell Period: <span className='data-featured sea-waves'>{weatherCurrent?.swellPeriod?.sg ?? "---"}m/s</span></div>
+
+                                    <div className='curr-direction'>Current Direction: <span className='data-featured sea-waves'>{getDirectionfromValueLong(weatherCurrent?.currentDirection?.sg)}</span></div>
+                                    <div className='wave-direction'>Wave Direction: <span className='data-featured sea-waves'>{getDirectionfromValueLong(weatherCurrent?.waveDirection?.sg)}</span></div>
+                                    <div className='swell-direction'>Swell Direction: <span className='data-featured sea-waves'>{getDirectionfromValueLong(weatherCurrent?.swellDirection?.sg)}</span></div>
+                                </div>
+                            </div>
+
                         </div>
+
+                        {/* Weather Forecast through out the day */}
                         <div className='data-hourly'></div>
+
+                        {/* Weather Forecast in coming days at current hour */}
                         <div className='data-daily'></div>
                     </div>
                 )

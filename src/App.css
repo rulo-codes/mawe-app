@@ -6,7 +6,9 @@
       --primary-alt-bg: rgb(230, 230, 230);
       --secondary-bg: rgb(95, 202, 179);
       --primary-color: rgb(20, 20, 20);
+      --primary-alt-color: rgb(108, 121, 133);
       --secondary-color: rgb(235, 235, 235);
+      --primary-highlight: rgb(122, 175, 206);
       --primary-border-color: rgb(99, 106, 131);
       --primary-font: Montserrat, sans-serif, Arial;
 }
