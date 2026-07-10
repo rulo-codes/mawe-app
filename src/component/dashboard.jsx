@@ -11,6 +11,7 @@ export default function Dashboard({weatherData, setWeatherData, locSelected}){
     //Weather Data
     const weatherCode = weatherData.weather_data?.code;
     const weatherCurrent = weatherData.weather_data?.current;
+    const bioCurrent = weatherData?.bio;
     const weatherSolar = weatherData?.solar;
 
     const alertLevel = weatherCode?.alertLevel ?? "UNKNOWN";
@@ -154,25 +155,64 @@ export default function Dashboard({weatherData, setWeatherData, locSelected}){
                                     <div className='wave-direction'>{getDirectionfromValueShort(weatherCurrent?.waveDirection?.sg)}</div>
                                 </div>
                             </div>
-                            <div className='data-card current-sea-waves'>
-                                <div className='sea-waves-header'>Sea State & Waves</div>
+                            <div className='data-card current-card current-sea-waves'>
+                                <div className='card-header'>Sea State & Waves</div>
                                 <hr style={{opacity: 0.8}} />
-                                <div className='sea-waves-data'>
-                                    <div className='sea-level'>Sea Level: <span className='data-featured sea-waves'>{weatherCurrent?.seaLevel?.sg ?? "---"}m</span></div>
-                                    <div className='curr-speed'>Current Speed: <span className='data-featured sea-waves'>{weatherCurrent?.seaLevel?.sg ?? "---"}m/s</span></div>
+                                <div className='card-data sea-waves-data'>
+                                    <div className='sea-level'>Sea Level: <span className='data-featured data-specific'>{weatherCurrent?.seaLevel?.sg ?? "---"} m</span></div>
+                                    <div className='curr-speed'>Current Speed: <span className='data-featured data-specific'>{weatherCurrent?.seaLevel?.sg ?? "---"} m/s</span></div>
                                     
-                                    <div className='wave-height'>Wave Height: <span className='data-featured sea-waves'>{weatherCurrent?.waveHeight?.sg ?? "---"}m</span></div>
-                                    <div className='wave-period'>Wave Period: <span className='data-featured sea-waves'>{weatherCurrent?.wavePeriod?.sg ?? "---"}m/s</span></div>
+                                    <div className='wave-height'>Wave Height: <span className='data-featured data-specific'>{weatherCurrent?.waveHeight?.sg ?? "---"} m</span></div>
+                                    <div className='wave-period'>Wave Period: <span className='data-featured data-specific'>{weatherCurrent?.wavePeriod?.sg ?? "---"} m/s</span></div>
                                     
-                                    <div className='swell-height'>Swell Height: <span className='data-featured sea-waves'>{weatherCurrent?.swellHeight?.sg ?? "---"}m</span></div>
-                                    <div className='swell-period'>Swell Period: <span className='data-featured sea-waves'>{weatherCurrent?.swellPeriod?.sg ?? "---"}m/s</span></div>
+                                    <div className='swell-height'>Swell Height: <span className='data-featured data-specific'>{weatherCurrent?.swellHeight?.sg ?? "---"} m</span></div>
+                                    <div className='swell-period'>Swell Period: <span className='data-featured data-specific'>{weatherCurrent?.swellPeriod?.sg ?? "---"} m/s</span></div>
 
-                                    <div className='curr-direction'>Current Direction: <span className='data-featured sea-waves'>{getDirectionfromValueLong(weatherCurrent?.currentDirection?.sg)}</span></div>
-                                    <div className='wave-direction'>Wave Direction: <span className='data-featured sea-waves'>{getDirectionfromValueLong(weatherCurrent?.waveDirection?.sg)}</span></div>
-                                    <div className='swell-direction'>Swell Direction: <span className='data-featured sea-waves'>{getDirectionfromValueLong(weatherCurrent?.swellDirection?.sg)}</span></div>
+                                    <div className='curr-direction'>Current Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.currentDirection?.sg)}</span></div>
+                                    <div className='wave-direction'>Wave Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.waveDirection?.sg)}</span></div>
+                                    <div className='swell-direction'>Swell Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.swellDirection?.sg)}</span></div>
                                 </div>
                             </div>
-
+                            <div className='data-card current-card current-wind'>
+                                <div className='card-header'>Sailing & Wind Condition</div>
+                                <hr style={{opacity: 0.8}} />
+                                <div className='card-data wind-data'>
+                                    <div className='wind-speed'>Wind Speed: <span className='data-featured data-specific'>{weatherCurrent?.windSpeed?.sg ?? "---"} m/s</span></div>
+                                    <div className='wind-direction'>Wind Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.waveDirection?.sg)}</span></div>
+                                    <div className='gust'>Gust: <span className='data-featured data-specific'>{weatherCurrent?.gust?.sg ?? "---"} m/s</span></div>
+                                </div>
+                            </div>
+                            <div className='data-card current-card current-weather'>
+                                <div className='card-header'>Weather Conditions</div>
+                                <hr style={{opacity: 0.8}} />
+                                <div className='card-data weather-data'>
+                                    <div className='air-temp'>Air Temperature: <span className='data-featured data-specific'>{weatherCurrent?.airTemperature?.sg ?? "---"} &deg;C</span></div>
+                                    <div className='pressure'>Air Pressure: <span className='data-featured data-specific'>{weatherCurrent?.pressure?.sg ?? "---"} hPa</span></div>
+                                    <div className='humidity'>Humidity: <span className='data-featured data-specific'>{weatherCurrent?.humidity?.sg ?? "---"}%</span></div>
+                                    <div className='precipitation'>Precipitation: <span className='data-featured data-specific'>{weatherCurrent?.precipitation?.sg ?? "---"} mm/h</span></div>
+                                    <div className='cloud-cover'>Cloud Cover: <span className='data-featured data-specific'>{weatherCurrent?.cloudCover?.sg ?? "---"}%</span></div>
+                                    <div className='wind-speed'>Visibility: <span className='data-featured data-specific'>{weatherCurrent?.visibility?.sg ?? "---"} km</span></div>
+                                    <div className='wind-speed' style={{display: weatherCurrent?.snow?.sg === 0 ? "none" : "block"}}>Snow: <span className='data-featured data-specific'>{weatherCurrent?.snow?.sg ?? "---"} mm/h</span></div>
+                                    <div className='wind-speed' style={{display: weatherCurrent?.seaIceThickness?.sg === 0 ? "none" : "block"}}>Ice Thickness: <span className='data-featured data-specific'>{weatherCurrent?.seaIceThickness?.sg ?? "---"} m</span></div>
+                                </div>
+                            </div>
+                            <div className='data-card current-card current-marine'>
+                                <div className='card-header'>Marine Condition</div>
+                                <hr style={{opacity: 0.8}} />
+                                <div className='card-data marine-data'>
+                                    <div className='water-temp'>Water Temperature: <span className='data-featured data-specific'>{weatherCurrent?.waterTemperature?.sg ?? "---"} &deg;C</span></div>
+                                    <div className='bio-ph'>Total pH Scale: <span className='data-featured data-specific'>{bioCurrent?.ph?.sg ?? "---"}</span></div>
+                                    <div className='bio-oxygen'>Oxygen: <span className='data-featured data-specific'>{bioCurrent?.oxygen?.sg > 0 ? (bioCurrent?.oxygen?.sg * 0.0328).toFixed(1) : "---"} mg/L</span></div>
+                                    <div className='bio-salinity'>Salinity: <span className='data-featured data-specific'>{bioCurrent?.salinity?.sg ?? "---"}</span></div>
+                                    <div className='bio-chlorophyll'>Chlorophyll: <span className='data-featured data-specific'>{bioCurrent?.chlorophyll?.sg ?? "---"} mg/m<sup>3</sup></span></div>
+                                    <div className='bio-iron'>Iron: <span className='data-featured data-specific'>{(bioCurrent?.iron?.sg).toFixed(3) ?? "---"} nmol/kg</span></div>
+                                    <div className='bio-nitrate'>Nitrate: <span className='data-featured data-specific'>{(bioCurrent?.nitrate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</span></div>
+                                    <div className='bio-phyto'>Phyto: <span className='data-featured data-specific'>{((bioCurrent?.phyto?.sg * 0.001) * 12.011).toFixed(3) ?? "---"} g/m<sup>3</sup>/day</span></div>
+                                    <div className='bio-phosphate'>Phosphate: <span className='data-featured data-specific'>{(bioCurrent?.phosphate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</span></div>
+                                    <div className='bio-silicate'>Silicate: <span className='data-featured data-specific'>{(bioCurrent?.silicate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</span></div>
+                                    <div className='bio-phytoplankton'>Phytoplankton: <span className='data-featured data-specific'>{(bioCurrent?.phytoplankton?.sg * 12.011).toFixed(2) ?? "---"} mg/m<sup>3</sup></span></div>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Weather Forecast through out the day */}

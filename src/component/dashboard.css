@@ -185,11 +185,11 @@
     position: relative;
 }
 
-.wind-speed, .wind-unit{
+.pin-wind .wind-speed, .pin-wind .wind-unit{
     z-index: 10;
 }
 
-.wind-speed{
+.pin-wind .wind-speed{
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -239,19 +239,19 @@
 
 /* CURRENT SEA WAVES */
 
-.current-sea-waves{
+.current-card{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.sea-waves-header{
+.card-header{
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--primary-alt-color);
 }
 
-.sea-waves-data{
+.card-data{
     height: auto;
     max-height: 240px;
     display: flex;
@@ -263,8 +263,31 @@
     padding: 10px 0px;
 }
 
-.sea-waves{
+.data-specific{
     background: var(--primary-highlight);
     padding: 0.2rem 0.6rem;
     border: none;
+}
+
+.current-wind{
+    gap: 5px;
+}
+
+.wind-data{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wind-data .wind-speed, .wind-data .wind-direction, .wind-data .gust{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.weather-data{
+    height: auto;
+    max-height: 190px;
 }
