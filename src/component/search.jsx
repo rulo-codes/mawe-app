@@ -4,7 +4,7 @@ import './search.css';
 import testData from '../data/weather.json';
 import bioData from '../data/bio.json'
 
-export default function Search({locSelected, setLocSelected, map, setWeatherData}){
+export default function Search({locSelected, setLocSelected, map, setWeatherData, isMiniMode, setIsMiniMode}){
     const [query, setQuery] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -68,12 +68,12 @@ export default function Search({locSelected, setLocSelected, map, setWeatherData
             map.current.flyTo({
                 center: [lng, lat],
                 zoom: 11,
-                padding: { left: isMobile ? 0 : 350 },
                 speed: 1.5,
                 essential: true
             });
         }
 
+        if(!isMiniMode) {setIsMiniMode(true)};
     };
 
     const handleKeyDown = (e) => {
@@ -115,9 +115,9 @@ export default function Search({locSelected, setLocSelected, map, setWeatherData
                     onKeyDown={handleKeyDown}
                     placeholder='Search...'
                     className='search-input'
-                    onFocus={() => {setLocSelected(false)}}
+                    onFocus={() => {setLocSelected(false); setIsMiniMode(false)}}
                 />
-                <button className='search-btn' onClick={() => {setQuery(""); setLocSelected(false)}}>X</button>
+                <button className='search-btn' onClick={() => {setQuery(""); setLocSelected(false); setIsMiniMode(false)}}>X</button>
                 <button className='search-btn' onClick={handleSearchButton}>Q</button>
             </div>
             <div className="search-result">

@@ -26,6 +26,11 @@ body {
 
 .main-wrapper{
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      background: var(--primary-bg);
 }
 
 .coordinates{
@@ -63,15 +68,18 @@ rgba(0, 0, 0, 0.5);
 
 /* UI Classes */
 
+.map-wrap{
+      z-index: 10;
+}
+
 .search-wrapper{
       position: absolute;
       top: 15px;
-      left: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
 }
 
 .dashboard-wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
+    z-index: 1;
 }

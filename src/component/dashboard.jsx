@@ -4,7 +4,7 @@ import './dashboard.css';
 
 
 //For testing: setWeatherData, locSelected
-export default function Dashboard({weatherData, setWeatherData, locSelected}){
+export default function Dashboard({weatherData, setWeatherData, locSelected, isMiniMode}){
     const [isLoading, setLoading] = useState(true);
 
     const [lng, lat] = Array.isArray(weatherData.coordinates) ? weatherData.coordinates : [null, null];
@@ -75,7 +75,7 @@ export default function Dashboard({weatherData, setWeatherData, locSelected}){
 
 
     return (
-        <div className="dashboard-wrapper">
+        <div className="dashboard-wrapper" style={{display: isMiniMode ? 'block' : 'none'}}>
             <div className="dashboard">
                 {/* Dashboard Banner */}
                 <div className='dashboard-header' style={{display: !checkData ? "none" : "flex"}}>

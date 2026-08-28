@@ -4,9 +4,9 @@ import { PrecipitationLayer, PressureLayer, TemperatureLayer, WindLayer } from '
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import './map.css';
 
-export default function Map({ map }) {
+export default function Map({ map, isMiniMode }) {
 
-    const mapContainer = useRef(null);
+    const mapObj = useRef(null);
     maptilersdk.config.apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
 
     const geocoding = useRef(null);
@@ -20,13 +20,22 @@ export default function Map({ map }) {
 
     const [selectedLayer, setSelectedLayer] = useState("default");
 
+    useEffect(() => {
+        if (!map.current) return;
+
+        const resizeFrame = requestAnimationFrame(() => {
+            map.current.resize();
+        });
+
+        return () => cancelAnimationFrame(resizeFrame);
+    }, [isMiniMode]);
 
     useEffect(() => {
 
         //Creating map
         if (map.current) return; // stops map from initializing more than once
         map.current = new maptilersdk.Map({
-            container: mapContainer.current,
+            container: mapObj.current,
             style: "019d9359-9c57-7522-b4dc-7a10a029169f",
             zoom: 8,
             //Disable Pitch
@@ -38,7 +47,8 @@ export default function Map({ map }) {
             //Main Controls
             geolocate: maptilersdk.GeolocationType.POINT,
             navigationControl: false,
-            geolocateControl: false
+            geolocateControl: false,
+            trackResize: true
         });
 
         //Map Layers
@@ -257,16 +267,16 @@ export default function Map({ map }) {
     }
 
     return (
-        <div className="map-wrap">
+        <div className={`map-wrap ${isMiniMode ? 'mini-mode' : ''}`}>
                 <div ref={windLayerData} id="wind-layer-data">
                     <div id="variable-name">Wind</div>
                     <div ref={pointerDataDiv} id="pointer-data"></div>
                 </div>
                 
-                <div ref={mapContainer} className="map" />
+                <div ref={mapObj} className="map" />
                 <pre ref={coordinates} id="coordinates" className="coordinates"></pre>
 
-                <div id="weather-layer-controls">
+                <div id="weather-layer-controls" style={{display: isMiniMode ? 'none' : ''}}>
                     <button id="default-layer-btn" className={`layer-btn ${selectedLayer === "default" ? "selected" : ""}`} onClick={toggleWeather} value="default">Default</button>
                     <button id="wind-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Wind" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Wind">Wind</button>
                     <button id="temp-layer-btn" className={`layer-btn ${selectedLayer === "MapTiler Temperature" ? "selected" : ""}`} onClick={toggleWeather} value="MapTiler Temperature">Temperature</button>

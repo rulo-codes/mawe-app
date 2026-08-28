@@ -18,6 +18,7 @@ function App() {
     bio: null, 
     solar: null
   });
+  const [isMiniMode, setIsMiniMode] = useState(false);
 
   const map = useRef(null);
 
@@ -33,9 +34,9 @@ function App() {
   return (
     <>
       <div id="App" className='main-wrapper'>
-        <Map map={map} />
-        <Search locSelected={locSelected} setLocSelected={setLocSelected} map={map} setWeatherData={setWeatherData} />
-        <Dashboard weatherData={weatherData} setWeatherData={setWeatherData} locSelected={locSelected}/>
+        <Map map={map} isMiniMode={isMiniMode} />
+        <Search locSelected={locSelected} setLocSelected={setLocSelected} map={map} setWeatherData={setWeatherData} isMiniMode={isMiniMode} setIsMiniMode={setIsMiniMode} />
+        <Dashboard weatherData={weatherData} setWeatherData={setWeatherData} locSelected={locSelected} isMiniMode={isMiniMode} />
       </div>
     </>
   )
