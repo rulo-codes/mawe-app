@@ -1,5 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { getDirectionfromValueShort, getDirectionfromValueLong } from '../utils/getDirectionfromValue.jsx';
+
+import CurrentDashboard from "./CurrentDashboard.jsx";
+import HourlyDashboard from './HourlyDashboard.jsx';
+
 import './dashboard.css';
 
 
@@ -9,58 +13,59 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
 
     const [lng, lat] = Array.isArray(weatherData.coordinates) ? weatherData.coordinates : [null, null];
     //Weather Data
-    const weatherCode = weatherData.weather_data?.code;
-    const weatherCurrent = weatherData.weather_data?.current;
+    const weatherCurrent = weatherData.data?.current;
     const bioCurrent = weatherData?.bio;
-    const weatherSolar = weatherData?.solar;
+    const astronomyCurrent = weatherData?.data?.astronomy;
 
-    const alertLevel = weatherCode?.alertLevel ?? "UNKNOWN";
-    const checkData = Array.isArray(weatherData.coordinates) && weatherData.coordinates.length === 2 && weatherData.weather_data != null;
+    const checkData = Array.isArray(weatherData.coordinates) && weatherData.coordinates.length === 2 && weatherData.data != null;
 
     //Date & Time
-    const getDate = weatherData?.date;
-    const date = getDate ? new Date(getDate) : null;
+    const date = weatherData?.date ? new Date(weatherData.date) : null;
 
     const currentTime = date && !Number.isNaN(date.getTime())
         ? date.toLocaleTimeString([], {
             hour: '2-digit',
             minute: '2-digit',
-            second: '2-digit',
-            timeZoneName: 'short',
             hour12: false
         })
         : "--:--:--";
+
+    const currentDay = date && !Number.isNaN(date.getTime())
+        ? date.toLocaleString([], {
+            weekday: 'long',
+        })
+        : "----";
     
     const currentDate = date && !Number.isNaN(date.getTime())
         ? date.toLocaleString([], {
-            weekday: 'long',
+            weekday: 'short',
             month: 'long',
             day: '2-digit',
             year: 'numeric'
         })
         : "---,---,--,----";
     
-    const dawn = weatherSolar?.dawn ? new Date(weatherSolar?.dawn) : null;
+    const dawn = astronomyCurrent?.nauticalDawn ? new Date(astronomyCurrent?.nauticalDawn) : null;
     const dawnTime = dawn && !Number.isNaN(dawn.getTime())
         ? dawn.toLocaleTimeString([], {
             hour: '2-digit',
             minute: '2-digit',
-            second: '2-digit',
             hour12: false
         })
         : "--:--:--";
     
-    const dusk = weatherSolar?.dusk ? new Date(weatherSolar?.dusk) : null;
+    const dusk = astronomyCurrent?.nauticalDusk ? new Date(astronomyCurrent?.nauticalDusk) : null;
     const duskTime = dusk && !Number.isNaN(dusk.getTime())
         ? dusk.toLocaleTimeString([], {
             hour: '2-digit',
             minute: '2-digit',
-            second: '2-digit',
             hour12: false
         })
         : "--:--:--";
 
     useEffect(() => {
+        console.log(weatherData);
+
         if (!locSelected) {
             setLoading(true);
             return;
@@ -73,21 +78,31 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
         };
     }, [locSelected]);
 
+    function selectMode(e){
+        const modeVal = e.currentTarget.value;
+
+        document.querySelectorAll(".data-mode-btn").forEach(btn => {
+            btn.classList.remove("mode-selected");
+        })
+
+        document.querySelector(`.mode-${modeVal}`).classList.add("mode-selected");
+        console.log(`${modeVal} mode selected for data`);
+    }
+
 
     return (
         <div className="dashboard-wrapper" style={{display: isMiniMode ? 'block' : 'none'}}>
             <div className="dashboard">
                 {/* Dashboard Banner */}
-                <div className='dashboard-header' style={{display: !checkData ? "none" : "flex"}}>
-                    <div className='header-city-name'>
-                        <h1>{weatherData.name}</h1>
-                        <div style={{textAlign: "right"}}>
+                <div className='dashboard-banner' style={{display: !checkData ? "none" : "flex"}}>
+                    <div className='dashboard-banner-header'>
+                        <h1 className='banner-header-city-name'>{weatherData.name}</h1>
+                        <div className='banner-header-coord'>
                             <span>{lng}</span>
                             <br />
                             <span>{lat}</span>
                         </div>
                     </div>
-                    <hr style={{opacity: 0.3}} />
                     <div className='header-city-info'>{weatherData.place}</div>
                 </div>
 
@@ -99,127 +114,258 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
                 ) : (
                     <div className='dashboard-data'>
                         {/* Weather Data at current hour */}
-                        <div className='data-current'>
-                            <div className='data-card current-condition'>
-                                <img src="/weather-icons/clear_sky_day.png" alt="weather icon" height={100} width={100} />
-                                <div className='condition-details'>
-                                    <div className='details-header'>
-                                        <h2 className='details-code'>
-                                            {weatherCode?.condition ?? "No Data"}
-                                        </h2>
+                        <div className='data-card data-pin'>
+                            <div className='data-pin-top'>
+                                <div className='pin-condition'>
+                                    <div className='pin-condition-header'>
+                                        <span className='condition-header-day'>{currentDay}</span> 
+                                        <h2 className='condition-header-code'>{weatherCurrent.weatherCode?.condition ?? "No Data"}</h2>
                                     </div>
-                                    <div className='details-subheader'>
-                                        <span>Precipitation: {weatherCurrent?.precipitation?.sg ?? "--"} mm/h</span>
-                                        <span style={{margin: "0px 15px"}}>|</span>
-                                        <span>Humidity: {weatherCurrent?.humidity?.sg ?? "--"}%</span>
-                                    </div>
-                                    <div className='details-alert'>
+                                    <div className='pin-condition-alert'>
                                         Alert Level :
-                                        <span className='details-alertLvl' style={{
+                                        <span className='pin-condition-alertLvl' style={{
                                             background: 
-                                                alertLevel === "CRITICAL" ? "#D42C22AA" : alertLevel === "WARNING" ? "#e2bc13aa" : alertLevel === "ADVISORY" ? "#1ba4daaa" : alertLevel === "NONE" ? "#1ddd6daa" : "#868686aa",
+                                                weatherCurrent.weatherCode?.alertLevel === "CRITICAL" ? "#D42C22AA" : weatherCurrent.weatherCode?.alertLevel === "WARNING" ? "#e2bc13aa" : weatherCurrent.weatherCode?.alertLevel === "ADVISORY" ? "#1ba4daaa" : weatherCurrent.weatherCode?.alertLevel === "NONE" ? "#1ddd6daa" : "#868686aa",
                                             marginLeft: "5px"
-                                            }}>{alertLevel}
+                                            }}>{weatherCurrent.weatherCode?.alertLevel}
                                         </span>
                                     </div>
                                 </div>
+                                <div className='pin-condition-icon'>
+                                    <img src={`/weather-icons/${weatherCurrent.weatherCode?.iconId}.png`} alt="weather icon" />
+                                </div>                                
                             </div>
-                            <div className='current-weather-pin'>
-                                <div className='data-card weather-pin pin-date'>
-                                    <div className='time-data'>
-                                        <span className='data-featured time-icon'></span>
-                                        <span className='data-featured time'>{currentTime}</span>
-                                    </div>
-                                    <div className='other-data'>
-                                        <div className='date'>{currentDate}</div>
-                                        <div className='solar-header'>Nautical Dawn/Dusk</div>
-                                        <div className='solar-data'>Dawn: {dawnTime}  |   Dusk: {duskTime}</div>
-                                    </div>
-                                </div>
-                                <div className='data-card weather-pin pin-wind'>
-                                    <div className='wind-speed'>{weatherCurrent?.windSpeed?.sg ?? "---"}</div>
-                                    <div className='wind-unit'>m/s</div>
-                                    <div className='icon-wind-direction'>
-                                        <div className='icon-arrow' style={{transform: `rotate(${weatherCurrent?.windDirection?.sg ?? 0}deg)`}}></div>
+                            <div className='data-pin-details'>                              
+                                <div className='data-pin-details-time'>
+                                    <span className='data-card pin-time'>{currentTime}</span>
+                                    <div className='pin-time-others'>
+                                        <div className='pin-date'>{currentDate}</div>
+                                        <div className='pin-solar'>
+                                            <div className='solar-dawn'>
+                                                <span>Nautical Dawn:</span>
+                                                <span className='val'> {dawnTime}</span>
+                                            </div>
+                                            <div className='solar-dusk'>
+                                                <span>Nautical Dusk: </span>
+                                                <span className='val'> {duskTime}</span>
+                                            </div>
+                                        </div> 
                                     </div>
                                 </div>
-                                <div className='data-card weather-pin pin-wave'>
-                                    <div className='icon-wave'><img src="/ui-icons/wave-blue.png" width="30px" height="30px" loading='lazy'></img></div>
-                                    <div className='wave'>
-                                        <div className='wave-height'>{weatherCurrent?.waveHeight?.sg ?? "---"} m</div>
-                                        
-                                    </div>
-                                    <div className='wave-period'>
-                                        Period: {weatherCurrent?.wavePeriod?.sg ?? "---"}s
-                                    </div>
-                                    <div className='wave-direction'>{getDirectionfromValueShort(weatherCurrent?.waveDirection?.sg)}</div>
-                                </div>
-                            </div>
-                            <div className='data-card current-card current-sea-waves'>
-                                <div className='card-header'>Sea State & Waves</div>
-                                <hr style={{opacity: 0.8}} />
-                                <div className='card-data sea-waves-data'>
-                                    <div className='sea-level'>Sea Level: <span className='data-featured data-specific'>{weatherCurrent?.seaLevel?.sg ?? "---"} m</span></div>
-                                    <div className='curr-speed'>Current Speed: <span className='data-featured data-specific'>{weatherCurrent?.seaLevel?.sg ?? "---"} m/s</span></div>
-                                    
-                                    <div className='wave-height'>Wave Height: <span className='data-featured data-specific'>{weatherCurrent?.waveHeight?.sg ?? "---"} m</span></div>
-                                    <div className='wave-period'>Wave Period: <span className='data-featured data-specific'>{weatherCurrent?.wavePeriod?.sg ?? "---"} m/s</span></div>
-                                    
-                                    <div className='swell-height'>Swell Height: <span className='data-featured data-specific'>{weatherCurrent?.swellHeight?.sg ?? "---"} m</span></div>
-                                    <div className='swell-period'>Swell Period: <span className='data-featured data-specific'>{weatherCurrent?.swellPeriod?.sg ?? "---"} m/s</span></div>
-
-                                    <div className='curr-direction'>Current Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.currentDirection?.sg)}</span></div>
-                                    <div className='wave-direction'>Wave Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.waveDirection?.sg)}</span></div>
-                                    <div className='swell-direction'>Swell Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.swellDirection?.sg)}</span></div>
-                                </div>
-                            </div>
-                            <div className='data-card current-card current-wind'>
-                                <div className='card-header'>Sailing & Wind Condition</div>
-                                <hr style={{opacity: 0.8}} />
-                                <div className='card-data wind-data'>
-                                    <div className='wind-speed'>Wind Speed: <span className='data-featured data-specific'>{weatherCurrent?.windSpeed?.sg ?? "---"} m/s</span></div>
-                                    <div className='wind-direction'>Wind Direction: <span className='data-featured data-specific'>{getDirectionfromValueLong(weatherCurrent?.waveDirection?.sg)}</span></div>
-                                    <div className='gust'>Gust: <span className='data-featured data-specific'>{weatherCurrent?.gust?.sg ?? "---"} m/s</span></div>
-                                </div>
-                            </div>
-                            <div className='data-card current-card current-weather'>
-                                <div className='card-header'>Weather Conditions</div>
-                                <hr style={{opacity: 0.8}} />
-                                <div className='card-data weather-data'>
-                                    <div className='air-temp'>Air Temperature: <span className='data-featured data-specific'>{weatherCurrent?.airTemperature?.sg ?? "---"} &deg;C</span></div>
-                                    <div className='pressure'>Air Pressure: <span className='data-featured data-specific'>{weatherCurrent?.pressure?.sg ?? "---"} hPa</span></div>
-                                    <div className='humidity'>Humidity: <span className='data-featured data-specific'>{weatherCurrent?.humidity?.sg ?? "---"}%</span></div>
-                                    <div className='precipitation'>Precipitation: <span className='data-featured data-specific'>{weatherCurrent?.precipitation?.sg ?? "---"} mm/h</span></div>
-                                    <div className='cloud-cover'>Cloud Cover: <span className='data-featured data-specific'>{weatherCurrent?.cloudCover?.sg ?? "---"}%</span></div>
-                                    <div className='wind-speed'>Visibility: <span className='data-featured data-specific'>{weatherCurrent?.visibility?.sg ?? "---"} km</span></div>
-                                    <div className='wind-speed' style={{display: weatherCurrent?.snow?.sg === 0 ? "none" : "block"}}>Snow: <span className='data-featured data-specific'>{weatherCurrent?.snow?.sg ?? "---"} mm/h</span></div>
-                                    <div className='wind-speed' style={{display: weatherCurrent?.seaIceThickness?.sg === 0 ? "none" : "block"}}>Ice Thickness: <span className='data-featured data-specific'>{weatherCurrent?.seaIceThickness?.sg ?? "---"} m</span></div>
-                                </div>
-                            </div>
-                            <div className='data-card current-card current-marine'>
-                                <div className='card-header'>Marine Condition</div>
-                                <hr style={{opacity: 0.8}} />
-                                <div className='card-data marine-data'>
-                                    <div className='water-temp'>Water Temperature: <span className='data-featured data-specific'>{weatherCurrent?.waterTemperature?.sg ?? "---"} &deg;C</span></div>
-                                    <div className='bio-ph'>Total pH Scale: <span className='data-featured data-specific'>{bioCurrent?.ph?.sg ?? "---"}</span></div>
-                                    <div className='bio-oxygen'>Oxygen: <span className='data-featured data-specific'>{bioCurrent?.oxygen?.sg > 0 ? (bioCurrent?.oxygen?.sg * 0.0328).toFixed(1) : "---"} mg/L</span></div>
-                                    <div className='bio-salinity'>Salinity: <span className='data-featured data-specific'>{bioCurrent?.salinity?.sg ?? "---"}</span></div>
-                                    <div className='bio-chlorophyll'>Chlorophyll: <span className='data-featured data-specific'>{bioCurrent?.chlorophyll?.sg ?? "---"} mg/m<sup>3</sup></span></div>
-                                    <div className='bio-iron'>Iron: <span className='data-featured data-specific'>{(bioCurrent?.iron?.sg).toFixed(3) ?? "---"} nmol/kg</span></div>
-                                    <div className='bio-nitrate'>Nitrate: <span className='data-featured data-specific'>{(bioCurrent?.nitrate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</span></div>
-                                    <div className='bio-phyto'>Phyto: <span className='data-featured data-specific'>{((bioCurrent?.phyto?.sg * 0.001) * 12.011).toFixed(3) ?? "---"} g/m<sup>3</sup>/day</span></div>
-                                    <div className='bio-phosphate'>Phosphate: <span className='data-featured data-specific'>{(bioCurrent?.phosphate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</span></div>
-                                    <div className='bio-silicate'>Silicate: <span className='data-featured data-specific'>{(bioCurrent?.silicate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</span></div>
-                                    <div className='bio-phytoplankton'>Phytoplankton: <span className='data-featured data-specific'>{(bioCurrent?.phytoplankton?.sg * 12.011).toFixed(2) ?? "---"} mg/m<sup>3</sup></span></div>
+                                
+                                <div className='data-pin-details-condition'>
+                                    <div className='pin-details-condition val'><img src='/ui-icons/ui-precep.png' className='data-ui-icon' style={{marginRight: "auto"}}></img> <div>{weatherCurrent?.precipitation?.sg ?? "--"} mm/h</div></div>
+                                    <div className='pin-details-condition val'><img src='/ui-icons/ui-humidity.png' className='data-ui-icon' style={{marginRight: "auto"}}></img> <div>{weatherCurrent?.humidity?.sg ?? "--"}%</div></div>
+                                    <div className='pin-details-condition val'>
+                                        <img src='/ui-icons/ui-temp-air.png' className='data-ui-icon' style={{marginRight: "auto"}}></img>
+                                        <div>{weatherCurrent?.airTemperature?.sg ?? "---"} &deg;C</div>
+                                    </div>  
                                 </div>
                             </div>
                         </div>
 
-                        {/* Weather Forecast through out the day */}
-                        <div className='data-hourly'></div>
+                        <div className='data-mode'>
+                            <button className='data-mode-btn mode-today mode-selected' onClick={selectMode} value="today">Today</button>
+                            <div className='divider'></div>
+                            <button className='data-mode-btn mode-hours' onClick={selectMode} value="hours">Hours</button>
+                            <div className='divider'></div>
+                            <button className='data-mode-btn mode-daily' onClick={selectMode} value="daily">Daily</button>
+                        </div>
 
-                        {/* Weather Forecast in coming days at current hour */}
-                        <div className='data-daily'></div>
+                        {/* Currenty, Hourly, Daily Weather Data */}
+                        {/*
+                        <div className='data-card data-weather data-current'>
+                            <div className='data-current'>
+                                
+                                <div className='data-current-list'>
+                                    <h2 className='data-header'>Current Condition</h2>
+                                    <div className='data-card data-current-wave'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-wave.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Wave</span> 
+                                        </div>
+                                        <div className='current-wave'>
+                                            <div style={{fontFamily: "var(--secondary-font)", textTransform: "uppercase", wordSpacing: "6px"}}>Height: <span className='val'>{weatherCurrent?.waveHeight?.sg ?? "---"} m</span></div>
+                                            <div style={{fontFamily: "var(--secondary-font)", textTransform: "uppercase", wordSpacing: "6px"}}>Period: <span className='val'>{weatherCurrent?.wavePeriod?.sg ?? "---"} m/s</span></div>
+                                            <div className='val'>{getDirectionfromValueShort(weatherCurrent?.waveDirection?.sg)}</div>
+                                        </div>
+                                    </div>
+                                    <div className='data-card data-current-swell'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-swell.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Swell</span> 
+                                        </div>
+                                        <div className='current-swell'>
+                                            <div style={{fontFamily: "var(--secondary-font)", textTransform: "uppercase", wordSpacing: "6px"}}>Height: <span className='val'>{weatherCurrent?.swellHeight?.sg ?? "---"} m</span></div>
+                                            <div style={{fontFamily: "var(--secondary-font)", textTransform: "uppercase", wordSpacing: "6px"}}>Period: <span className='val'>{weatherCurrent?.swellPeriod?.sg ?? "---"} m/s</span></div>
+                                            <div className='val'>{getDirectionfromValueShort(weatherCurrent?.swellDirection?.sg)}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='data-current-other-list'>
+
+                                    <div className='data-card data-current-wind'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-wind.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Wind</span> 
+                                        </div>
+                                        <div className='current-wind val'>{weatherCurrent?.windSpeed?.sg ?? "---"}m/s  {getDirectionfromValueShort(weatherCurrent?.windDirection?.sg)}</div>
+                                    </div>
+                                    <div className='data-card data-current-gust'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-gust.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Gust</span> 
+                                        </div>
+                                        <div className='current-gust val'>{weatherCurrent?.gust?.sg ?? "---"}m/s </div>
+                                    </div>
+                                    <div className='data-card data-current-sea-level'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-sea-level.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Sea Level</span> 
+                                        </div>
+                                        <div className='current-sea-level val'>{weatherCurrent?.seaLevel?.sg ?? "---"}m </div>
+                                    </div>
+                                    <div className='data-card data-current-curr'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-current.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Current</span> 
+                                        </div>
+                                        <div className='current-curr val'>{weatherCurrent?.currentSpeed?.sg ?? "---"}m/s      {getDirectionfromValueShort(weatherCurrent?.currentDirection?.sg)}</div>
+                                    </div>
+                                    <div className='data-card data-current-temp'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-temp-air.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Temp</span> 
+                                        </div>
+                                        <div className='current-air-temp val'>{weatherCurrent?.airTemperature?.sg ?? "---"}&deg;C </div>
+                                    </div>
+                                    <div className='data-card data-current-pressure'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-air-pressure.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Air Pressure</span> 
+                                        </div>
+                                        <div className='current-air-pressure val'>{weatherCurrent?.pressure?.sg ?? "---"} hPa</div>
+                                    </div>
+                                    <div className='data-card data-current-humidity'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-humidity.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Humidity</span> 
+                                        </div>
+                                        <div className='current-humidity val'>{weatherCurrent?.humidity?.sg ?? "---"}%</div>
+                                    </div>
+                                    <div className='data-card data-current-precep'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-precep.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Precepitation</span> 
+                                        </div>
+                                        <div className='current-precep val'>{weatherCurrent?.precipitation?.sg ?? "---"}mm/h</div>
+                                    </div>
+                                    <div className='data-card data-current-cloud-cover'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-cloud-cover.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Cloud Cover</span> 
+                                        </div>
+                                        <div className='current-cloud-cover val'>{weatherCurrent?.cloudCover?.sg ?? "---"}%</div>
+                                    </div>
+                                    <div className='data-card data-current-visibility'>
+                                        <div className='data-label'>
+                                            <img src='/ui-icons/ui-visibility.png' className='data-ui-icon'></img>
+                                            <span style={{margin: "0px 8px"}}>Visibility</span> 
+                                        </div>
+                                        <div className='current-visibility val'>{weatherCurrent?.visibility?.sg ?? "---"} km</div>
+                                    </div>
+                
+                                </div>
+                                <div className='data-current-marine'>
+                                    <h2 className='data-header'>Marine Biology</h2>
+                                    <div className='data-current-marine-list'>
+
+                                        <div className='data-card data-current-marine-water-temp'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-temp-water.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Water Temp</span> 
+                                            </div>
+                                            <div className='current-bio-watertemp val'>{weatherCurrent?.waterTemperature?.sg ?? "---"}&deg;C</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-ph'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-ph.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>pH Scale</span> 
+                                            </div>
+                                            <div className='current-bio-ph val'>{bioCurrent?.ph?.sg ?? "---"}</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-oxygen'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-oxygen.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Oxygen</span> 
+                                            </div>
+                                            <div className='current-bio-oxygen val'>{bioCurrent?.oxygen?.sg > 0 ? (bioCurrent?.oxygen?.sg * 0.0328).toFixed(1) : "---"} mg/L</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-salinity'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-salinity.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Salinity</span> 
+                                            </div>
+                                            <div className='current-bio-salinity val'>{bioCurrent?.salinity?.sg ?? "---"}</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-iron'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-iron.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Iron</span> 
+                                            </div>
+                                            <div className='current-bio-iron val'>{(bioCurrent?.iron?.sg).toFixed(3) ?? "---"} nmol/kg</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-nitrate'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-nitrate.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Nitrate</span> 
+                                            </div>
+                                            <div className='current-bio-nitrate val'>{(bioCurrent?.nitrate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-chloro'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-chloro.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Chlorophyll</span> 
+                                            </div>
+                                            <div className='current-bio-chloro val'>{bioCurrent?.chlorophyll?.sg ?? "---"} mg/m</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-phyto'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-phyto.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Phyto</span> 
+                                            </div>
+                                            <div className='current-bio-phyto val'>{((bioCurrent?.phyto?.sg * 0.001) * 12.011).toFixed(3) ?? "---"} g/m</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-plankton'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-plankton.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Phytoplankton</span> 
+                                            </div>
+                                            <div className='current-bio-plankton salinity val'>{(bioCurrent?.phytoplankton?.sg * 12.011).toFixed(2) ?? "---"} mg/m<sup>3</sup></div>
+                                        </div>
+                                        <div className='data-card data-current-marine-phosphate'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-phosphate.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Phosphate</span> 
+                                            </div>
+                                            <div className='current-bio-phosphate val'>{(bioCurrent?.phosphate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</div>
+                                        </div>
+                                        <div className='data-card data-current-marine-silicate'>
+                                            <div className='data-label'>
+                                                <img src='/ui-icons/ui-bio-silicate.png' className='data-ui-icon'></img>
+                                                <span style={{margin: "0px 8px"}}>Silicate</span> 
+                                            </div>
+                                            <div className='current-bio-silicate val'>{(bioCurrent?.silicate?.sg).toFixed(2) ?? "---"} &micro;mol/kg</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        */}
+
+                        <CurrentDashboard weatherData={weatherData} />
+                        <HourlyDashboard weatherData={weatherData} />
                     </div>
                 )
                 }

@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
       --primary: rgba(235, 235, 235, 1);
-      --primary-bg: rgba(207, 207, 207, 0.70);
-      --primary-alt-bg: rgb(230, 230, 230);
+      --primary-10: rgb(225, 228, 231);
+      --primary-bg: rgb(214, 222, 226);
+      --primary-alt-bg: rgb(46, 70, 99);
       --secondary-bg: rgb(95, 202, 179);
       --primary-color: rgb(20, 20, 20);
       --primary-alt-color: rgb(108, 121, 133);
       --secondary-color: rgb(235, 235, 235);
+      --accent-color: rgb(40, 128, 228);
       --primary-highlight: rgb(122, 175, 206);
+      --primary-border: 1px solid rgb(99, 106, 131);
       --primary-border-color: rgb(99, 106, 131);
-      --primary-font: Montserrat, sans-serif, Arial;
+      --primary-font: "Fjord One", sans-serif, Arial;
+      --secondary-font: "Barlow Semi Condensed", serif;
 }
 
 
@@ -25,6 +29,8 @@ body {
 }
 
 .main-wrapper{
+      height: auto;
+      min-height: 100dvh;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -74,12 +80,12 @@ rgba(0, 0, 0, 0.5);
 
 .search-wrapper{
       position: absolute;
-      top: 15px;
+      top: 65px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 15;
 }
 
-.dashboard-wrapper{
+.dashboard{
     z-index: 1;
 }

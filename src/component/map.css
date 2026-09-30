@@ -3,6 +3,7 @@
   position: relative;
   width: 100dvw;
   height: 100dvh;
+  transition: width 0.4s ease-out, height 0.4s ease-out 0.2s;
 }
 
 .map {
@@ -15,11 +16,17 @@
 
 .map-wrap.mini-mode {
   width: 1100px;
-  height: 220px;
+  height: 460px;
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 2px #1e27312a;
+}
+
+.map-wrap.mini-mode > .map{
+  border-radius: 20px; 
 }
 
 #time-info{ display: none; position: fixed; width: 60vw; bottom: 0; z-index: 1; margin: 10px; text-shadow: 0px 0px 5px 

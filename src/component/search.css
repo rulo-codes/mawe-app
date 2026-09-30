@@ -4,7 +4,7 @@
     width: 600px;
     height: fit-content;
     display: block;
-    background: var(--primary-alt-bg);
+    background: var(--primary);
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 1rem;
     color: var(--primary-color);
