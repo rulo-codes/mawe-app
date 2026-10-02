@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { getDirectionfromValueShort, getDirectionfromValueLong } from '../utils/getDirectionfromValue.jsx';
+import { checkWeatherIcon } from '../utils/checkWeatherIcon.jsx';
 
 import CurrentDashboard from "./CurrentDashboard.jsx";
 import HourlyDashboard from './HourlyDashboard.jsx';
@@ -132,7 +133,7 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
                                     </div>
                                 </div>
                                 <div className='pin-condition-icon'>
-                                    <img src={`/weather-icons/${weatherCurrent.weatherCode?.iconId}.png`} alt="weather icon" />
+                                    <img src={`/weather-icons/${checkWeatherIcon(weatherCurrent.weatherCode?.iconId, weatherData?.date)}.png`} alt="weather icon" />
                                 </div>                                
                             </div>
                             <div className='data-pin-details'>                              
