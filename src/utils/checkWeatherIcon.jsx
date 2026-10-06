@@ -1,7 +1,6 @@
 export function checkWeatherIcon(icon, time){
-    if (!time) return icon;
-
     const date = new Date(time);
+
     if (Number.isNaN(date.getTime())) return icon;
 
     const hour = date.getHours();

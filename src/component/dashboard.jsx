@@ -4,6 +4,7 @@ import { checkWeatherIcon } from '../utils/checkWeatherIcon.jsx';
 
 import CurrentDashboard from "./CurrentDashboard.jsx";
 import HourlyDashboard from './HourlyDashboard.jsx';
+import DailyDashboard from './DailyDashboard.jsx';
 
 import './dashboard.css';
 
@@ -11,6 +12,7 @@ import './dashboard.css';
 //For testing: setWeatherData, locSelected
 export default function Dashboard({weatherData, setWeatherData, locSelected, isMiniMode}){
     const [isLoading, setLoading] = useState(true);
+    const [dataMode, setDataMode] = useState("current");
 
     const [lng, lat] = Array.isArray(weatherData.coordinates) ? weatherData.coordinates : [null, null];
     //Weather Data
@@ -88,6 +90,7 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
 
         document.querySelector(`.mode-${modeVal}`).classList.add("mode-selected");
         console.log(`${modeVal} mode selected for data`);
+        setDataMode(modeVal);
     }
 
 
@@ -133,7 +136,7 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
                                     </div>
                                 </div>
                                 <div className='pin-condition-icon'>
-                                    <img src={`/weather-icons/${checkWeatherIcon(weatherCurrent.weatherCode?.iconId, weatherData?.date)}.png`} alt="weather icon" />
+                                    <img src={`/weather-icons/${checkWeatherIcon(weatherCurrent.weatherCode?.iconId, date)}.png`} alt="weather icon" />
                                 </div>                                
                             </div>
                             <div className='data-pin-details'>                              
@@ -166,9 +169,9 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
                         </div>
 
                         <div className='data-mode'>
-                            <button className='data-mode-btn mode-today mode-selected' onClick={selectMode} value="today">Today</button>
+                            <button className='data-mode-btn mode-current mode-selected' onClick={selectMode} value="current">Today</button>
                             <div className='divider'></div>
-                            <button className='data-mode-btn mode-hours' onClick={selectMode} value="hours">Hours</button>
+                            <button className='data-mode-btn mode-hourly' onClick={selectMode} value="hourly">Hourly</button>
                             <div className='divider'></div>
                             <button className='data-mode-btn mode-daily' onClick={selectMode} value="daily">Daily</button>
                         </div>
@@ -365,8 +368,10 @@ export default function Dashboard({weatherData, setWeatherData, locSelected, isM
                         </div>
                         */}
 
-                        <CurrentDashboard weatherData={weatherData} />
-                        <HourlyDashboard weatherData={weatherData} />
+                        {dataMode == "current" ? ( <CurrentDashboard weatherData={weatherData} /> )
+                            : dataMode == "hourly" ? ( <HourlyDashboard weatherData={weatherData} /> )
+                            : ( <DailyDashboard weatherData={weatherData} /> )
+                        }
                     </div>
                 )
                 }

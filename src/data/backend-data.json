@@ -143,7 +143,7 @@
         "sg": 7.39
       },
       "weatherCode": {
-        "condition": "Sunny / Clear",
+        "condition": "Clear Skies",
         "iconId": "clear_sky",
         "alertLevel": "NONE"
       }
